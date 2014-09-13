@@ -7,5 +7,11 @@
     <File Path="Scripts\jquery-2.1.1.min.js" Url="Scripts/jquery-2.1.1.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\underscore-min.js" Url="Scripts/underscore-min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\require.js" Url="Scripts/require.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-route.min.js.map" Url="Scripts/angular-route.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-route.min.js" Url="Scripts/angular-route.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-route.js" Url="Scripts/angular-route.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-sanitize.min.js.map" Url="Scripts/angular-sanitize.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-sanitize.min.js" Url="Scripts/angular-sanitize.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular-sanitize.js" Url="Scripts/angular-sanitize.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

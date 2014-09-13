@@ -46,6 +46,25 @@
     <Content Include="App\Elements.xml" />
     <Content Include="App\app.js" />
     <Content Include="App\github\githubModule.js" />
+    <Content Include="Data\Elements.xml" />
+    <Content Include="Data\Repositories\Elements.xml" />
+    <Content Include="Data\Repositories\RepositoriesInstance\Elements.xml" />
+    <Content Include="Data\Repositories\Schema.xml" />
+    <Content Include="Data\Sample.txt" />
+    <Content Include="Data\Users\Elements.xml" />
+    <Content Include="Data\Users\Schema.xml" />
+    <Content Include="Data\Users\UsersInstance\Elements.xml" />
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Scripts\angular-route.js" />
+    <Content Include="Scripts\angular-route.min.js">
+      <DependentUpon>angular-route.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\angular-sanitize.js" />
+    <Content Include="Scripts\angular-sanitize.min.js">
+      <DependentUpon>angular-sanitize.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\jquery-2.1.1.intellisense.js">
       <DependentUpon>jquery-2.1.1.js</DependentUpon>
     </Content>
@@ -61,6 +80,24 @@
     <None Include="App\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9786add7-935d-4211-afdb-3e0a90d6a732}</SharePointProjectItemId>
     </None>
+    <None Include="Data\Repositories\RepositoriesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{993424e9-676b-40d9-afba-9d1f0d5eca1c}</SharePointProjectItemId>
+    </None>
+    <None Include="Data\Repositories\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{799c7a42-b627-4492-8603-c37fe45b4a51}</SharePointProjectItemId>
+    </None>
+    <None Include="Data\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{95ac7b8b-2c5b-4b1f-9005-42689109504e}</SharePointProjectItemId>
+    </None>
+    <None Include="Data\Users\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{51cdf506-ffe2-4b5e-898d-637bf0a34e19}</SharePointProjectItemId>
+    </None>
+    <None Include="Data\Users\UsersInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aa4e9da4-2b91-4c96-a6fa-539c25afb4a4}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{589e1f83-c425-4d02-a450-6538872cf1c3}</FeatureId>
+    </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7e62070d-8216-488f-994f-f0b8a53f1c2c}</SharePointProjectItemId>
@@ -68,6 +105,12 @@
     <Content Include="Pages\Elements.xml" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Scripts\angular-route.min.js.map">
+      <DependentUpon>angular-route.js</DependentUpon>
+    </None>
+    <None Include="Scripts\angular-sanitize.min.js.map">
+      <DependentUpon>angular-sanitize.js</DependentUpon>
+    </None>
     <None Include="Scripts\angular.min.js.map">
       <DependentUpon>angular.js</DependentUpon>
     </None>
