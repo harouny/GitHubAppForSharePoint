@@ -7,7 +7,6 @@
         baseUrl: '../App',
         paths:
         {
-            'github':       './github',
             'underscore':   '../Scripts/underscore-min',
             'jquery':       '../Scripts/jquery-2.1.1.min',
             'angular':      '../Scripts/angular.min'
