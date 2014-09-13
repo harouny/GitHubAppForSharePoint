@@ -3,14 +3,14 @@
 
     require.config(
     {
-        //all paths are relative to "/Scripts"
-        baseUrl: 'Scripts',
+        //all paths are relative to "/Pages"
+        baseUrl: '../App',
         paths:
         {
-            'app': './app',
-            'underscore': './underscore-min',
-            'jquery': './jquery-2.1.1.min',
-            'angular': './angular.min'
+            'github':       './github',
+            'underscore':   '../Scripts/underscore-min',
+            'jquery':       '../Scripts/jquery-2.1.1.min',
+            'angular':      '../Scripts/angular.min'
         },
         shim:
         {
@@ -25,7 +25,7 @@
         }
     });
 
-    define("app", ["angular", "app/github/githubModule"],
+    define("app", ["angular", "github/githubModule"],
         function (angular, githubModule) {
             angular.bootstrap(document.getElementsByTagName("body")[0],
                               [githubModule.name]);

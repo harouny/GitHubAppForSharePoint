@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="App">
+    <File Path="App\app.js" Url="App/app.js" ReplaceContent="TRUE" />
+    <File Path="App\github\githubModule.js" Url="App/github/githubModule.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

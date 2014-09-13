@@ -13,7 +13,5 @@
     <ProjectItemFile Source="underscore-min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="require.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="r.js" Target="Scripts\" Type="ElementFile" />
-    <ProjectItemFile Source="app\app.js" Target="Scripts\app\" Type="ElementFile" />
-    <ProjectItemFile Source="app\github\githubModule.js" Target="Scripts\app\github\" Type="ElementFile" />
   </Files>
 </ProjectItem>

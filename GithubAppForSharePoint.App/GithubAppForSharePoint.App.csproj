@@ -43,8 +43,9 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="Scripts\app\app.js" />
-    <Content Include="Scripts\app\github\githubModule.js" />
+    <Content Include="App\Elements.xml" />
+    <Content Include="App\app.js" />
+    <Content Include="App\github\githubModule.js" />
     <Content Include="Scripts\jquery-2.1.1.intellisense.js">
       <DependentUpon>jquery-2.1.1.js</DependentUpon>
     </Content>
@@ -57,6 +58,9 @@
     </Content>
     <Content Include="Scripts\require.js" />
     <Content Include="Scripts\underscore-min.js" />
+    <None Include="App\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9786add7-935d-4211-afdb-3e0a90d6a732}</SharePointProjectItemId>
+    </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{7e62070d-8216-488f-994f-f0b8a53f1c2c}</SharePointProjectItemId>
