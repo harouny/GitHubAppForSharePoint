@@ -36,4 +36,4 @@
         // Application has bootstrapped and started...
     });
 
-}(require, define));
+}(window.require, window.define));
