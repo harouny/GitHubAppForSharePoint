@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="2eeee61d-22e1-4bb6-ab7a-d60faeb7526d" 
+        solutionId="2eeee61d-22e1-4bb6-ab7a-d60faeb7526d" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="GithubAppForSharePoint.App"
+        sharePointProductVersion="16.0">
+  <features>
+        <featureReference itemId="f26c9b90-c7f6-4520-97c8-3101b9f2cbb1" />
+  </features>
+</package>

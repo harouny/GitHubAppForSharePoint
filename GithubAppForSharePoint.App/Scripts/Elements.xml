@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Scripts">
+    <File Path="Scripts\angular-mocks.js" Url="Scripts/angular-mocks.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular.min.js" Url="Scripts/angular.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\angular.min.js.map" Url="Scripts/angular.min.js.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-2.1.1.min.map" Url="Scripts/jquery-2.1.1.min.map" ReplaceContent="TRUE" />
+    <File Path="Scripts\jquery-2.1.1.min.js" Url="Scripts/jquery-2.1.1.min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\underscore-min.js" Url="Scripts/underscore-min.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\require.js" Url="Scripts/require.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\app.js" Url="Scripts/app/app.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\app\github\githubModule.js" Url="Scripts/app/github/githubModule.js" ReplaceContent="TRUE" />
+  </Module>
+</Elements>
