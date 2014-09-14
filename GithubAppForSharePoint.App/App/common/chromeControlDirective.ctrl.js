@@ -3,17 +3,17 @@
 
     define([
         "common/commonModule",
-        "SP.UI.Controls"
+        "spUiControls"
     ],
     function (commonModule, spUiControls) {
 
         commonModule.controller("chromeControlDirective.ctrl",
-            ["$scope",
-            function ($scope) {
+            ["$scope", "appConstants",
+            function ($scope, appConstants) {
 
                 var options = {
-                    'appIconUrl': "../Images/AppIcon.png",
-                    'appTitle': "Github App For SharePoint",
+                    'appIconUrl': appConstants.logoUrl,
+                    'appTitle': appConstants.appTitle,
                     'appHelpPageUrl': 'javascript:;',
                     'settingsLinks': [
                         {
@@ -31,12 +31,8 @@
                     ]
                 };
 
-                $scope.$watch("chromeControlContainerId", function (chromeControlContainerId) {
-                    if (chromeControlContainerId) {
-                        var nav = new spUiControls.Navigation(chromeControlContainerId, options);
-                        nav.setVisible(true);
-                    }
-                });
+                var nav = new spUiControls.Navigation($scope.containerId, options);
+                nav.setVisible(true);
 
             }
         ]);

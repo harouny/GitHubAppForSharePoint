@@ -11,11 +11,10 @@
                 return {
                     restrict: 'AE',
                     controller: 'chromeControlDirective.ctrl',
-                    scope: {},
-                    templateUrl: "../App/common/chromeControlDirective.tpl.html",
-                    link: function ($scope, element) {
-                        $scope.chromeControlContainerId = "chrome-control-container";
-                    }
+                    scope: {
+                        containerId : "@"
+                    },
+                    templateUrl: "../App/common/chromeControlDirective.tpl.html"
                 };
             }]);
     });

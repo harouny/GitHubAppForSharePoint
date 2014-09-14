@@ -1,29 +1,51 @@
-﻿define(['angular-mocks', 'SP.UI.Controls', 'common/chromeControlDirective.ctrl'],
+﻿define(['angular-mocks', 'spUiControls', 'common/chromeControlDirective.ctrl'],
 function (mock, spUiControls) {
     describe("chrome control directive controller", function () {
+
         var $scope;
+        var chromeOptions;
+        var chromeIsVisible;
+
         beforeEach(function () {
-            spyOn(spUiControls, "Navigation").and.callThrough();
+            spyOn(spUiControls, "Navigation").and.callFake(function (containerId, options) {
+                chromeOptions = options;
+                return {
+                    setVisible: function (value) {
+                        chromeIsVisible = value;
+                    }
+                }
+            });
             mock.module('commonModule');
             mock.inject(function ($rootScope, $controller) {
                 $scope = $rootScope.$new();
+                $scope.containerId = "container-div";
                 var dependencies = {
                     $scope: $scope
                 }
                 $controller('chromeControlDirective.ctrl', dependencies);
             });
         });
-        it("is watching for an element id in DOM", function () {
-            expect($scope.$$watchers[0].exp).toBe("chromeControlContainerId");
-        });
-        describe("and when element id is found", function () {
 
-            it("it loads chrome control into that element", function() {
-                $scope.chromeControlContainerId = "container-div";
-                $scope.$apply();
-                expect(spUiControls.Navigation)
-                    .toHaveBeenCalledWith("container-div", window.jasmine.any(Object));
-            });
+        it("it loads chrome control into target DOM element", function() {
+            expect(spUiControls.Navigation)
+                .toHaveBeenCalledWith("container-div", window.jasmine.any(Object));
         });
+
+        describe("passing the following details", function () {
+
+            it("app icon", function() {
+                expect(chromeOptions.appIconUrl).toBe("../Images/AppIcon.png");
+            });
+
+            it("app title", function () {
+                expect(chromeOptions.appTitle).toBe("Github App For SharePoint");
+            });
+
+        });
+
+        it("then set chrome visibaility to true", function() {
+            expect(chromeIsVisible).toBe(true);
+        });
+
     });
 });

@@ -12,7 +12,7 @@
             'angular-route':    '../Scripts/angular-route',
             'angular-sanitize': '../Scripts/angular-sanitize',
             'angular-mocks':    '../Scripts/angular-mocks',
-            'SP.UI.Controls': '../../GithubAppForSharePoint.Tests/Mocks/spUiControls',
+            'spUiControls': '../../GithubAppForSharePoint.Tests/Mocks/spUiControls',
         },
         shim:
         {

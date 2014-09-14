@@ -12,7 +12,7 @@
             'angular':          '../Scripts/angular.min',
             'angular-route':    '../Scripts/angular-route',
             'angular-sanitize': '../Scripts/angular-sanitize',
-            'SP.UI.Controls':   '/_layouts/15/SP.UI.Controls'
+            'spUiControls':     '/_layouts/15/SP.UI.Controls'
         },
         shim:
         {
@@ -24,7 +24,7 @@
             {
                 exports: 'angular'
             },
-            'SP.UI.Controls':
+            'spUiControls':
             {
                 exports: 'SP.UI.Controls'
             }
