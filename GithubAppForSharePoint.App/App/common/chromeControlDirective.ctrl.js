@@ -3,7 +3,7 @@
 
     define([
         "common/commonModule",
-        "spUiControls"
+        "SP.UI.Controls"
     ],
     function (commonModule, spUiControls) {
 

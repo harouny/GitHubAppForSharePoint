@@ -1,4 +1,4 @@
-﻿define(['angular-mocks', 'spUiControls', 'common/chromeControlDirective.ctrl'],
+﻿define(['angular-mocks', 'SP.UI.Controls', 'common/chromeControlDirective.ctrl'],
 function (mock, spUiControls) {
     describe("chrome control directive controller", function () {
         var $scope;
