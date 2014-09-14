@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubAppForSharePoint.App", "GithubAppForSharePoint.App\GithubAppForSharePoint.App.csproj", "{ED720918-EB85-4D4C-B038-545B44A6A72A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubAppForSharePoint.UnitTests", "GithubAppForSharePoint.UnitTests\GithubAppForSharePoint.UnitTests.csproj", "{A0EFCB36-C60F-41B2-9D39-D68281C832D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{ED720918-EB85-4D4C-B038-545B44A6A72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED720918-EB85-4D4C-B038-545B44A6A72A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{ED720918-EB85-4D4C-B038-545B44A6A72A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A0EFCB36-C60F-41B2-9D39-D68281C832D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0EFCB36-C60F-41B2-9D39-D68281C832D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0EFCB36-C60F-41B2-9D39-D68281C832D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0EFCB36-C60F-41B2-9D39-D68281C832D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

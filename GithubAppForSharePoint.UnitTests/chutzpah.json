@@ -1,0 +1,14 @@
+﻿{
+    "Framework": "jasmine",
+	"FrameworkVersion": "2",
+    "TestHarnessReferenceMode": "AMD",
+    "TestHarnessLocationMode": "SettingsFileAdjacent",
+    "AMDBasePath": "../GithubAppForSharePoint.App/App",
+    "References": [
+        { "Path": "Scripts/require.js" },
+        { "Path": "Scripts/init.js" }
+    ],
+    "Tests": [
+        { "Include": "*-spec.js" }
+    ]
+}
