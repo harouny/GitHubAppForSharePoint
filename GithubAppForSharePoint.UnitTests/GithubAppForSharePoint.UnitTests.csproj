@@ -46,7 +46,6 @@
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\init.js" />
-    <Content Include="Scripts\jasmine.js" />
     <Content Include="Scripts\r.js">
       <DependentUpon>require.js</DependentUpon>
     </Content>
