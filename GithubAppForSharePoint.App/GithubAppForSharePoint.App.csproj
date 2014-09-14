@@ -43,6 +43,14 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="App\common\chromeControlDirective.ctrl.js">
+      <DependentUpon>chromeControlDirective.js</DependentUpon>
+    </Content>
+    <Content Include="App\common\chromeControlDirective.js" />
+    <Content Include="App\common\chromeControlDirective.tpl.html">
+      <DependentUpon>chromeControlDirective.js</DependentUpon>
+    </Content>
+    <Content Include="App\common\commonModule.js" />
     <Content Include="App\Elements.xml" />
     <Content Include="App\app.js" />
     <Content Include="App\github\githubModule.js" />

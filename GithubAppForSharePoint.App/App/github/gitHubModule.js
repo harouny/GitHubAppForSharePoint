@@ -1,16 +1,12 @@
 ﻿(function (define) {
     "use strict";
 
-    define(['angular', 'angular-route'],
-        function (angular){
+    define(['angular',
+        'angular-route',
+        'common/commonModule', 'common/chromeControlDirective'],
 
-            var githubModule = angular.module('githubModule', ["ngRoute"]);
-
-            githubModule.config(['$routeProvider',
-                function ($routeProvider) {
-                    //configure routs here
-                }]);
-
+        function (angular) {
+            var githubModule = angular.module('githubModule', ["commonModule"]);
             return githubModule;
         });
 

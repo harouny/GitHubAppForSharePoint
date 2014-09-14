@@ -3,5 +3,9 @@
   <Module Name="App">
     <File Path="App\app.js" Url="App/app.js" ReplaceContent="TRUE" />
     <File Path="App\github\githubModule.js" Url="App/github/githubModule.js" ReplaceContent="TRUE" />
+    <File Path="App\common\ChromeControlDirective.js" Url="App/common/ChromeControlDirective.js" ReplaceContent="TRUE" />
+    <File Path="App\common\commonModule.js" Url="App/common/commonModule.js" ReplaceContent="TRUE" />
+    <File Path="App\common\ChromeControlDirective.tpl.html" Url="App/common/ChromeControlDirective.tpl.html" ReplaceContent="TRUE" />
+    <File Path="App\common\ChromeControlDirective.ctrl.js" Url="App/common/ChromeControlDirective.ctrl.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
