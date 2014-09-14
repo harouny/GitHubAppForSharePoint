@@ -8,6 +8,10 @@
         { "Path": "../GithubAppForSharePoint.App/Scripts/require.js" },
         { "Path": "init.js" }
     ],
+    "CodeCoverageExcludes": [
+		"*GithubAppForSharePoint.Tests\\*", 
+        "*GithubAppForSharePoint.App\\Scripts\\*"
+	],
     "Tests": [
         { "Include": "*-spec.js" }
     ]
