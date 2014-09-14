@@ -9,8 +9,7 @@
         commonModule.directive("commonChromeControl",
             [function () {
                 return {
-                    restrict: 'E',
-                    replace: false,
+                    restrict: 'AE',
                     controller: 'chromeControlDirective.ctrl',
                     scope: {},
                     templateUrl: "../App/common/chromeControlDirective.tpl.html",
