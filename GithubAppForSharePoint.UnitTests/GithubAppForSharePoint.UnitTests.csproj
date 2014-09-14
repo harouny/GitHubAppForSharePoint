@@ -43,13 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Mocks\spUiControls.js" />
-    <Content Include="Scripts\angular-mocks.js" />
-    <Content Include="Scripts\angular.js" />
-    <Content Include="Scripts\init.js" />
-    <Content Include="Scripts\r.js">
-      <DependentUpon>require.js</DependentUpon>
-    </Content>
-    <Content Include="Scripts\require.js" />
+    <Content Include="init.js" />
     <Content Include="Specs\common\chromeControlDirective.ctrl-spec.js" />
   </ItemGroup>
   <ItemGroup />

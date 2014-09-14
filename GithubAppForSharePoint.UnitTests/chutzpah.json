@@ -5,8 +5,8 @@
     "TestHarnessLocationMode": "SettingsFileAdjacent",
     "AMDBasePath": "../GithubAppForSharePoint.App/App",
     "References": [
-        { "Path": "Scripts/require.js" },
-        { "Path": "Scripts/init.js" }
+        { "Path": "../GithubAppForSharePoint.App/Scripts/require.js" },
+        { "Path": "init.js" }
     ],
     "Tests": [
         { "Include": "*-spec.js" }

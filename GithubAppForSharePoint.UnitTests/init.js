@@ -11,7 +11,7 @@
             'angular':          '../Scripts/angular.min',
             'angular-route':    '../Scripts/angular-route',
             'angular-sanitize': '../Scripts/angular-sanitize',
-            'angular-mocks':    '../../GithubAppForSharePoint.UnitTests/Scripts/angular-mocks',
+            'angular-mocks':    '../Scripts/angular-mocks',
             'spUiControls':     '../../GithubAppForSharePoint.UnitTests/Mocks/spUiControls',
         },
         shim:
