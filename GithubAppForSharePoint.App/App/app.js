@@ -1,9 +1,9 @@
-﻿(function (require, define) {
+﻿(function (require) {
     "use strict";
 
+    //configure requirejs script dependencies
     require.config(
     {
-        //all paths are relative to "/Pages"
         baseUrl: '../App',
         paths:
         {
@@ -31,17 +31,12 @@
         }
     });
 
-    define("app",
-        ["angular", "github/githubModule"],
+
+    //bootstrap angularjs app
+    require(["angular", "github/githubModule"],
         function (angular, githubModule) {
-            angular.bootstrap(document.getElementsByTagName("body")[0],
-                              [githubModule.name]);
-            return githubModule;
+            angular.bootstrap(document.getElementsByTagName("body")[0], [githubModule.name]);
         }
     );
 
-    require(["app"], function (githubModule) {
-        // Application has bootstrapped and started...
-    });
-
-}(window.require, window.define));
+}(window.require));
