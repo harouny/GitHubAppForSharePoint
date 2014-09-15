@@ -43,17 +43,18 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="App\common\chromeControlDirective.ctrl.js">
-      <DependentUpon>chromeControlDirective.js</DependentUpon>
+    <Content Include="App\common\chromeDirective.ctrl.js">
+      <DependentUpon>chromeDirective.js</DependentUpon>
     </Content>
-    <Content Include="App\common\chromeControlDirective.js" />
-    <Content Include="App\common\chromeControlDirective.tpl.html">
-      <DependentUpon>chromeControlDirective.js</DependentUpon>
+    <Content Include="App\common\chromeDirective.html">
+      <DependentUpon>chromeDirective.js</DependentUpon>
     </Content>
-    <Content Include="App\common\commonModule.js" />
+    <Content Include="App\common\chromeDirective.js" />
+    <Content Include="App\common\common.config.js" />
+    <Content Include="App\common\common.js" />
     <Content Include="App\Elements.xml" />
     <Content Include="App\app.js" />
-    <Content Include="App\github\githubModule.js" />
+    <Content Include="App\github\github.js" />
     <Content Include="Data\Elements.xml" />
     <Content Include="Data\Repositories\Elements.xml" />
     <Content Include="Data\Repositories\RepositoriesInstance\Elements.xml" />

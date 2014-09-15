@@ -3,10 +3,11 @@
   <Files>
     <ProjectItemFile Source="Elements.xml" Target="App\" Type="ElementManifest" />
     <ProjectItemFile Source="app.js" Target="App\" Type="ElementFile" />
-    <ProjectItemFile Source="github\githubModule.js" Target="App\github\" Type="ElementFile" />
-    <ProjectItemFile Source="common\chromeControlDirective.js" Target="App\common\" Type="ElementFile" />
-    <ProjectItemFile Source="common\commonModule.js" Target="App\common\" Type="ElementFile" />
-    <ProjectItemFile Source="common\chromeControlDirective.tpl.html" Target="App\common\" Type="ElementFile" />
-    <ProjectItemFile Source="common\chromeControlDirective.ctrl.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="github\github.js" Target="App\github\" Type="ElementFile" />
+    <ProjectItemFile Source="common\chromeDirective.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="common\common.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="common\chromeDirective.ctrl.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="common\chromeDirective.html" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="common\common.config.js" Target="App\common\" Type="ElementFile" />
   </Files>
 </ProjectItem>

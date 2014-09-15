@@ -2,19 +2,19 @@
     "use strict";
 
     define([
-        "common/commonModule",
-        "common/chromeControlDirective.ctrl"
+        "common/common",
+        "common/chromeDirective.ctrl"
     ],
     function (commonModule) {
-        commonModule.directive("commonChromeControl",
+        commonModule.directive("chromeControl",
             [function () {
                 return {
                     restrict: 'AE',
-                    controller: 'chromeControlDirective.ctrl',
+                    controller: 'chromeDirective.ctrl',
                     scope: {
                         containerId : "@"
                     },
-                    templateUrl: "../App/common/chromeControlDirective.tpl.html"
+                    templateUrl: "../App/common/chromeDirective.html"
                 };
             }]);
     });

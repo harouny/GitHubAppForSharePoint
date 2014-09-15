@@ -33,7 +33,7 @@
 
 
     //bootstrap angularjs app
-    require(["angular", "github/githubModule"],
+    require(["angular", "github/github"],
         function (angular, githubModule) {
             angular.bootstrap(document.getElementsByTagName("body")[0], [githubModule.name]);
         }
