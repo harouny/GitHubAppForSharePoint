@@ -27,6 +27,10 @@
             'spUiControls':
             {
                 exports: 'SP.UI.Controls'
+            },
+            'angular-route':
+            {
+                deps: ['angular']
             }
         }
     });
