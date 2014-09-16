@@ -5,6 +5,8 @@
   "out": "script.js",
   "mainConfigFile": "../App/app.js",
   "paths": {
-	"spUiControls" : "empty:"
+    "spUiControls": "empty:",
+	"spInit" : "empty:",
+    "spCore": "empty:"
   }
 }

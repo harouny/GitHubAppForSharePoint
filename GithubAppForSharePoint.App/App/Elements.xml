@@ -9,5 +9,6 @@
     <File Path="App\common\chromeDirective.html" Url="App/common/chromeDirective.html" ReplaceContent="TRUE" />
     <File Path="App\common\common.config.js" Url="App/common/common.config.js" ReplaceContent="TRUE" />
     <File Path="App\github\github.routes.js" Url="App/github/github.routes.js" ReplaceContent="TRUE" />
+    <File Path="App\common\notificationService.js" Url="App/common/notificationService.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

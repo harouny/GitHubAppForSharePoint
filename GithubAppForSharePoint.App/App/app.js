@@ -12,7 +12,10 @@
             'angular':          '../Scripts/angular.min',
             'angular-route':    '../Scripts/angular-route',
             'angular-sanitize': '../Scripts/angular-sanitize',
-            'spUiControls':     '/_layouts/15/SP.UI.Controls'
+            //sharepoint scripts
+            'spUiControls':     '/_layouts/15/SP.UI.Controls',
+            'spInit':           '/_layouts/15/init',
+            'spCore':           '/_layouts/15/core'
         },
         shim:
         {
@@ -31,6 +34,10 @@
             'angular-route':
             {
                 deps: ['angular']
+            },
+            'spCore' :
+            {
+                deps: ['spInit']
             }
         }
     });

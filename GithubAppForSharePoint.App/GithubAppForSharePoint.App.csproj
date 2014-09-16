@@ -54,6 +54,7 @@
     <Content Include="App\common\chromeDirective.js" />
     <Content Include="App\common\common.config.js" />
     <Content Include="App\common\common.js" />
+    <Content Include="App\common\notificationService.js" />
     <Content Include="App\Elements.xml" />
     <Content Include="App\app.js" />
     <Content Include="App\github\github.js" />
@@ -69,6 +70,8 @@
     <Content Include="Features\Feature2\Feature2.Template.xml">
       <DependentUpon>Feature2.feature</DependentUpon>
     </Content>
+    <Content Include="Images\error.png" />
+    <Content Include="Images\success.png" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js">
       <DependentUpon>angular-route.js</DependentUpon>

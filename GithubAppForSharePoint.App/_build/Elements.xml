@@ -2,6 +2,5 @@
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
   <Module Name="_build">
     <File Path="_build\script.js" Url="_build/script.js" ReplaceContent="TRUE" />
-    <File Path="_build\build.json" Url="_build/build.json" ReplaceContent="TRUE" />
   </Module>
 </Elements>
