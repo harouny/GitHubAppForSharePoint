@@ -55,6 +55,7 @@
     <Content Include="App\Elements.xml" />
     <Content Include="App\app.js" />
     <Content Include="App\github\github.js" />
+    <Content Include="App\github\github.routes.js" />
     <Content Include="Data\Elements.xml" />
     <Content Include="Data\Repositories\Elements.xml" />
     <Content Include="Data\Repositories\RepositoriesInstance\Elements.xml" />
@@ -86,6 +87,8 @@
     </Content>
     <Content Include="Scripts\require.js" />
     <Content Include="Scripts\underscore-min.js" />
+    <Content Include="_build\Elements.xml" />
+    <Content Include="_build\script.js" />
     <None Include="App\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9786add7-935d-4211-afdb-3e0a90d6a732}</SharePointProjectItemId>
     </None>
@@ -112,6 +115,9 @@
       <SharePointProjectItemId>{7e62070d-8216-488f-994f-f0b8a53f1c2c}</SharePointProjectItemId>
     </None>
     <Content Include="Pages\Elements.xml" />
+    <None Include="_build\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{11d2a8de-a65e-4257-b4a7-ded66ca3532f}</SharePointProjectItemId>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\angular-route.min.js.map">
@@ -175,4 +181,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PostBuildEvent>call "$(ProjectDir)_build\build.vs.bat"</PostBuildEvent>
+  </PropertyGroup>
 </Project>

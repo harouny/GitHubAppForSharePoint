@@ -1,0 +1,1 @@
+node ..\..\Scripts\r.js -o ..\..\_build\build.json
