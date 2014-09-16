@@ -3,8 +3,8 @@
   "include": ["../Scripts/require"], 
   "optimize": "uglify2", 
   "out": "script.js",
-  "mainConfigFile": '../App/app.js',
+  "mainConfigFile": "../App/app.js",
   "paths": {
-	'spUiControls' : 'empty:'
+	"spUiControls" : "empty:"
   }
 }

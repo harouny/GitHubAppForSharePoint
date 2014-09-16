@@ -115,6 +115,7 @@
       <SharePointProjectItemId>{7e62070d-8216-488f-994f-f0b8a53f1c2c}</SharePointProjectItemId>
     </None>
     <Content Include="Pages\Elements.xml" />
+    <None Include="_build\build.json" />
     <None Include="_build\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{11d2a8de-a65e-4257-b4a7-ded66ca3532f}</SharePointProjectItemId>
     </None>
