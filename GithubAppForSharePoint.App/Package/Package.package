@@ -2,6 +2,5 @@
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2eeee61d-22e1-4bb6-ab7a-d60faeb7526d" solutionId="2eeee61d-22e1-4bb6-ab7a-d60faeb7526d" resetWebServer="false" sharePointProductVersion="16.0" name="GithubAppForSharePoint.App" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <features>
     <featureReference itemId="f26c9b90-c7f6-4520-97c8-3101b9f2cbb1" />
-    <featureReference itemId="589e1f83-c425-4d02-a450-6538872cf1c3" />
   </features>
 </package>

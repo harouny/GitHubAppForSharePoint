@@ -67,9 +67,6 @@
     <Content Include="Data\Users\Elements.xml" />
     <Content Include="Data\Users\Schema.xml" />
     <Content Include="Data\Users\UsersInstance\Elements.xml" />
-    <Content Include="Features\Feature2\Feature2.Template.xml">
-      <DependentUpon>Feature2.feature</DependentUpon>
-    </Content>
     <Content Include="Images\error.png" />
     <Content Include="Images\success.png" />
     <Content Include="Scripts\angular-route.js" />
@@ -111,9 +108,6 @@
     </None>
     <None Include="Data\Users\UsersInstance\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{aa4e9da4-2b91-4c96-a6fa-539c25afb4a4}</SharePointProjectItemId>
-    </None>
-    <None Include="Features\Feature2\Feature2.feature">
-      <FeatureId>{589e1f83-c425-4d02-a450-6538872cf1c3}</FeatureId>
     </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">
