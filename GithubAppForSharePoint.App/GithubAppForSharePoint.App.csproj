@@ -65,6 +65,7 @@
     <Content Include="App\layout\workingonit.html" />
     <Content Include="Data\Elements.xml" />
     <Content Include="Images\error.png" />
+    <Content Include="Images\headerIcon.png" />
     <Content Include="Images\success.png" />
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js">

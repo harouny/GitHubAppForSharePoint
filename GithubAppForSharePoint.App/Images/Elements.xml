@@ -4,5 +4,6 @@
     <File Path="Images\AppIcon.png" Url="Images/AppIcon.png" ReplaceContent="TRUE" />
     <File Path="Images\error.png" Url="Images/error.png" ReplaceContent="TRUE" />
     <File Path="Images\success.png" Url="Images/success.png" ReplaceContent="TRUE" />
+    <File Path="Images\headerIcon.png" Url="Images/headerIcon.png" ReplaceContent="TRUE" />
   </Module>
 </Elements>
