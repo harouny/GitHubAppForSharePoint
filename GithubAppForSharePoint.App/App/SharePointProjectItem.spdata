@@ -11,5 +11,9 @@
     <ProjectItemFile Source="common\common.config.js" Target="App\common\" Type="ElementFile" />
     <ProjectItemFile Source="github\github.routes.js" Target="App\github\" Type="ElementFile" />
     <ProjectItemFile Source="common\notificationService.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="layout\header.html" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="layout\quicklaunch.html" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="layout\shell.html" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="layout\workingonit.html" Target="App\layout\" Type="ElementFile" />
   </Files>
 </ProjectItem>

@@ -59,6 +59,10 @@
     <Content Include="App\app.js" />
     <Content Include="App\github\github.js" />
     <Content Include="App\github\github.routes.js" />
+    <Content Include="App\layout\header.html" />
+    <Content Include="App\layout\quicklaunch.html" />
+    <Content Include="App\layout\shell.html" />
+    <Content Include="App\layout\workingonit.html" />
     <Content Include="Data\Elements.xml" />
     <Content Include="Images\error.png" />
     <Content Include="Images\success.png" />
