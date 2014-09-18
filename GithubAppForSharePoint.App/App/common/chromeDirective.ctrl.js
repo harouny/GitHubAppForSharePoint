@@ -13,6 +13,8 @@
             function ($scope, configs) {
 
                 var options = {
+                    'appWebUrl': '/',
+                    'appStartPage': '#/',
                     'appIconUrl': configs.logoUrl,
                     'appTitle': configs.appTitle,
                     'appHelpPageUrl': 'javascript:;',
@@ -31,10 +33,9 @@
                         }
                     ]
                 };
-
                 var nav = new spUiControls.Navigation($scope.containerId, options);
                 nav.setVisible(true);
-
+                nav.setBottomHeaderVisible(false);
             }
         ]);
 

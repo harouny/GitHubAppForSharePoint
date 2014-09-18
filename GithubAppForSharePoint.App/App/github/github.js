@@ -9,8 +9,11 @@
             'common/chromeDirective'],
 
         function (angular, routes) {
-            var github = angular.module('github', ["common", "ngRoute"]);
-            //register app routes
+
+            //define app
+            var github = angular.module('github', ["common", "ngRoute", "ngSanitize"]);
+
+            //configure app routes
             github.config(['$routeProvider',
                 function ($routeProvider) {
                     routes.forEach(function (route) {
@@ -22,6 +25,10 @@
                     );
                 }
             ]);
+
+            github.run(['$route', function () {
+            }]);
+
             return github;
         });
 
