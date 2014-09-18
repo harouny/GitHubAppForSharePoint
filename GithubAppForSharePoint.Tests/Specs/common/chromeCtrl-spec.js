@@ -5,6 +5,7 @@ function (mock, spUiControls) {
         var $scope;
         var chromeOptions;
         var chromeIsVisible;
+        var bottomHeaderIsVisible;
 
         beforeEach(function () {
             spyOn(spUiControls, "Navigation").and.callFake(function (containerId, options) {
@@ -12,6 +13,9 @@ function (mock, spUiControls) {
                 return {
                     setVisible: function (value) {
                         chromeIsVisible = value;
+                    },
+                    setBottomHeaderVisible : function(value) {
+                        bottomHeaderIsVisible = value;
                     }
                 }
             });
@@ -41,10 +45,21 @@ function (mock, spUiControls) {
                 expect(chromeOptions.appTitle).toBe("Github App For SharePoint");
             });
 
+            it("app web url", function () {
+                expect(chromeOptions.appWebUrl).toBe("/");
+            });
+
+            it("app start page", function () {
+                expect(chromeOptions.appStartPage).toBe("#/");
+            });
         });
 
-        it("then set chrome visibaility to true", function() {
+        it("show chrome control", function() {
             expect(chromeIsVisible).toBe(true);
+        });
+
+        it("hide chrome control bottom header", function () {
+            expect(bottomHeaderIsVisible).toBe(false);
         });
 
     });

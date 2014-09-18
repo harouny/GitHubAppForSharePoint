@@ -3,9 +3,8 @@
     return {
         Navigation: function() {
             return {
-                setVisible : function() {
-                    
-                }
+                setVisible : function() {},
+                setBottomHeaderVisible : function (){}
             }
         }
 };
