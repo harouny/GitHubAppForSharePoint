@@ -59,6 +59,10 @@
     <Content Include="App\app.js" />
     <Content Include="App\github\github.js" />
     <Content Include="App\github\github.routes.js" />
+    <Content Include="App\github\reports\reports.html" />
+    <Content Include="App\github\repos\repos.html" />
+    <Content Include="App\github\repos\repo.html" />
+    <Content Include="App\github\user\user.html" />
     <Content Include="App\layout\header.html" />
     <Content Include="App\layout\quicklaunch.html" />
     <Content Include="App\layout\shell.html" />

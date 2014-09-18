@@ -4,6 +4,7 @@
     define(['angular',
             'github/github.routes',
             'angular-route',
+            'angular-sanitize',
             'common/common',
             'common/chromeDirective'],
 
@@ -15,6 +16,10 @@
                     routes.forEach(function (route) {
                         $routeProvider.when(route.url, route.config);
                     });
+                    $routeProvider.otherwise
+                    (
+                        { redirectTo: '/repos' }
+                    );
                 }
             ]);
             return github;

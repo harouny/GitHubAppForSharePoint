@@ -15,5 +15,9 @@
     <ProjectItemFile Source="layout\quicklaunch.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\shell.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\workingonit.html" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="github\repos\repo.html" Target="App\github\repos\" Type="ElementFile" />
+    <ProjectItemFile Source="github\repos\repos.html" Target="App\github\repos\" Type="ElementFile" />
+    <ProjectItemFile Source="github\user\user.html" Target="App\github\user\" Type="ElementFile" />
+    <ProjectItemFile Source="github\reports\reports.html" Target="App\github\reports\" Type="ElementFile" />
   </Files>
 </ProjectItem>
