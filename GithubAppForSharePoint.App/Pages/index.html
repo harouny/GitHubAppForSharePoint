@@ -1,31 +1,31 @@
 ﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-   <head>
-        <meta charset="utf-8" />
-        <title>Github App For SharePoint</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    </head>
-    <body>
-        <div id="pageWidth">
-            <chrome-control data-container-id="chrome-control-container"></chrome-control>
-            <div id="s4-workspace" class="ms-core-overlay">
-                <div id="s4-bodyContainer">
-                    <div data-ng-include="'../App/layout/header.html'"></div>
-                    <div id="contentRow">
-                        <div data-ng-include="'../App/layout/quicklaunch.html'"></div>
-                        <div id="contentBox" aria-live="polite" aria-relevant="all">
-                            <div data-ng-include="'../App/layout/shell.html'"></div>
-                        </div>
+<head>
+    <meta charset="utf-8" />
+    <title>Github App For SharePoint</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+</head>
+<body>
+    <div id="pageWidth">
+        <chrome-control data-container-id="chrome-control-container"></chrome-control>
+        <div id="s4-workspace" class="ms-core-overlay">
+            <div id="s4-bodyContainer">
+                <div data-ng-include="'../App/layout/header.html'"></div>
+                <div id="contentRow">
+                    <div data-ng-include="'../App/layout/quicklaunch.html'"></div>
+                    <div id="contentBox" aria-live="polite" aria-relevant="all">
+                        <div data-ng-include="'../App/layout/shell.html'"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div data-ng-include="'../App/layout/workingonit.html'"></div>
-        <!-- none optimized -->
-        <script src="../Scripts/require.js"></script>
-        <script src="../App/app.js"></script>
-        <!-- optimized -->
-        <!--<script src="../_build/script.js"></script>-->
-    </body>
+    </div>
+    <div data-ng-include="'../App/layout/workingonit.html'"></div>
+    <!-- none optimized -->
+    <script src="../Scripts/require.js"></script>
+    <script src="../App/app.js"></script>
+    <!-- optimized -->
+    <!--<script src="../_build/script.js"></script>-->
+</body>
 </html>

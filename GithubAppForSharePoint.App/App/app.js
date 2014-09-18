@@ -35,6 +35,10 @@
             {
                 deps: ['angular']
             },
+            'angular-sanitize':
+            {
+                deps: ['angular']
+            },
             'spCore' :
             {
                 deps: ['spInit']
