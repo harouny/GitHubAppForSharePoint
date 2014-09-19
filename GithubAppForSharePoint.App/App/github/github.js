@@ -9,7 +9,7 @@
             'layout/chromeControl'],
 
         function (angular) {
-            angular.module('github', ["common", "layout", "ngRoute", "ngSanitize"]);
+            return angular.module('github', ["common", "layout", "ngRoute", "ngSanitize"]);
         });
 
 

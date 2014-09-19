@@ -13,7 +13,8 @@
                     url: '/repos',
                     config: {
                         templateUrl: '../App/github/repos/repos.html',
-                        title: 'Repositories'
+                        title: 'Repositories',
+                        controller: 'repos.ctrl'
                     }
                 },
                 {
