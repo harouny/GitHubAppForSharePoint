@@ -45,6 +45,8 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="App\common\queryStringService.js" />
+    <Content Include="App\common\spContext.js" />
     <Content Include="App\github\repos\repos.ctrl.js" />
     <Content Include="App\layout\chromeControl.ctrl.js">
       <DependentUpon>chromeControl.js</DependentUpon>
@@ -73,6 +75,14 @@
     <Content Include="Images\error.png" />
     <Content Include="Images\headerIcon.png" />
     <Content Include="Images\success.png" />
+    <Content Include="Scripts\angular-cookies.js" />
+    <Content Include="Scripts\angular-cookies.min.js">
+      <DependentUpon>angular-cookies.js</DependentUpon>
+    </Content>
+    <Content Include="Scripts\angular-resource.js" />
+    <Content Include="Scripts\angular-resource.min.js">
+      <DependentUpon>angular-resource.js</DependentUpon>
+    </Content>
     <Content Include="Scripts\angular-route.js" />
     <Content Include="Scripts\angular-route.min.js">
       <DependentUpon>angular-route.js</DependentUpon>
@@ -106,6 +116,12 @@
       <SharePointProjectItemId>{7e62070d-8216-488f-994f-f0b8a53f1c2c}</SharePointProjectItemId>
     </None>
     <Content Include="Pages\Elements.xml" />
+    <None Include="Scripts\angular-cookies.min.js.map">
+      <DependentUpon>angular-cookies.js</DependentUpon>
+    </None>
+    <None Include="Scripts\angular-resource.min.js.map">
+      <DependentUpon>angular-resource.js</DependentUpon>
+    </None>
     <None Include="_build\build.json" />
     <None Include="_build\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{11d2a8de-a65e-4257-b4a7-ded66ca3532f}</SharePointProjectItemId>

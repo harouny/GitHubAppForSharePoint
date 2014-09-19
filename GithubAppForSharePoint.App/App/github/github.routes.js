@@ -56,7 +56,7 @@
             }
         ]);
 
-        //fix to allow using ng-view from a template loaded using ng-include
+        //require $route instance to handle default route
         github.run(['$route', function () {
         }]);
 

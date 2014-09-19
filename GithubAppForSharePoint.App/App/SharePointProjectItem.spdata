@@ -21,5 +21,7 @@
     <ProjectItemFile Source="layout\chromeControl.ctrl.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\chromeControl.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="github\repos\repos.ctrl.js" Target="App\github\repos\" Type="ElementFile" />
+    <ProjectItemFile Source="common\spContext.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="common\queryStringService.js" Target="App\common\" Type="ElementFile" />
   </Files>
 </ProjectItem>

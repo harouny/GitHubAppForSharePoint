@@ -20,5 +20,7 @@
     <File Path="App\layout\chromeControl.ctrl.js" Url="App/layout/chromeControl.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\layout\chromeControl.html" Url="App/layout/chromeControl.html" ReplaceContent="TRUE" />
     <File Path="App\github\repos\repos.ctrl.js" Url="App/github/repos/repos.ctrl.js" ReplaceContent="TRUE" />
+    <File Path="App\common\spContext.js" Url="App/common/spContext.js" ReplaceContent="TRUE" />
+    <File Path="App\common\queryStringService.js" Url="App/common/queryStringService.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

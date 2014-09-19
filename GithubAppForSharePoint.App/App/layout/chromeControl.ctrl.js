@@ -4,18 +4,21 @@
     define([
         "layout/layout",
         "spUiControls",
-        "common/appConfig"
+        "common/appConfig",
+        "common/spContext"
     ],
     function (layoutModule, spUiControls) {
 
         layoutModule.controller("chromeControl.ctrl",
-            ["$scope", "appConfig",
-            function ($scope, appConfig) {
+            ["$scope", "appConfig", "spContext",
+            function ($scope, appConfig, spContext) {
 
                 var options = {
+                    'siteUrl': spContext.hostWeb.url,
+                    'siteTitle': spContext.hostWeb.title,
+                    'appIconUrl': spContext.hostWeb.logoUrl,
                     'appWebUrl': '/',
                     'appStartPage': '#/',
-                    'appIconUrl': appConfig.logoUrl,
                     'appTitle': appConfig.appTitle,
                     'appHelpPageUrl': 'javascript:;',
                     'settingsLinks': [

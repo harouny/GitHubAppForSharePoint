@@ -12,6 +12,8 @@
             'angular':          '../Scripts/angular.min',
             'angular-route':    '../Scripts/angular-route',
             'angular-sanitize': '../Scripts/angular-sanitize',
+            'angular-cookies': '../Scripts/angular-cookies',
+            'angular-resource': '../Scripts/angular-resource',
             //sharepoint scripts
             'spUiControls':     '/_layouts/15/SP.UI.Controls',
             'spInit':           '/_layouts/15/init',
@@ -36,6 +38,14 @@
                 deps: ['angular']
             },
             'angular-sanitize':
+            {
+                deps: ['angular']
+            },
+            'angular-cookies':
+            {
+                deps: ['angular']
+            },
+            'angular-resource':
             {
                 deps: ['angular']
             },
