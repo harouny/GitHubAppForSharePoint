@@ -50,7 +50,7 @@
     //bootstrap angularjs app
     require(["angular",
              "github/github",
-             "github/repos/repos.ctrl"],
+             "github/github.routes"],
         function (angular, githubModule) {
             angular.bootstrap(document.getElementsByTagName("body")[0], [githubModule.name]);
         }
