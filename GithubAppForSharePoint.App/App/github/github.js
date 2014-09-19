@@ -6,12 +6,12 @@
             'angular-route',
             'angular-sanitize',
             'common/common',
-            'common/chromeDirective'],
+            'layout/chromeControl'],
 
         function (angular, routes) {
 
             //define app
-            var github = angular.module('github', ["common", "ngRoute", "ngSanitize"]);
+            var github = angular.module('github', ["common", "layout", "ngRoute", "ngSanitize"]);
 
             //configure app routes
             github.config(['$routeProvider',

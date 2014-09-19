@@ -45,7 +45,7 @@
     <Content Include="_libs\jasmine.js" />
     <Content Include="Mocks\spUiControls.js" />
     <Content Include="init.js" />
-    <Content Include="Specs\common\chromeCtrl-spec.js" />
+    <Content Include="Specs\layout\chromeControl.ctrl-spec.js" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

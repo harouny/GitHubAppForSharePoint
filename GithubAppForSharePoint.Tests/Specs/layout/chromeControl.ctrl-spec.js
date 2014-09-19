@@ -1,4 +1,4 @@
-﻿define(['angular-mocks', 'spUiControls', 'common/chromeDirective.ctrl'],
+﻿define(['angular-mocks', 'spUiControls', 'layout/chromeControl.ctrl'],
 function (mock, spUiControls) {
     describe("chrome control directive controller", function () {
 
@@ -19,14 +19,14 @@ function (mock, spUiControls) {
                     }
                 }
             });
-            mock.module('common');
+            mock.module('layout');
             mock.inject(function ($rootScope, $controller) {
                 $scope = $rootScope.$new();
                 $scope.containerId = "container-div";
                 var dependencies = {
                     $scope: $scope
                 }
-                $controller('chromeDirective.ctrl', dependencies);
+                $controller('chromeControl.ctrl', dependencies);
             });
         });
 

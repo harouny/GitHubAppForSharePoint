@@ -4,11 +4,9 @@
     <ProjectItemFile Source="Elements.xml" Target="App\" Type="ElementManifest" />
     <ProjectItemFile Source="app.js" Target="App\" Type="ElementFile" />
     <ProjectItemFile Source="github\github.js" Target="App\github\" Type="ElementFile" />
-    <ProjectItemFile Source="common\chromeDirective.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="layout\chromeControl.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="common\common.js" Target="App\common\" Type="ElementFile" />
-    <ProjectItemFile Source="common\chromeDirective.ctrl.js" Target="App\common\" Type="ElementFile" />
-    <ProjectItemFile Source="common\chromeDirective.html" Target="App\common\" Type="ElementFile" />
-    <ProjectItemFile Source="common\common.config.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="common\appConfig.js" Target="App\common\" Type="ElementFile" />
     <ProjectItemFile Source="github\github.routes.js" Target="App\github\" Type="ElementFile" />
     <ProjectItemFile Source="common\notificationService.js" Target="App\common\" Type="ElementFile" />
     <ProjectItemFile Source="layout\header.html" Target="App\layout\" Type="ElementFile" />
@@ -19,5 +17,9 @@
     <ProjectItemFile Source="github\repos\repos.html" Target="App\github\repos\" Type="ElementFile" />
     <ProjectItemFile Source="github\user\user.html" Target="App\github\user\" Type="ElementFile" />
     <ProjectItemFile Source="github\reports\reports.html" Target="App\github\reports\" Type="ElementFile" />
+    <ProjectItemFile Source="layout\layout.js" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="layout\chromeControl.ctrl.js" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="layout\chromeControl.html" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="github\repos\repos.ctrl.js" Target="App\github\repos\" Type="ElementFile" />
   </Files>
 </ProjectItem>

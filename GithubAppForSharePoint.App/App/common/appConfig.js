@@ -8,7 +8,7 @@
                 appVersion: "1.0.0.0",
                 logoUrl: "../Images/AppIcon.png"
             };
-            common.value('common.config', configs);
+            common.value('appConfig', configs);
         });
 
 }(window.define));

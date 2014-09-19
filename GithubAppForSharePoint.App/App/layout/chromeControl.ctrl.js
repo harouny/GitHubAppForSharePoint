@@ -2,21 +2,21 @@
     "use strict";
 
     define([
-        "common/common",
+        "layout/layout",
         "spUiControls",
-        "common/common.config"
+        "common/appConfig"
     ],
-    function (commonModule, spUiControls) {
+    function (layoutModule, spUiControls) {
 
-        commonModule.controller("chromeDirective.ctrl",
-            ["$scope", "common.config",
-            function ($scope, configs) {
+        layoutModule.controller("chromeControl.ctrl",
+            ["$scope", "appConfig",
+            function ($scope, appConfig) {
 
                 var options = {
                     'appWebUrl': '/',
                     'appStartPage': '#/',
-                    'appIconUrl': configs.logoUrl,
-                    'appTitle': configs.appTitle,
+                    'appIconUrl': appConfig.logoUrl,
+                    'appTitle': appConfig.appTitle,
                     'appHelpPageUrl': 'javascript:;',
                     'settingsLinks': [
                         {
