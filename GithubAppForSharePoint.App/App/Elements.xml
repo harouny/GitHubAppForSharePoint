@@ -11,7 +11,6 @@
     <File Path="App\layout\header.html" Url="App/layout/header.html" ReplaceContent="TRUE" />
     <File Path="App\layout\quicklaunch.html" Url="App/layout/quicklaunch.html" ReplaceContent="TRUE" />
     <File Path="App\layout\shell.html" Url="App/layout/shell.html" ReplaceContent="TRUE" />
-    <File Path="App\layout\workingonit.html" Url="App/layout/workingonit.html" ReplaceContent="TRUE" />
     <File Path="App\github\repos\repo.html" Url="App/github/repos/repo.html" ReplaceContent="TRUE" />
     <File Path="App\github\repos\repos.html" Url="App/github/repos/repos.html" ReplaceContent="TRUE" />
     <File Path="App\github\user\user.html" Url="App/github/user/user.html" ReplaceContent="TRUE" />
@@ -22,5 +21,7 @@
     <File Path="App\github\repos\repos.ctrl.js" Url="App/github/repos/repos.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\common\spContext.js" Url="App/common/spContext.js" ReplaceContent="TRUE" />
     <File Path="App\common\queryStringService.js" Url="App/common/queryStringService.js" ReplaceContent="TRUE" />
+    <File Path="App\layout\layoutContents.ctrl.js" Url="App/layout/layoutContents.ctrl.js" ReplaceContent="TRUE" />
+    <File Path="App\app.css" Url="App/app.css" ReplaceContent="TRUE" />
   </Module>
 </Elements>

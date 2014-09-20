@@ -7,7 +7,7 @@
             'common/common',
             'common/spContext',
             'layout/layout',
-            'layout/chromeControl'],
+            'layout/layoutContents.ctrl'],
 
         function (angular) {
             var github = angular.module('github', ["common", "layout", "ngRoute", "ngSanitize"]);

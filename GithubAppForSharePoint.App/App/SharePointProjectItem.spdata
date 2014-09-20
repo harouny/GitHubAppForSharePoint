@@ -12,7 +12,6 @@
     <ProjectItemFile Source="layout\header.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\quicklaunch.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\shell.html" Target="App\layout\" Type="ElementFile" />
-    <ProjectItemFile Source="layout\workingonit.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="github\repos\repo.html" Target="App\github\repos\" Type="ElementFile" />
     <ProjectItemFile Source="github\repos\repos.html" Target="App\github\repos\" Type="ElementFile" />
     <ProjectItemFile Source="github\user\user.html" Target="App\github\user\" Type="ElementFile" />
@@ -23,5 +22,7 @@
     <ProjectItemFile Source="github\repos\repos.ctrl.js" Target="App\github\repos\" Type="ElementFile" />
     <ProjectItemFile Source="common\spContext.js" Target="App\common\" Type="ElementFile" />
     <ProjectItemFile Source="common\queryStringService.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="layout\layoutContents.ctrl.js" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="app.css" Target="App\" Type="ElementFile" />
   </Files>
 </ProjectItem>

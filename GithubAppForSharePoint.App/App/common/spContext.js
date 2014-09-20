@@ -45,7 +45,6 @@
                 $log.log(loggerSource, 'writing spContext cookie', null);
 
                 var appWebUrl = decodeURIComponent(queryString.get("SPAppWebUrl"));
-                appWebUrl = appWebUrl.split('#')[0];
                 $cookieStore.put('SPAppWebUrl', appWebUrl);
 
                 var url = decodeURIComponent(queryString.get("SPHostUrl"));

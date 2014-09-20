@@ -45,6 +45,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="App\app.css" />
     <Content Include="App\common\queryStringService.js" />
     <Content Include="App\common\spContext.js" />
     <Content Include="App\github\repos\repos.ctrl.js" />
@@ -68,9 +69,9 @@
     </Content>
     <Content Include="App\layout\layout.js" />
     <Content Include="App\layout\header.html" />
+    <Content Include="App\layout\layoutContents.ctrl.js" />
     <Content Include="App\layout\quicklaunch.html" />
     <Content Include="App\layout\shell.html" />
-    <Content Include="App\layout\workingonit.html" />
     <Content Include="Data\Elements.xml" />
     <Content Include="Images\error.png" />
     <Content Include="Images\headerIcon.png" />
