@@ -43,7 +43,7 @@
 
                 //will fire when the chrome control is fully loaded
                 $window.onChromeLoaded = function () {
-                    $rootScope.chromeLoaded = true;
+                    $rootScope.isChromeLoaded = true;
                     $rootScope.$apply();
                 };
             }

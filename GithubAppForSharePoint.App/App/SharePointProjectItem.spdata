@@ -24,5 +24,6 @@
     <ProjectItemFile Source="common\queryStringService.js" Target="App\common\" Type="ElementFile" />
     <ProjectItemFile Source="layout\layoutContents.ctrl.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="app.css" Target="App\" Type="ElementFile" />
+    <ProjectItemFile Source="common\loadingIndicatorService.js" Target="App\common\" Type="ElementFile" />
   </Files>
 </ProjectItem>

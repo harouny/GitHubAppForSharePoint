@@ -23,5 +23,6 @@
     <File Path="App\common\queryStringService.js" Url="App/common/queryStringService.js" ReplaceContent="TRUE" />
     <File Path="App\layout\layoutContents.ctrl.js" Url="App/layout/layoutContents.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\app.css" Url="App/app.css" ReplaceContent="TRUE" />
+    <File Path="App\common\loadingIndicatorService.js" Url="App/common/loadingIndicatorService.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
