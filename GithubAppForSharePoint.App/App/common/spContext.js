@@ -24,7 +24,6 @@
 
             // init... akin to class constructor
             function init() {
-                debugger;
                 $log.log(loggerSource, 'service loaded', null);
 
                 // if values don't exist on querystring...
