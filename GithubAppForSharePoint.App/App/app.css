@@ -1,4 +1,4 @@
-﻿/*#region 'Working on it' busy dialog" */
+﻿/*'Working on it' busy dialog */
 #workingOnIt-container {
   display: block;
   width: 100%;
@@ -31,9 +31,3 @@
   font-family: "Segoe UI Light", "Segoe UI", Tahoma, Helvetica, Arial,sans-serif;
   color: #4183C4;
 }
-
-
-.workingOnIt-message img {
-    
-}
-/*#endregion */

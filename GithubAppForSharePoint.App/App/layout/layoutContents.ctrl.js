@@ -11,9 +11,14 @@
             ["$scope", "$rootScope",
             function ($scope, $rootScope) {
 
-                $scope.chromeLoaded = $rootScope.chromeLoaded;
-                $rootScope.$watch("chromeLoaded", function(newValue) {
-                    $scope.chromeLoaded = newValue;
+                $scope.isChromeLoaded = $rootScope.chromeLoaded;
+                $scope.isLoading = $rootScope.isLoading;
+
+                $rootScope.$watch("isChromeLoaded", function (newValue) {
+                    $scope.isChromeLoaded = newValue;
+                });
+                $rootScope.$watch("isLoading", function (newValue) {
+                    $scope.isLoading = newValue;
                 });
 
             }]);
