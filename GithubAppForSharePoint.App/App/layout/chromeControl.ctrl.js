@@ -5,7 +5,7 @@
         "layout/layout",
         "spUiControls",
         "common/appConfig",
-        "common/spContext"
+        "common/services/spContext"
     ],
     function (layoutModule, spUiControls) {
 

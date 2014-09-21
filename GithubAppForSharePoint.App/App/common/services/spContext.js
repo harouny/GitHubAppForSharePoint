@@ -2,8 +2,8 @@
   'use strict';
 
   define(["common/common",
-          "common/notificationService",
-          "common/queryStringService"],
+          "common/services/notificationService",
+          "common/services/queryStringService"],
     function (common) {
         var serviceId = 'spContext';
         var loggerSource = '[' + serviceId + '] ';

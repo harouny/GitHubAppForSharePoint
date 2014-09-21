@@ -8,7 +8,7 @@
     <ProjectItemFile Source="common\common.js" Target="App\common\" Type="ElementFile" />
     <ProjectItemFile Source="common\appConfig.js" Target="App\common\" Type="ElementFile" />
     <ProjectItemFile Source="github\github.routes.js" Target="App\github\" Type="ElementFile" />
-    <ProjectItemFile Source="common\notificationService.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="common\services\notificationService.js" Target="App\common\services\" Type="ElementFile" />
     <ProjectItemFile Source="layout\header.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\quicklaunch.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\shell.html" Target="App\layout\" Type="ElementFile" />
@@ -20,11 +20,11 @@
     <ProjectItemFile Source="layout\chromeControl.ctrl.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\chromeControl.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="github\repos\repos.ctrl.js" Target="App\github\repos\" Type="ElementFile" />
-    <ProjectItemFile Source="common\spContext.js" Target="App\common\" Type="ElementFile" />
-    <ProjectItemFile Source="common\queryStringService.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="common\services\spContext.js" Target="App\common\services\" Type="ElementFile" />
+    <ProjectItemFile Source="common\services\queryStringService.js" Target="App\common\services\" Type="ElementFile" />
     <ProjectItemFile Source="layout\layoutContents.ctrl.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="app.css" Target="App\" Type="ElementFile" />
-    <ProjectItemFile Source="common\loadingIndicatorService.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="common\services\loadingIndicatorService.js" Target="App\common\services\" Type="ElementFile" />
     <ProjectItemFile Source="common\resources\userProfile.js" Target="App\common\resources\" Type="ElementFile" />
   </Files>
 </ProjectItem>

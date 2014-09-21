@@ -46,10 +46,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="App\app.css" />
-    <Content Include="App\common\loadingIndicatorService.js" />
-    <Content Include="App\common\queryStringService.js" />
+    <Content Include="App\common\services\loadingIndicatorService.js" />
+    <Content Include="App\common\services\queryStringService.js" />
     <Content Include="App\common\resources\userProfile.js" />
-    <Content Include="App\common\spContext.js" />
+    <Content Include="App\common\services\spContext.js" />
     <Content Include="App\github\repos\repos.ctrl.js" />
     <Content Include="App\layout\chromeControl.ctrl.js">
       <DependentUpon>chromeControl.js</DependentUpon>
@@ -57,7 +57,7 @@
     <Content Include="App\layout\chromeControl.js" />
     <Content Include="App\common\appConfig.js" />
     <Content Include="App\common\common.js" />
-    <Content Include="App\common\notificationService.js" />
+    <Content Include="App\common\services\notificationService.js" />
     <Content Include="App\Elements.xml" />
     <Content Include="App\app.js" />
     <Content Include="App\github\github.js" />

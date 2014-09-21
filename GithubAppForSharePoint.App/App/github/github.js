@@ -5,7 +5,7 @@
             'angular-route',
             'angular-sanitize',
             'common/common',
-            'common/spContext',
+            'common/services/spContext',
             'layout/layout',
             'layout/layoutContents.ctrl'],
 

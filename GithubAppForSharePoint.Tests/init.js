@@ -14,11 +14,11 @@
             'angular-cookies':              '../Scripts/angular-cookies',
             'angular-resource':             '../Scripts/angular-resource',
             //sharepoint scripts
-            'spUiControls':                 '../../GithubAppForSharePoint.Tests/Mocks/spUiControls',
-            'common/spContext':             '../../GithubAppForSharePoint.Tests/Mocks/spContext',
-            'common/notificationService':   '../../GithubAppForSharePoint.Tests/Mocks/notificationService',
+            'spUiControls':                         '../../GithubAppForSharePoint.Tests/Mocks/spUiControls',
+            'common/services/spContext':                     '../../GithubAppForSharePoint.Tests/Mocks/spContext',
+            'common/services/notificationService':  '../../GithubAppForSharePoint.Tests/Mocks/notificationService',
             //test related scripts
-            'angular-mocks': '../Scripts/angular-mocks',
+            'angular-mocks':                        '../Scripts/angular-mocks',
         },
         shim:
         {

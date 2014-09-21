@@ -2,15 +2,15 @@
     "use strict";
 
     define([
-        "github/github",
-        "common/notificationService"
+        "angular",
+        "github/github"
     ],
-    function (github) {
+    function (angular, github) {
 
         github.controller("repos.ctrl",
-        ["$scope", "notificationService",
-            function ($scope, notification) {
-                notification.success("controller", "loaded successfully");
+        ["$scope",
+            function () {
+
             }
         ]);
 

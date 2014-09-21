@@ -7,7 +7,7 @@
     <File Path="App\common\common.js" Url="App/common/common.js" ReplaceContent="TRUE" />
     <File Path="App\common\appConfig.js" Url="App/common/appConfig.js" ReplaceContent="TRUE" />
     <File Path="App\github\github.routes.js" Url="App/github/github.routes.js" ReplaceContent="TRUE" />
-    <File Path="App\common\notificationService.js" Url="App/common/notificationService.js" ReplaceContent="TRUE" />
+    <File Path="App\common\services\notificationService.js" Url="App/common/services/notificationService.js" ReplaceContent="TRUE" />
     <File Path="App\layout\header.html" Url="App/layout/header.html" ReplaceContent="TRUE" />
     <File Path="App\layout\quicklaunch.html" Url="App/layout/quicklaunch.html" ReplaceContent="TRUE" />
     <File Path="App\layout\shell.html" Url="App/layout/shell.html" ReplaceContent="TRUE" />
@@ -19,11 +19,11 @@
     <File Path="App\layout\chromeControl.ctrl.js" Url="App/layout/chromeControl.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\layout\chromeControl.html" Url="App/layout/chromeControl.html" ReplaceContent="TRUE" />
     <File Path="App\github\repos\repos.ctrl.js" Url="App/github/repos/repos.ctrl.js" ReplaceContent="TRUE" />
-    <File Path="App\common\spContext.js" Url="App/common/spContext.js" ReplaceContent="TRUE" />
-    <File Path="App\common\queryStringService.js" Url="App/common/queryStringService.js" ReplaceContent="TRUE" />
+    <File Path="App\common\services\spContext.js" Url="App/common/services/spContext.js" ReplaceContent="TRUE" />
+    <File Path="App\common\services\queryStringService.js" Url="App/common/services/queryStringService.js" ReplaceContent="TRUE" />
     <File Path="App\layout\layoutContents.ctrl.js" Url="App/layout/layoutContents.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\app.css" Url="App/app.css" ReplaceContent="TRUE" />
-    <File Path="App\common\loadingIndicatorService.js" Url="App/common/loadingIndicatorService.js" ReplaceContent="TRUE" />
+    <File Path="App\common\services\loadingIndicatorService.js" Url="App/common/services/loadingIndicatorService.js" ReplaceContent="TRUE" />
     <File Path="App\common\resources\userProfile.js" Url="App/common/resources/userProfile.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
