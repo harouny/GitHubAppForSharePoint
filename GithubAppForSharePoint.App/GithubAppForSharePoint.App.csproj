@@ -75,6 +75,15 @@
     <Content Include="App\layout\quicklaunch.html" />
     <Content Include="App\layout\shell.html" />
     <Content Include="Data\Elements.xml" />
+    <Content Include="Data\Repositories\Elements.xml" />
+    <Content Include="Data\Repositories\RepositoriesInstance\Elements.xml" />
+    <Content Include="Data\Repositories\Schema.xml" />
+    <Content Include="Data\Users\Elements.xml" />
+    <Content Include="Data\Users\Schema.xml" />
+    <Content Include="Data\Users\UsersInstance\Elements.xml" />
+    <Content Include="Features\Feature2\Feature2.Template.xml">
+      <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
     <Content Include="Images\error.png" />
     <Content Include="Images\headerIcon.png" />
     <Content Include="Images\success.png" />
@@ -111,8 +120,23 @@
     <None Include="App\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{9786add7-935d-4211-afdb-3e0a90d6a732}</SharePointProjectItemId>
     </None>
+    <None Include="Data\Repositories\RepositoriesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e8167b86-b245-4bf6-a3b0-243ea1d89bf6}</SharePointProjectItemId>
+    </None>
+    <None Include="Data\Repositories\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5d2b411c-27e1-4de3-8f9c-2a2899f66a09}</SharePointProjectItemId>
+    </None>
     <None Include="Data\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{95ac7b8b-2c5b-4b1f-9005-42689109504e}</SharePointProjectItemId>
+    </None>
+    <None Include="Data\Users\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8a482699-6352-483e-b838-cd50603149cf}</SharePointProjectItemId>
+    </None>
+    <None Include="Data\Users\UsersInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32bb33ad-8819-4046-89fd-801d8573cb0d}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature2\Feature2.feature">
+      <FeatureId>{bd1ab401-d758-438c-9b78-4ef33f70029a}</FeatureId>
     </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">

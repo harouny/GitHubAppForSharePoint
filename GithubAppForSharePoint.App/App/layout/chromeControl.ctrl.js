@@ -24,16 +24,12 @@
                     'appHelpPageUrl': 'javascript:;',
                     'settingsLinks': [
                         {
-                            'linkUrl': 'javascript:;',
-                            'displayName': 'Link 1'
+                            'linkUrl': spContext.hostWeb.appWebUrl + "/Lists/Users",
+                            'displayName': 'Users List'
                         },
                         {
-                            'linkUrl': 'javascript:;',
-                            'displayName': 'Link 2'
-                        },
-                        {
-                            'linkUrl': 'javascript:;',
-                            'displayName': 'Link 3'
+                            'linkUrl': spContext.hostWeb.appWebUrl + "/Lists/Repositories",
+                            'displayName': 'Repositories List'
                         }
                     ]
                 };
