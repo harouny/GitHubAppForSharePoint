@@ -16,6 +16,11 @@
             github.run(['spContext', function () {
             }]);
 
+            //configure $http to use json
+            github.run(['$http', function ($http) {
+                $http.defaults.headers.common.Accept = 'application/json;odata=verbose;';
+            }]);
+
             return github;
         });
 
