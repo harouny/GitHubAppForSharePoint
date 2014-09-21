@@ -42,6 +42,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Mocks\notificationService.js" />
+    <Content Include="Mocks\spContext.js" />
     <Content Include="_libs\jasmine.js" />
     <Content Include="Mocks\spUiControls.js" />
     <Content Include="init.js" />

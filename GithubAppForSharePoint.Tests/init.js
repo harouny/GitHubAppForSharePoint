@@ -6,13 +6,19 @@
         baseUrl: '../GithubAppForSharePoint.App/App',
         paths:
         {
-            'underscore':       '../Scripts/underscore-min',
-            'jquery':           '../Scripts/jquery-2.1.1.min',
-            'angular':          '../Scripts/angular.min',
-            'angular-route':    '../Scripts/angular-route',
-            'angular-sanitize': '../Scripts/angular-sanitize',
-            'angular-mocks':    '../Scripts/angular-mocks',
-            'spUiControls': '../../GithubAppForSharePoint.Tests/Mocks/spUiControls',
+            'underscore':                   '../Scripts/underscore-min',
+            'jquery':                       '../Scripts/jquery-2.1.1.min',
+            'angular':                      '../Scripts/angular.min',
+            'angular-route':                '../Scripts/angular-route',
+            'angular-sanitize':             '../Scripts/angular-sanitize',
+            'angular-cookies':              '../Scripts/angular-cookies',
+            'angular-resource':             '../Scripts/angular-resource',
+            //sharepoint scripts
+            'spUiControls':                 '../../GithubAppForSharePoint.Tests/Mocks/spUiControls',
+            'common/spContext':             '../../GithubAppForSharePoint.Tests/Mocks/spContext',
+            'common/notificationService':   '../../GithubAppForSharePoint.Tests/Mocks/notificationService',
+            //test related scripts
+            'angular-mocks': '../Scripts/angular-mocks',
         },
         shim:
         {
@@ -28,6 +34,22 @@
             {
                 deps: ['angular'],
                 exports: 'angular.mock'
+            },
+            'angular-route':
+            {
+                deps: ['angular']
+            },
+            'angular-sanitize':
+            {
+                deps: ['angular']
+            },
+            'angular-cookies':
+            {
+                deps: ['angular']
+            },
+            'angular-resource':
+            {
+                deps: ['angular']
             }
         }
     });

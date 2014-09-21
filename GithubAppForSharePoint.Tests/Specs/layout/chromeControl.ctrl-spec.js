@@ -1,5 +1,8 @@
-﻿define(['angular-mocks', 'spUiControls', 'layout/chromeControl.ctrl'],
-function (mock, spUiControls) {
+﻿define(['angular-mocks',
+        'spUiControls',
+        'common/spContext',
+        'layout/chromeControl.ctrl'],
+function (mock, spUiControls, spContext) {
     describe("chrome control directive controller", function () {
 
         var $scope;
@@ -18,6 +21,9 @@ function (mock, spUiControls) {
                         bottomHeaderIsVisible = value;
                     }
                 }
+            });
+            mock.module('common', function ($provide) {
+                $provide.value('spContext', spContext);
             });
             mock.module('layout');
             mock.inject(function ($rootScope, $controller) {
@@ -38,7 +44,15 @@ function (mock, spUiControls) {
         describe("passing the following details", function () {
 
             it("app icon", function() {
-                expect(chromeOptions.appIconUrl).toBe("../Images/AppIcon.png");
+                expect(chromeOptions.appIconUrl).toBe("host_web_logo_url");
+            });
+
+            it("site title", function () {
+                expect(chromeOptions.siteTitle).toBe("host_web_title");
+            });
+
+            it("site url", function () {
+                expect(chromeOptions.siteUrl).toBe("host_web_url");
             });
 
             it("app title", function () {
@@ -51,6 +65,10 @@ function (mock, spUiControls) {
 
             it("app start page", function () {
                 expect(chromeOptions.appStartPage).toBe("#/");
+            });
+
+            it("on css loaded callback", function () {
+                expect(chromeOptions.onCssLoaded).toBe("onChromeLoaded()");
             });
         });
 
