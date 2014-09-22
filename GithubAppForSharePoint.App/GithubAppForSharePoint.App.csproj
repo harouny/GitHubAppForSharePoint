@@ -51,6 +51,7 @@
     <Content Include="App\common\resources\userProfile.js" />
     <Content Include="App\common\services\spContext.js" />
     <Content Include="App\github\repos\repos.ctrl.js" />
+    <Content Include="App\github\resources\repositoriesList.js" />
     <Content Include="App\github\resources\usersList.js" />
     <Content Include="App\layout\chromeControl.ctrl.js">
       <DependentUpon>chromeControl.js</DependentUpon>
@@ -84,6 +85,9 @@
     <Content Include="Data\Users\UsersInstance\Elements.xml" />
     <Content Include="Features\Feature2\Feature2.Template.xml">
       <DependentUpon>Feature2.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Feature3\Feature3.Template.xml">
+      <DependentUpon>Feature3.feature</DependentUpon>
     </Content>
     <Content Include="Images\error.png" />
     <Content Include="Images\headerIcon.png" />
@@ -122,22 +126,25 @@
       <SharePointProjectItemId>{9786add7-935d-4211-afdb-3e0a90d6a732}</SharePointProjectItemId>
     </None>
     <None Include="Data\Repositories\RepositoriesInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{e8167b86-b245-4bf6-a3b0-243ea1d89bf6}</SharePointProjectItemId>
+      <SharePointProjectItemId>{d1b371fa-ab74-4c37-9f9e-6c3c36a517a7}</SharePointProjectItemId>
     </None>
     <None Include="Data\Repositories\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{5d2b411c-27e1-4de3-8f9c-2a2899f66a09}</SharePointProjectItemId>
+      <SharePointProjectItemId>{3b554114-c74a-4928-ac70-0e2cf201e58f}</SharePointProjectItemId>
     </None>
     <None Include="Data\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{95ac7b8b-2c5b-4b1f-9005-42689109504e}</SharePointProjectItemId>
     </None>
     <None Include="Data\Users\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{8a482699-6352-483e-b838-cd50603149cf}</SharePointProjectItemId>
+      <SharePointProjectItemId>{67633783-a35d-4a67-95e1-017df3e5abfd}</SharePointProjectItemId>
     </None>
     <None Include="Data\Users\UsersInstance\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{32bb33ad-8819-4046-89fd-801d8573cb0d}</SharePointProjectItemId>
+      <SharePointProjectItemId>{9b2aa742-4531-44d6-b006-1f14a092b752}</SharePointProjectItemId>
     </None>
     <None Include="Features\Feature2\Feature2.feature">
       <FeatureId>{bd1ab401-d758-438c-9b78-4ef33f70029a}</FeatureId>
+    </None>
+    <None Include="Features\Feature3\Feature3.feature">
+      <FeatureId>{00b5f435-9e8c-4bbc-9c3f-cb3b8a310785}</FeatureId>
     </None>
     <None Include="packages.config" />
     <None Include="Pages\SharePointProjectItem.spdata">

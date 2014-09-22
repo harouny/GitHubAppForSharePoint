@@ -4,78 +4,94 @@
     <ContentTypes>
 
 
-      
-      
-      
-    <ContentType ID="0x01000c59cca02497499897dcd5513af126a0" Name="ListFieldsContentType">
+
+
+
+      <ContentType ID="0x0100af19df6c07134abc99ae48becd562d7e" Name="ListFieldsContentType">
         <FieldRefs>
-          
-          
-          
-        
-          
-          
-          
-        <FieldRef ID="{19f6d109-755f-46d9-bdf3-0ce4985558c1}" Name="RepositoryName" /><FieldRef ID="{1d654b92-a177-4318-9915-a9dccfa16973}" Name="RepositoryURL" /><FieldRef ID="{72ad3474-cd80-4ca5-be92-4da1c69f488d}" Name="GithubUserName" /><FieldRef ID="{8d3c0ebd-36fd-4650-84b6-399e3261230d}" Name="RepositoryDescription" /></FieldRefs>
-      </ContentType><ContentTypeRef ID="0x01">
+
+
+
+
+          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+          <FieldRef ID="{37c32e80-bc93-4998-b37a-76801ce55650}" Name="Url" />
+          <FieldRef ID="{a1ff4324-5887-417c-997b-3cbee55e87a3}" Name="RepositoryDescription" />
+          <FieldRef ID="{b468054e-5ecf-4989-8765-3eddca6d3b62}" Name="UserName" />
+        </FieldRefs>
+      </ContentType>
+      <ContentTypeRef ID="0x01">
         <Folder TargetName="Item" />
-      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+      </ContentTypeRef>
+      <ContentTypeRef ID="0x0120" />
+    </ContentTypes>
     <Fields>
 
-      
-      
-      
-    
-      
-      
-      
-    <Field Name="RepositoryName" ID="{19f6d109-755f-46d9-bdf3-0ce4985558c1}" DisplayName="Name" Type="Text" Required="TRUE" /><Field Name="RepositoryURL" ID="{1d654b92-a177-4318-9915-a9dccfa16973}" DisplayName="URL" Type="Text" Required="TRUE" /><Field Name="GithubUserName" ID="{72ad3474-cd80-4ca5-be92-4da1c69f488d}" DisplayName="GitHub User Name" Type="Text" Required="TRUE" /><Field Name="RepositoryDescription" ID="{8d3c0ebd-36fd-4650-84b6-399e3261230d}" DisplayName="Description" Type="Note" /></Fields>
+
+
+
+
+      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Name" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+      <Field Name="Url" ID="{37c32e80-bc93-4998-b37a-76801ce55650}" DisplayName="Url" Type="Text" Required="TRUE" />
+      <Field Name="RepositoryDescription" ID="{a1ff4324-5887-417c-997b-3cbee55e87a3}" DisplayName="Description" Type="Note" />
+      <Field Name="UserName" ID="{b468054e-5ecf-4989-8765-3eddca6d3b62}" DisplayName="User Name" Type="Lookup" Required="TRUE" List="Lists/Users" ShowField="Title" />
+    </Fields>
     <Views>
 
 
-      
-      
-    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+
+
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
 
-          
-        <FieldRef Name="LinkTitleNoMenu" /></ViewFields>
+
+          <FieldRef Name="LinkTitleNoMenu"></FieldRef>
+        </ViewFields>
         <Query>
           <OrderBy>
 
-            
-          <FieldRef Name="Modified" Ascending="FALSE" /></OrderBy>
+
+            <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
+          </OrderBy>
         </Query>
         <ParameterBindings>
           <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
         </ParameterBindings>
-      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
         <Toolbar Type="Standard" />
         <XslLink Default="TRUE">main.xsl</XslLink>
         <JSLink>clienttemplates.js</JSLink>
         <RowLimit Paged="TRUE">30</RowLimit>
         <ViewFields>
 
-          
-          
-          
-        <FieldRef Name="RepositoryName" /><FieldRef Name="RepositoryURL" /><FieldRef Name="GithubUserName" /><FieldRef Name="RepositoryDescription" /></ViewFields>
+
+
+
+
+          <FieldRef Name="LinkTitle" />
+          <FieldRef Name="Title" />
+          <FieldRef Name="Url" />
+          <FieldRef Name="RepositoryDescription" />
+          <FieldRef Name="UserName" />
+        </ViewFields>
         <Query>
           <OrderBy>
 
-            
-          <FieldRef Name="ID" /></OrderBy>
+
+            <FieldRef Name="ID"></FieldRef>
+          </OrderBy>
         </Query>
         <ParameterBindings>
           <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
           <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
         </ParameterBindings>
-      </View></Views>
+      </View>
+    </Views>
     <Forms>
       <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
       <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />

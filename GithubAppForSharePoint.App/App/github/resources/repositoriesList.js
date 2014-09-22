@@ -3,12 +3,12 @@
 
     define(["github/github"],
         function (common) {
-            common.factory("usersList",
+            common.factory("repositoriesList",
                 ["$resource", function ($resource) {
-                    return $resource('../_api/web/lists/getbytitle(\'Users\')', {}, {
+                    return $resource('../_api/web/lists/getbytitle(\'Repositories\')', {}, {
                         get: {
                             params: {
-                                '$select': 'Title,GithubUserName'
+                                '$select': 'Title,Url,RepositoryDescription,UserName'
                             }
                         }
                     });
