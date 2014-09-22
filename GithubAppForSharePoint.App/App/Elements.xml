@@ -25,5 +25,6 @@
     <File Path="App\app.css" Url="App/app.css" ReplaceContent="TRUE" />
     <File Path="App\common\services\loadingIndicatorService.js" Url="App/common/services/loadingIndicatorService.js" ReplaceContent="TRUE" />
     <File Path="App\common\resources\userProfile.js" Url="App/common/resources/userProfile.js" ReplaceContent="TRUE" />
+    <File Path="App\github\resources\usersList.js" Url="App/github/resources/usersList.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

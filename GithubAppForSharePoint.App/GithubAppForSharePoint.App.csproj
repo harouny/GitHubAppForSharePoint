@@ -51,6 +51,7 @@
     <Content Include="App\common\resources\userProfile.js" />
     <Content Include="App\common\services\spContext.js" />
     <Content Include="App\github\repos\repos.ctrl.js" />
+    <Content Include="App\github\resources\usersList.js" />
     <Content Include="App\layout\chromeControl.ctrl.js">
       <DependentUpon>chromeControl.js</DependentUpon>
     </Content>
