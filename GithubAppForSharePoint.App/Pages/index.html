@@ -1,45 +1,49 @@
-﻿<!DOCTYPE html>
+﻿<!-- ReSharper disable UnknownCssClass -->
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>Github App For SharePoint</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
-    <link href="../App/app.css" rel="stylesheet" />
-</head>
-<body>
-    <div id="pageWidth" data-ng-controller="layoutContents">
-        <!-- chrome control -->
-        <layout-chrome-control data-container-id="chrome-control-container">
-        </layout-chrome-control>
+    <head>
+        <meta charset="utf-8" />
+        <title>Github App For SharePoint</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+        <link href="../App/app.css" rel="stylesheet" />
+    </head>
+    <body>
+        
+        <div id="pageWidth" data-ng-controller="layoutContents">
+            
+            <layout-chrome-control data-container-id="chrome-control-container">
+            </layout-chrome-control>
 
-        <!-- app layout -->
-        <div data-ng-if="isChromeLoaded" id="s4-workspace" class="ms-core-overlay">
-            <div id="s4-bodyContainer">
-                <div data-ng-include="'../App/layout/header.html'"></div>
-                <div id="contentRow">
-                    <div data-ng-include="'../App/layout/quicklaunch.html'"></div>
-                    <div data-ng-include="'../App/layout/shell.html'"></div>
+            <!-- app layout -->
+            <div data-ng-if="isChromeLoaded" id="s4-workspace" class="ms-core-overlay">
+                <div id="s4-bodyContainer">
+                    <div data-ng-include="'../App/layout/header.html'"></div>
+                    <div id="contentRow">
+                        <div data-ng-include="'../App/layout/quicklaunch.html'"></div>
+                        <div data-ng-include="'../App/layout/shell.html'"></div>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- working on it messege -->
-        <div ng-hide="isChromeLoaded && !isLoading" id="workingOnIt-container"
-             class="dissolve-animation">
-            <div id="workingOnIt-message">
-                <img src="data:image/gif;base64,R0lGODlhGAAYAJECAP///5mZmf///wAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgACACwAAAAAGAAYAAACQJQvAGgRDI1SyLnI5jr2YUQx10eW5hmeB6Wpkja5SZy6tYzn+g5uMhuzwW6lFtF05CkhxGQm+HKuoDPplOlDFAAAIfkEBQoAAgAsFAAGAAQABAAAAgVUYqeXUgAh+QQFCgACACwUAA4ABAAEAAACBVRip5dSACH5BAUKAAIALA4AFAAEAAQAAAIFVGKnl1IAIfkEBQoAAgAsBgAUAAQABAAAAgVUYqeXUgAh+QQFCgACACwAAA4ABAAEAAACBVRip5dSACH5BAUKAAIALAAABgAEAAQAAAIFVGKnl1IAIfkECQoAAgAsBgAAAAQABAAAAgVUYqeXUgAh+QQJCgACACwAAAAAGAAYAAACJZQvEWgADI1SyLnI5jr2YUQx10eW5omm6sq27gvH8kzX9o3ndAEAIfkECQoAAgAsAAAAABgAGAAAAkCULxFoAAyNUsi5yOY69mFEMddHluYZntyjqY3Vul2yucJo5/rOQ6lLiak0QtSEpvv1lh8l0lQsYqJHaO3gFBQAACH5BAkKAAIALAAAAAAYABgAAAJAlC8RaAAMjVLIucjmOvZhRDHXR5bmGZ7co6mN1bpdsrnCaOf6zkOpzJrYOjHV7Gf09JYlJA0lPBQ/0ym1JsUeCgAh+QQJCgACACwAAAAAGAAYAAACQJQvEWgADI1SyLnI5jr2YUQx10eW5hme3KOpjdW6XbK5wmjn+s5Dqcya2Dox1exn9PSWJeRNSSo+cR/pzOSkHgoAIfkECQoAAgAsAAAAABgAGAAAAkCULxFoAAyNUsi5yOY69mFEMddHluYZntyjqY3Vul2yucJo5/rOQ6nMmtg6MdXsZ/T0liXc6jRbOTHR15SqfEIKACH5BAkKAAIALAAAAAAYABgAAAJAlC8RaAAMjVLIucjmOvZhRDHXR5bmGZ7co6mN1bpdsrnCaOf6zkO4/JgBOz/TrHhC9pYRpNJnqURLwtdT5JFGCgAh+QQJCgACACwAAAAAGAAYAAACPpQvEWgADI1SyLnI5jr2YUQx10eW5jme3NOpTWe5Qpu6tYzn+l558tWywW4lmk/IS6KOr2UtSILOYiYiUVAAADs=" />
-                <span class="ms-accentText workingOnIt-accentText">
-                    &nbsp;Working on it...
-                </span>
+            <!-- working on it messege -->
+            <div ng-hide="isChromeLoaded && !isLoading" id="workingOnIt-container"
+                 class="dissolve-animation">
+                <div id="workingOnIt-message">
+                    <img src="data:image/gif;base64,R0lGODlhGAAYAJECAP///5mZmf///wAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgACACwAAAAAGAAYAAACQJQvAGgRDI1SyLnI5jr2YUQx10eW5hmeB6Wpkja5SZy6tYzn+g5uMhuzwW6lFtF05CkhxGQm+HKuoDPplOlDFAAAIfkEBQoAAgAsFAAGAAQABAAAAgVUYqeXUgAh+QQFCgACACwUAA4ABAAEAAACBVRip5dSACH5BAUKAAIALA4AFAAEAAQAAAIFVGKnl1IAIfkEBQoAAgAsBgAUAAQABAAAAgVUYqeXUgAh+QQFCgACACwAAA4ABAAEAAACBVRip5dSACH5BAUKAAIALAAABgAEAAQAAAIFVGKnl1IAIfkECQoAAgAsBgAAAAQABAAAAgVUYqeXUgAh+QQJCgACACwAAAAAGAAYAAACJZQvEWgADI1SyLnI5jr2YUQx10eW5omm6sq27gvH8kzX9o3ndAEAIfkECQoAAgAsAAAAABgAGAAAAkCULxFoAAyNUsi5yOY69mFEMddHluYZntyjqY3Vul2yucJo5/rOQ6lLiak0QtSEpvv1lh8l0lQsYqJHaO3gFBQAACH5BAkKAAIALAAAAAAYABgAAAJAlC8RaAAMjVLIucjmOvZhRDHXR5bmGZ7co6mN1bpdsrnCaOf6zkOpzJrYOjHV7Gf09JYlJA0lPBQ/0ym1JsUeCgAh+QQJCgACACwAAAAAGAAYAAACQJQvEWgADI1SyLnI5jr2YUQx10eW5hme3KOpjdW6XbK5wmjn+s5Dqcya2Dox1exn9PSWJeRNSSo+cR/pzOSkHgoAIfkECQoAAgAsAAAAABgAGAAAAkCULxFoAAyNUsi5yOY69mFEMddHluYZntyjqY3Vul2yucJo5/rOQ6nMmtg6MdXsZ/T0liXc6jRbOTHR15SqfEIKACH5BAkKAAIALAAAAAAYABgAAAJAlC8RaAAMjVLIucjmOvZhRDHXR5bmGZ7co6mN1bpdsrnCaOf6zkO4/JgBOz/TrHhC9pYRpNJnqURLwtdT5JFGCgAh+QQJCgACACwAAAAAGAAYAAACPpQvEWgADI1SyLnI5jr2YUQx10eW5jme3NOpTWe5Qpu6tYzn+l558tWywW4lmk/IS6KOr2UtSILOYiYiUVAAADs=" />
+                    <span class="ms-accentText workingOnIt-accentText">
+                        &nbsp;Working on it...
+                    </span>
+                </div>
             </div>
+
         </div>
 
-    </div>
-    <!-- none optimized -->
-    <script src="../Scripts/require.js"></script>
-    <script src="../App/app.js"></script>
-    <!-- optimized -->
-    <!--<script src="../_build/script.js"></script>-->
-</body>
+        <!-- none optimized -->
+        <script src="../Scripts/require.js"></script>
+        <script src="../App/app.js"></script>
+        <!-- optimized -->
+        <!--<script src="../_build/script.js"></script>-->
+    </body>
 </html>
+<!-- ReSharper UnknownCssClass -->
