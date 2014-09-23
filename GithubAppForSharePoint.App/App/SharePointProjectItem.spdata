@@ -28,5 +28,8 @@
     <ProjectItemFile Source="common\resources\userProfile.js" Target="App\common\resources\" Type="ElementFile" />
     <ProjectItemFile Source="github\resources\usersList.js" Target="App\github\resources\" Type="ElementFile" />
     <ProjectItemFile Source="github\resources\repositoriesList.js" Target="App\github\resources\" Type="ElementFile" />
+    <ProjectItemFile Source="github\services\usersService.js" Target="App\github\services\" Type="ElementFile" />
+    <ProjectItemFile Source="common\services\userProfileService.js" Target="App\common\services\" Type="ElementFile" />
+    <ProjectItemFile Source="common\models\userProfile.js" Target="App\common\models\" Type="ElementFile" />
   </Files>
 </ProjectItem>

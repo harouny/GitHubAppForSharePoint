@@ -3,14 +3,18 @@
 
     define([
         "angular",
-        "github/github"
+        "github/github",
+        "github/services/usersService"
     ],
     function (angular, github) {
 
         github.controller("repos.ctrl",
-        ["$scope",
-            function () {
+        ["$scope", "usersService",
+            function ($scope, usersService) {
 
+                usersService.getCurrentGithubUser().then(function (githubUser) {
+                    
+                });
             }
         ]);
 

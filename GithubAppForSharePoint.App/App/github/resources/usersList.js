@@ -5,7 +5,7 @@
         function (common) {
             common.factory("usersList",
                 ["$resource", function ($resource) {
-                    return $resource('../_api/web/lists/getbytitle(\'Users\')', {}, {
+                    return $resource('../_api/web/lists/getbytitle(\'Users\')/Items', {}, {
                         get: {
                             params: {
                                 '$select': 'Title,GithubUserName'

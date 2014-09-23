@@ -46,13 +46,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="App\app.css" />
+    <Content Include="App\common\models\userProfile.js" />
     <Content Include="App\common\services\loadingIndicatorService.js" />
     <Content Include="App\common\services\queryStringService.js" />
     <Content Include="App\common\resources\userProfile.js" />
     <Content Include="App\common\services\spContext.js" />
+    <Content Include="App\common\services\userProfileService.js" />
     <Content Include="App\github\repos\repos.ctrl.js" />
     <Content Include="App\github\resources\repositoriesList.js" />
     <Content Include="App\github\resources\usersList.js" />
+    <Content Include="App\github\services\usersService.js" />
     <Content Include="App\layout\chromeControl.ctrl.js">
       <DependentUpon>chromeControl.js</DependentUpon>
     </Content>
