@@ -6,16 +6,15 @@
     ],
     function (github) {
 
-        github.controller("repositories.ctrl",
+        github.controller("user.ctrl",
         ["$scope", "usersService", "$log", "$location",
             function ($scope, usersService, $log, $location) {
+                $log.debug("user controller is loaded");
 
-                usersService.getCurrentGithubUser()
-                    .then(function (githubUser) {
-                        if (!githubUser) {
-                            $log.debug("should be redirected to #/repo");
-                        }
-                });
+                $scope.submit = function () {
+                    
+                };
+
             }
         ]);
 

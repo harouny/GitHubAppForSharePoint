@@ -15,7 +15,7 @@
                     config: {
                         templateUrl: '../App/github/views/repositories/repositories.html',
                         title: 'Repositories',
-                        controller: 'repos.ctrl'
+                        controller: 'repositories.ctrl'
                     }
                 },
                 {
