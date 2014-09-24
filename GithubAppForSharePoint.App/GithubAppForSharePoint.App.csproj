@@ -68,17 +68,29 @@
     <Content Include="App\app.js" />
     <Content Include="App\github\github.js" />
     <Content Include="App\github\github.routes.js" />
-    <Content Include="App\github\views\reports\reports.html" />
+    <Content Include="App\github\views\allRepositories\allRepositories.html" />
     <Content Include="App\github\views\repositories\repositories.html" />
     <Content Include="App\github\views\repository\repo.html" />
     <Content Include="App\github\views\user\user.html" />
     <Content Include="App\layout\chromeControl.html">
       <DependentUpon>chromeControl.js</DependentUpon>
     </Content>
+    <Content Include="App\layout\header.ctrl.js">
+      <DependentUpon>header.js</DependentUpon>
+    </Content>
+    <Content Include="App\layout\header.js" />
     <Content Include="App\layout\layout.js" />
-    <Content Include="App\layout\header.html" />
+    <Content Include="App\layout\header.html">
+      <DependentUpon>header.js</DependentUpon>
+    </Content>
     <Content Include="App\layout\layoutContents.ctrl.js" />
-    <Content Include="App\layout\quicklaunch.html" />
+    <Content Include="App\layout\quicklaunch.ctrl.js">
+      <DependentUpon>quicklaunch.js</DependentUpon>
+    </Content>
+    <Content Include="App\layout\quicklaunch.html">
+      <DependentUpon>quicklaunch.js</DependentUpon>
+    </Content>
+    <Content Include="App\layout\quicklaunch.js" />
     <Content Include="App\layout\shell.html" />
     <Content Include="Data\Elements.xml" />
     <Content Include="Data\Repositories\Elements.xml" />

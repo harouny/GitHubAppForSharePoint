@@ -3,7 +3,9 @@
 
     define([
         "layout/layout",
-        "layout/chromeControl"
+        "layout/chromeControl",
+        "layout/header",
+        "layout/quicklaunch"
     ],
     function (layoutModule) {
 

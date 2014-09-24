@@ -14,7 +14,7 @@
     <File Path="App\github\views\repository\repo.html" Url="App/github/views/repository/repo.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\repositories\repositories.html" Url="App/github/views/repositories/repositories.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\user\user.html" Url="App/github/views/user/user.html" ReplaceContent="TRUE" />
-    <File Path="App\github\views\reports\reports.html" Url="App/github/views/reports/reports.html" ReplaceContent="TRUE" />
+    <File Path="App\github\views\allRepositories\allRepositories.html" Url="App/github/views/allRepositories/allRepositories.html" ReplaceContent="TRUE" />
     <File Path="App\layout\layout.js" Url="App/layout/layout.js" ReplaceContent="TRUE" />
     <File Path="App\layout\chromeControl.ctrl.js" Url="App/layout/chromeControl.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\layout\chromeControl.html" Url="App/layout/chromeControl.html" ReplaceContent="TRUE" />
@@ -31,5 +31,9 @@
     <File Path="App\common\services\userProfileService.js" Url="App/common/services/userProfileService.js" ReplaceContent="TRUE" />
     <File Path="App\common\models\userProfile.js" Url="App/common/models/userProfile.js" ReplaceContent="TRUE" />
     <File Path="App\github\views\user\user.ctrl.js" Url="App/github/views/user/user.ctrl.js" ReplaceContent="TRUE" />
+    <File Path="App\layout\quicklaunch.js" Url="App/layout/quicklaunch.js" ReplaceContent="TRUE" />
+    <File Path="App\layout\quicklaunch.ctrl.js" Url="App/layout/quicklaunch.ctrl.js" ReplaceContent="TRUE" />
+    <File Path="App\layout\header.js" Url="App/layout/header.js" ReplaceContent="TRUE" />
+    <File Path="App\layout\header.ctrl.js" Url="App/layout/header.ctrl.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

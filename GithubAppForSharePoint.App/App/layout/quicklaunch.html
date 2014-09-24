@@ -4,18 +4,14 @@
         <div class="ms-core-sideNavBox-removeLeftMargin">
             <div class="noindex ms-core-listMenu-verticalBox">
                 <ul class="noindex ms-core-listMenu-root static">
-                    <li class="static selected">
-                        <a href="#repos" class="selected static menu-item ms-core-listMenu-item ms-displayInline ms-core-listMenu-selected ms-navedit-linkNode">Repositories</a>
+                    
+                    <li class="static" data-ng-repeat="item in items" data-ng-class="{selected: item.selected}">
+                        <a href="#{{item.url}}"
+                           data-ng-bind-html="item.title"
+                           class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode"
+                           data-ng-class="{selected:item.selected, 'ms-core-listMenu-selected':item.selected}"></a>
                     </li>
-                    <li class="static">
-                        <a href="#repo" class="static ms-quicklaunch-dropNode menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode ms-droppable">Repo</a>
-                    </li>
-                    <li class="static">
-                        <a href="#user" class="static ms-quicklaunch-dropNode menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode ms-droppable">User Details</a>
-                    </li>
-                    <li class="static">
-                        <a href="#reports" class="static ms-quicklaunch-dropNode menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode ms-droppable">Reports</a>
-                    </li>
+
                 </ul>
             </div>
         </div>

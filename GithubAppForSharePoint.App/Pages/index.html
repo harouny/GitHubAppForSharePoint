@@ -12,15 +12,15 @@
         
         <div id="pageWidth" data-ng-controller="layoutContents">
             
-            <layout-chrome-control data-container-id="chrome-control-container">
-            </layout-chrome-control>
+            <!-- chrome control -->
+            <layout-chrome-control data-container-id="chrome-control-container"></layout-chrome-control>
 
             <!-- app layout -->
             <div data-ng-if="isChromeLoaded" id="s4-workspace" class="ms-core-overlay">
                 <div id="s4-bodyContainer">
-                    <div data-ng-include="'../App/layout/header.html'"></div>
+                    <layout-header></layout-header>
                     <div id="contentRow">
-                        <div data-ng-include="'../App/layout/quicklaunch.html'"></div>
+                        <layout-quicklaunch></layout-quicklaunch>
                         <div data-ng-include="'../App/layout/shell.html'"></div>
                     </div>
                 </div>

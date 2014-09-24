@@ -13,31 +13,39 @@
                 {
                     url: '/repos',
                     config: {
+                        id: 'repos',
                         templateUrl: '../App/github/views/repositories/repositories.html',
-                        title: 'Repositories',
-                        controller: 'repositories.ctrl'
+                        title: 'My Repositories',
+                        controller: 'repositories.ctrl',
+                        showInQuicklaunch : true
+                    }
+                },
+                {
+                    url: '/all',
+                    config: {
+                        id: 'allRepos',
+                        templateUrl: '../App/github/views/allRepositories/allRepositories.html',
+                        title: 'All Repositories',
+                        showInQuicklaunch: true
                     }
                 },
                 {
                     url: '/repo',
                     config: {
+                        id: 'repo',
                         templateUrl: '../App/github/views/repository/repository.html',
-                        title: 'Repository Details'
+                        title: 'Repository Details',
+                        showInQuicklaunch: false
                     }
                 },
                 {
                     url: '/user',
                     config: {
+                        id: 'user',
                         templateUrl: '../App/github/views/user/user.html',
                         controller: 'user.ctrl',
-                        title: 'User Details'
-                    }
-                },
-                {
-                    url: '/reports',
-                    config: {
-                        templateUrl: '../App/github/views/reports/reports.html',
-                        title: 'Reports'
+                        title: 'My details',
+                        showInQuicklaunch: true
                     }
                 }
             ];
@@ -45,10 +53,10 @@
 
         //configure app routes
         var github = angular.module("github");
-        github.config(['$routeProvider',
-            function ($routeProvider) {
-                var routes = getRoutes();
-                routes.forEach(function (route) {
+        github.constant("appRoutes", getRoutes());
+        github.config(['$routeProvider', 'appRoutes',
+            function ($routeProvider, appRoutes) {
+                appRoutes.forEach(function (route) {
                     $routeProvider.when(route.url, route.config);
                 });
                 $routeProvider.otherwise

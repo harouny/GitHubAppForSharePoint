@@ -2,19 +2,22 @@
     "use strict";
 
     define(["github/github",
-        "github/services/usersService"
+        "github/services/usersService",
+        "common/services/loadingIndicatorService"
     ],
     function (github) {
 
         github.controller("repositories.ctrl",
-        ["$scope", "usersService", "$log", "$location",
-            function ($scope, usersService, $log, $location) {
-
+        ["$scope", "usersService", "$log", "$location", "loadingIndicatorService",
+            function ($scope, usersService, $log, $location, loadingIndicator) {
+                loadingIndicator.startLoading();
                 usersService.getCurrentGithubUser()
                     .then(function (githubUser) {
                         if (!githubUser) {
-                            $log.debug("should be redirected to #/repo");
+                            $location.path("/user");
                         }
+                }).finally(function() {
+                    loadingIndicator.stopLoading();
                 });
             }
         ]);
