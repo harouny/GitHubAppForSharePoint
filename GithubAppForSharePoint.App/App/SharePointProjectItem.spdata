@@ -6,20 +6,20 @@
     <ProjectItemFile Source="github\github.js" Target="App\github\" Type="ElementFile" />
     <ProjectItemFile Source="layout\chromeControl.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="common\common.js" Target="App\common\" Type="ElementFile" />
-    <ProjectItemFile Source="common\appConfig.js" Target="App\common\" Type="ElementFile" />
+    <ProjectItemFile Source="common\common.config.js" Target="App\common\" Type="ElementFile" />
     <ProjectItemFile Source="github\github.routes.js" Target="App\github\" Type="ElementFile" />
     <ProjectItemFile Source="common\services\notificationService.js" Target="App\common\services\" Type="ElementFile" />
     <ProjectItemFile Source="layout\header.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\quicklaunch.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\shell.html" Target="App\layout\" Type="ElementFile" />
-    <ProjectItemFile Source="github\repos\repo.html" Target="App\github\repos\" Type="ElementFile" />
-    <ProjectItemFile Source="github\repos\repos.html" Target="App\github\repos\" Type="ElementFile" />
-    <ProjectItemFile Source="github\user\user.html" Target="App\github\user\" Type="ElementFile" />
-    <ProjectItemFile Source="github\reports\reports.html" Target="App\github\reports\" Type="ElementFile" />
+    <ProjectItemFile Source="github\views\repository\repo.html" Target="App\github\views\repository\" Type="ElementFile" />
+    <ProjectItemFile Source="github\views\repositories\repositories.html" Target="App\github\views\repositories\" Type="ElementFile" />
+    <ProjectItemFile Source="github\views\user\user.html" Target="App\github\views\user\" Type="ElementFile" />
+    <ProjectItemFile Source="github\views\reports\reports.html" Target="App\github\views\reports\" Type="ElementFile" />
     <ProjectItemFile Source="layout\layout.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\chromeControl.ctrl.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\chromeControl.html" Target="App\layout\" Type="ElementFile" />
-    <ProjectItemFile Source="github\repos\repos.ctrl.js" Target="App\github\repos\" Type="ElementFile" />
+    <ProjectItemFile Source="github\views\repositories\repositories.ctrl.js" Target="App\github\views\repositories\" Type="ElementFile" />
     <ProjectItemFile Source="common\services\spContext.js" Target="App\common\services\" Type="ElementFile" />
     <ProjectItemFile Source="common\services\queryStringService.js" Target="App\common\services\" Type="ElementFile" />
     <ProjectItemFile Source="layout\layoutContents.ctrl.js" Target="App\layout\" Type="ElementFile" />
@@ -31,5 +31,6 @@
     <ProjectItemFile Source="github\services\usersService.js" Target="App\github\services\" Type="ElementFile" />
     <ProjectItemFile Source="common\services\userProfileService.js" Target="App\common\services\" Type="ElementFile" />
     <ProjectItemFile Source="common\models\userProfile.js" Target="App\common\models\" Type="ElementFile" />
+    <ProjectItemFile Source="github\views\user\user.ctrl.js" Target="App\github\views\user\" Type="ElementFile" />
   </Files>
 </ProjectItem>

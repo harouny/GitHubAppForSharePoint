@@ -52,25 +52,26 @@
     <Content Include="App\common\resources\userProfile.js" />
     <Content Include="App\common\services\spContext.js" />
     <Content Include="App\common\services\userProfileService.js" />
-    <Content Include="App\github\repos\repos.ctrl.js" />
+    <Content Include="App\github\views\repositories\repositories.ctrl.js" />
     <Content Include="App\github\resources\repositoriesList.js" />
     <Content Include="App\github\resources\usersList.js" />
     <Content Include="App\github\services\usersService.js" />
+    <Content Include="App\github\views\user\user.ctrl.js" />
     <Content Include="App\layout\chromeControl.ctrl.js">
       <DependentUpon>chromeControl.js</DependentUpon>
     </Content>
     <Content Include="App\layout\chromeControl.js" />
-    <Content Include="App\common\appConfig.js" />
+    <Content Include="App\common\common.config.js" />
     <Content Include="App\common\common.js" />
     <Content Include="App\common\services\notificationService.js" />
     <Content Include="App\Elements.xml" />
     <Content Include="App\app.js" />
     <Content Include="App\github\github.js" />
     <Content Include="App\github\github.routes.js" />
-    <Content Include="App\github\reports\reports.html" />
-    <Content Include="App\github\repos\repos.html" />
-    <Content Include="App\github\repos\repo.html" />
-    <Content Include="App\github\user\user.html" />
+    <Content Include="App\github\views\reports\reports.html" />
+    <Content Include="App\github\views\repositories\repositories.html" />
+    <Content Include="App\github\views\repository\repo.html" />
+    <Content Include="App\github\views\user\user.html" />
     <Content Include="App\layout\chromeControl.html">
       <DependentUpon>chromeControl.js</DependentUpon>
     </Content>

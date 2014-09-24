@@ -4,7 +4,7 @@
     define([
         "layout/layout",
         "spUiControls",
-        "common/appConfig",
+        "common/common.config",
         "common/services/spContext"
     ],
     function (layoutModule, spUiControls) {

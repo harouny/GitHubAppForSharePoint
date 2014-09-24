@@ -33,8 +33,26 @@
                     function getCurrentGithubUser() {
                         return userProfileService.getCurrentUserDetails()
                             .then(function (currentUser) {
-                                return  getGithubUserByUserName(currentUser.accountName);
+                                return getGithubUserByUserName(currentUser.accountName);
                             });
+                    }
+
+                    function saveGithubUser(githubUserName) {
+                        var deferred = $q.defer();
+                        userProfileService.getCurrentUserDetails()
+                            .then(function (currentUser) {
+                                usersList.post({},
+                                    function (data) {
+                                        deferred.resolve();
+                                    },
+                                    function (error) {
+                                        deferred.reject(error);
+                                    }
+                                );
+                            }, function(error) {
+                                deferred.reject(error);
+                            });
+                        return deferred.promise;
                     }
 
                     return {

@@ -2,7 +2,8 @@
     "use strict";
     define(['angular',
             'github/github',
-            'github/repos/repos.ctrl'
+            'github/views/repositories/repositories.ctrl',
+            'github/views/user/user.ctrl'
             ],
     function (angular) {
 
@@ -12,7 +13,7 @@
                 {
                     url: '/repos',
                     config: {
-                        templateUrl: '../App/github/repos/repos.html',
+                        templateUrl: '../App/github/views/repositories/repositories.html',
                         title: 'Repositories',
                         controller: 'repos.ctrl'
                     }
@@ -20,21 +21,22 @@
                 {
                     url: '/repo',
                     config: {
-                        templateUrl: '../App/github/repos/repo.html',
+                        templateUrl: '../App/github/views/repository/repository.html',
                         title: 'Repository Details'
                     }
                 },
                 {
                     url: '/user',
                     config: {
-                        templateUrl: '../App/github/user/user.html',
+                        templateUrl: '../App/github/views/user/user.html',
+                        controller: 'user.ctrl',
                         title: 'User Details'
                     }
                 },
                 {
                     url: '/reports',
                     config: {
-                        templateUrl: '../App/github/reports/reports.html',
+                        templateUrl: '../App/github/views/reports/reports.html',
                         title: 'Reports'
                     }
                 }
