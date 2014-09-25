@@ -7,12 +7,17 @@
 
 
 
+
+
+
       <ContentType ID="0x010006a3484acf2049288d89447b29f37c63" Name="ListFieldsContentType">
         <FieldRefs>
 
 
-          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+
+
           <FieldRef ID="{99051bba-bb7f-4ff0-b237-fe7a39f3ad28}" Name="GithubUserName" />
+          <FieldRef ID="{56d12ca8-0650-4c73-bc74-0029aa7bea3c}" Name="AccountName" />
         </FieldRefs>
       </ContentType>
       <ContentTypeRef ID="0x01">
@@ -24,10 +29,14 @@
 
 
 
-      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="User Name" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+
+
       <Field Name="GithubUserName" ID="{99051bba-bb7f-4ff0-b237-fe7a39f3ad28}" DisplayName="Github User Name" Type="Text" Required="TRUE" />
+      <Field Name="AccountName" ID="{56d12ca8-0650-4c73-bc74-0029aa7bea3c}" DisplayName="Account Name" Type="Text" Required="TRUE" />
     </Fields>
     <Views>
+
+
 
 
 
@@ -39,10 +48,12 @@
         <ViewFields>
 
 
+
           <FieldRef Name="LinkTitleNoMenu"></FieldRef>
         </ViewFields>
         <Query>
           <OrderBy>
+
 
 
             <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
@@ -63,12 +74,15 @@
 
 
 
-          <FieldRef Name="LinkTitle" />
-          <FieldRef Name="Title" />
+
+
+
+          <FieldRef Name="AccountName" />
           <FieldRef Name="GithubUserName" />
         </ViewFields>
         <Query>
           <OrderBy>
+
 
 
             <FieldRef Name="ID"></FieldRef>

@@ -2,22 +2,28 @@
     "use strict";
 
     define(["github/github",
+            "github/models/userListItem",
             "common/services/userProfileService",
             "github/resources/usersList"],
-        function (common) {
-            common.factory("usersService",
+
+        function (github, userListItem) {
+            github.factory("usersService",
                 ["usersList", "$q", "userProfileService",
                 function (usersList, $q, userProfileService) {
 
-                    function getGithubUserByUserName(username) {
+                    function getGithubUserByAccountName(accountName) {
                         var deferred = $q.defer();
                         usersList.get(
                             {
-                                '$filter': 'Title eq \''+ username +'\''
+                                '$filter': 'AccountName eq \'' + accountName + '\''
                             },
                             function (data) {
                                 if (data.d.results && data.d.results.length == 1) {
-                                    deferred.resolve(data.d.results[0]);
+                                    var userItem = data.d.results[0];
+                                    var user = new userListItem();
+                                    user.AccountName = userItem.AccountName;
+                                    user.GithubUserName = userItem.GithubUserName;
+                                    deferred.resolve(user);
                                 } else {
                                     deferred.resolve();
                                 }
@@ -33,16 +39,20 @@
                     function getCurrentGithubUser() {
                         return userProfileService.getCurrentUserDetails()
                             .then(function (currentUser) {
-                                return getGithubUserByUserName(currentUser.accountName);
+                                return getGithubUserByAccountName(currentUser.AccountName);
                             });
                     }
+
 
                     function saveGithubUser(githubUserName) {
                         var deferred = $q.defer();
                         userProfileService.getCurrentUserDetails()
                             .then(function (currentUser) {
-                                usersList.post({},
-                                    function (data) {
+                                var user = new userListItem();
+                                user.AccountName = currentUser.AccountName;
+                                user.GithubUserName = githubUserName;
+                                usersList.post(user,
+                                    function () {
                                         deferred.resolve();
                                     },
                                     function (error) {
@@ -56,7 +66,8 @@
                     }
 
                     return {
-                        getCurrentGithubUser : getCurrentGithubUser
+                        getCurrentGithubUser: getCurrentGithubUser,
+                        saveGithubUser: saveGithubUser
                     };
 
                 }]);

@@ -19,6 +19,7 @@
             //configure $http to use json
             github.run(['$http', function ($http) {
                 $http.defaults.headers.common.Accept = 'application/json;odata=verbose;';
+                $http.defaults.headers.common['Content-Type'] = 'application/json;odata=verbose;';
             }]);
 
             return github;

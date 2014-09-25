@@ -7,16 +7,23 @@
 
 
 
+
+
+
       <ContentType ID="0x0100af19df6c07134abc99ae48becd562d7e" Name="ListFieldsContentType">
         <FieldRefs>
 
 
 
 
-          <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+
+
+
+
           <FieldRef ID="{37c32e80-bc93-4998-b37a-76801ce55650}" Name="Url" />
           <FieldRef ID="{a1ff4324-5887-417c-997b-3cbee55e87a3}" Name="RepositoryDescription" />
           <FieldRef ID="{b468054e-5ecf-4989-8765-3eddca6d3b62}" Name="UserName" />
+          <FieldRef ID="{2b8c6abe-5683-41b2-8880-897c49fdbd1d}" Name="RepositoryName" />
         </FieldRefs>
       </ContentType>
       <ContentTypeRef ID="0x01">
@@ -30,12 +37,18 @@
 
 
 
-      <Field ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Type="Text" Name="Title" DisplayName="Name" Required="TRUE" SourceID="http://schemas.microsoft.com/sharepoint/v3" StaticName="Title" MaxLength="255" />
+
+
+
+
       <Field Name="Url" ID="{37c32e80-bc93-4998-b37a-76801ce55650}" DisplayName="Url" Type="Text" Required="TRUE" />
       <Field Name="RepositoryDescription" ID="{a1ff4324-5887-417c-997b-3cbee55e87a3}" DisplayName="Description" Type="Note" />
       <Field Name="UserName" ID="{b468054e-5ecf-4989-8765-3eddca6d3b62}" DisplayName="User Name" Type="Lookup" Required="TRUE" List="Lists/Users" ShowField="Title" />
+      <Field Name="RepositoryName" ID="{2b8c6abe-5683-41b2-8880-897c49fdbd1d}" DisplayName="Name" Type="Text" Required="TRUE" />
     </Fields>
     <Views>
+
+
 
 
 
@@ -47,10 +60,12 @@
         <ViewFields>
 
 
+
           <FieldRef Name="LinkTitleNoMenu"></FieldRef>
         </ViewFields>
         <Query>
           <OrderBy>
+
 
 
             <FieldRef Name="Modified" Ascending="FALSE"></FieldRef>
@@ -73,14 +88,19 @@
 
 
 
-          <FieldRef Name="LinkTitle" />
-          <FieldRef Name="Title" />
+
+
+
+
+
+          <FieldRef Name="RepositoryName" />
           <FieldRef Name="Url" />
           <FieldRef Name="RepositoryDescription" />
           <FieldRef Name="UserName" />
         </ViewFields>
         <Query>
           <OrderBy>
+
 
 
             <FieldRef Name="ID"></FieldRef>

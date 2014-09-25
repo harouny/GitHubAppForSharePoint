@@ -1,4 +1,4 @@
-﻿<h3>User Details</h3>
+﻿<p>Please fill in your github details.</p>
 <label>Github user name</label>
-<input type="text" data-ng-bind="githubUserName"/>
-<input type="button" value="Submit"/>
+<input type="text" data-ng-disabled="disabled" data-ng-model="githubUserName" />
+<input type="button" data-ng-disabled="disabled" data-ng-click="submit()" value="Save" />

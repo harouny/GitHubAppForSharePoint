@@ -3,10 +3,8 @@
     define([], function() {
 
         return function () {
-            var self = this;
-            self.AccountName = "";
-            self.DisplayName = "";
-            self.Email = "";
+            this.GithubUserName = "";
+            this.AccountName = "";
         }
 
     });

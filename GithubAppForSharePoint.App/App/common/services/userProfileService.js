@@ -14,9 +14,9 @@
                         userProfile.get({},
                             function (data) {
                                 var user = new userProfileModel();
-                                user.accountName = data.d.AccountName;
-                                user.displayName = data.d.DisplayName;
-                                user.email = data.d.Email;
+                                user.AccountName = data.d.AccountName;
+                                user.DisplayName = data.d.DisplayName;
+                                user.Email = data.d.Email;
                                 deferred.resolve(user);
                             },
                             function (error) {

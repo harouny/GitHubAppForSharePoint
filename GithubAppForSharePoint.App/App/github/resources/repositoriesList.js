@@ -8,7 +8,7 @@
                     return $resource('../_api/web/lists/getbytitle(\'Repositories\')', {}, {
                         get: {
                             params: {
-                                '$select': 'Title,Url,RepositoryDescription,UserName'
+                                '$select': 'RepositoryName,Url,RepositoryDescription,UserName'
                             }
                         }
                     });

@@ -1,16 +1,25 @@
 ﻿(function (define) {
     "use strict";
 
-    define(["github/github"],
+    define(["github/github",
+            "common/services/spContext"],
         function (common) {
             common.factory("usersList",
-                ["$resource", function ($resource) {
+                ["$resource", "spContext",
+                function ($resource, spContext) {
                     return $resource('../_api/web/lists/getbytitle(\'Users\')/Items', {}, {
                         get: {
+                            method: 'GET',
                             params: {
-                                '$select': 'Title,GithubUserName'
+                                '$select': 'AccountName,GithubUserName'
                             }
-                        }
+                        },
+                        post: {
+                                method: 'POST',
+                                headers: {
+                                    'X-RequestDigest': spContext.securityValidation,
+                                },
+                            }
                     });
                 }]);
         });
