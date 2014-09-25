@@ -8,8 +8,8 @@
         var serviceId = 'spContext';
         var loggerSource = '[' + serviceId + '] ';
         common.service(serviceId, [
-          '$log', '$cookieStore', '$window', '$resource', '$timeout', "notificationService", "queryStringService", spContext]);
-        function spContext($log, $cookieStore, $window, $resource, $timeout, notification, queryString) {
+          '$log', '$cookieStore', '$window', '$resource', '$timeout', "notificationService", "queryStringService", "appDefaultRoute", spContext]);
+        function spContext($log, $cookieStore, $window, $resource, $timeout, notification, queryString, appDefaultRoute) {
             var service = this;
             var spWeb = {
                 appWebUrl: '',
@@ -56,7 +56,7 @@
                 $cookieStore.put('SPHostLogoUrl', logoUrl);
 
                 $log.log(loggerSource, 'redirecting to app', null);
-                $window.location.href = appWebUrl + '/Pages/index.html#/repos';
+                $window.location.href = appWebUrl + '/Pages/index.html#' + appDefaultRoute;
             }
 
             // init the sharepoint app context by loding the app's cookie contents

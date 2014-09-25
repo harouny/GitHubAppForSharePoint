@@ -1,15 +1,26 @@
 ﻿(function (define) {
     "use strict";
     define(['angular',
+            'underscore',
             'github/github',
             'github/views/repositories/repositories.ctrl',
             'github/views/user/user.ctrl'
             ],
-    function (angular) {
+    function (angular, _) {
 
         //define routes
         function getRoutes() {
             return [
+                {
+                    url: '/all',
+                    config: {
+                        id: 'allRepos',
+                        templateUrl: '../App/github/views/allRepositories/allRepositories.html',
+                        title: 'All Repositories',
+                        showInQuicklaunch: true,
+                        isDefault : true
+                    }
+                },
                 {
                     url: '/repos',
                     config: {
@@ -18,15 +29,6 @@
                         title: 'My Repositories',
                         controller: 'repositories.ctrl',
                         showInQuicklaunch : true
-                    }
-                },
-                {
-                    url: '/all',
-                    config: {
-                        id: 'allRepos',
-                        templateUrl: '../App/github/views/allRepositories/allRepositories.html',
-                        title: 'All Repositories',
-                        showInQuicklaunch: true
                     }
                 },
                 {
@@ -53,7 +55,11 @@
 
         //configure app routes
         var github = angular.module("github");
-        github.constant("appRoutes", getRoutes());
+        var routes = getRoutes();
+        github.constant("appRoutes", routes);
+        github.constant("appDefaultRoute", _.find(routes, function(route) {
+            return route.config.isDefault === true;
+        }).url);
         github.config(['$routeProvider', 'appRoutes',
             function ($routeProvider, appRoutes) {
                 appRoutes.forEach(function (route) {
@@ -61,7 +67,7 @@
                 });
                 $routeProvider.otherwise
                 (
-                    { redirectTo: '/repos' }
+                    { redirectTo: '/all' }
                 );
             }
         ]);
