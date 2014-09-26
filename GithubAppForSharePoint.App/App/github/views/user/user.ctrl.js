@@ -29,7 +29,7 @@
             };
 
             function init() {
-                //loadingIndicatorService.startLoading();
+                loadingIndicatorService.startLoading();
                 usersService.getCurrentGithubUser()
                     .then(function (user) {
                     if (user) {
@@ -37,7 +37,7 @@
                         $scope.disabled = true;
                     }
                 }).finally(function () {
-                        //loadingIndicatorService.stopLoading();
+                        loadingIndicatorService.stopLoading();
                 });
             }
 
