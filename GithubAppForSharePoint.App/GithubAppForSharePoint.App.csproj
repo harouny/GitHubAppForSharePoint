@@ -72,7 +72,7 @@
     <Content Include="App\github\github.routes.js" />
     <Content Include="App\github\views\allRepositories\allRepositories.html" />
     <Content Include="App\github\views\repositories\repositories.html" />
-    <Content Include="App\github\views\repository\repo.html" />
+    <Content Include="App\github\views\repository\repository.html" />
     <Content Include="App\github\views\user\user.html" />
     <Content Include="App\layout\chromeControl.html">
       <DependentUpon>chromeControl.js</DependentUpon>

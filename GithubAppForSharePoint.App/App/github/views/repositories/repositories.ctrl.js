@@ -14,7 +14,7 @@
                 usersService.getCurrentGithubUser()
                     .then(function (githubUser) {
                         if (!githubUser) {
-                            $location.path("/user");
+                            //$location.path("/user");
                         }
                 }).finally(function() {
                     loadingIndicator.stopLoading();

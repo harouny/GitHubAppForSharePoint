@@ -11,7 +11,7 @@
     <File Path="App\layout\header.html" Url="App/layout/header.html" ReplaceContent="TRUE" />
     <File Path="App\layout\quicklaunch.html" Url="App/layout/quicklaunch.html" ReplaceContent="TRUE" />
     <File Path="App\layout\shell.html" Url="App/layout/shell.html" ReplaceContent="TRUE" />
-    <File Path="App\github\views\repository\repo.html" Url="App/github/views/repository/repo.html" ReplaceContent="TRUE" />
+    <File Path="App\github\views\repository\repository.html" Url="App/github/views/repository/repository.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\repositories\repositories.html" Url="App/github/views/repositories/repositories.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\user\user.html" Url="App/github/views/user/user.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\allRepositories\allRepositories.html" Url="App/github/views/allRepositories/allRepositories.html" ReplaceContent="TRUE" />

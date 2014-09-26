@@ -17,7 +17,8 @@
                 usersService.saveGithubUser($scope.githubUserName)
                     .then(function() {
                         notificationService.success("Saved", "your github details was successfully saved.");
-                        $location.path("/repos");
+                        //$location.path("/repos");
+                        init();
                     },
                     function () {
                             delete $scope.githubUserName;
@@ -28,7 +29,7 @@
             };
 
             function init() {
-                loadingIndicatorService.startLoading();
+                //loadingIndicatorService.startLoading();
                 usersService.getCurrentGithubUser()
                     .then(function (user) {
                     if (user) {
@@ -36,7 +37,7 @@
                         $scope.disabled = true;
                     }
                 }).finally(function () {
-                        loadingIndicatorService.stopLoading();
+                        //loadingIndicatorService.stopLoading();
                 });
             }
 

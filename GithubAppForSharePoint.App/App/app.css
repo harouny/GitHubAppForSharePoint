@@ -31,3 +31,13 @@
   font-family: "Segoe UI Light", "Segoe UI", Tahoma, Helvetica, Arial,sans-serif;
   color: #4183C4;
 }
+
+
+.ms-listviewtable .ms-itmHoverEnabled a {
+    color: #0072c6 !important;
+}
+
+
+.dots-th {
+    width: 30px !important;
+}
