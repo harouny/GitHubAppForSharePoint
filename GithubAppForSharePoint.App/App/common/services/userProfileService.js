@@ -3,33 +3,28 @@
 
     define(["common/common",
             "common/models/userProfile",
-            "common/resources/userProfile"],
+            "common/services/notificationService"
+            ],
         function (common, userProfileModel) {
             common.factory("userProfileService",
-                ["userProfile", "$q",
-                function (userProfile, $q) {
-
-                    function getCurrentUserDetails() {
-                        var deferred = $q.defer();
-                        userProfile.get({},
-                            function (data) {
-                                var user = new userProfileModel();
-                                user.AccountName = data.d.AccountName;
-                                user.DisplayName = data.d.DisplayName;
-                                user.Email = data.d.Email;
-                                deferred.resolve(user);
-                            },
-                            function (error) {
-                                deferred.reject(error);
-                            }
-                        );
-                        return deferred.promise;
-                    }
-
-                    return {
-                        getCurrentUserDetails: getCurrentUserDetails
+                ["notificationService", "$http",
+                function(notificationService, $http) {
+                    var self = this;
+                    var resource = '../_api/SP.UserProfiles.PeopleManager/GetMyProperties?$select=PictureUrl,AccountName,Email,DisplayName';
+                    self.userProfile = { };
+                    self.initialize = function () {
+                        return $http.get(resource)
+                        .success(function (data) {
+                            self.userProfile = new userProfileModel();
+                            self.userProfile.AccountName = data.d.AccountName;
+                            self.userProfile.DisplayName = data.d.DisplayName;
+                            self.userProfile.Email = data.d.Email;
+                        })
+                        .error(function () {
+                            notificationService.error("Error", "Error while loading current user profile.");
+                        });
                     };
-
+                    return self;
                 }]);
         });
 

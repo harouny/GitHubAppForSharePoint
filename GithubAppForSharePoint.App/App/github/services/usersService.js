@@ -37,9 +37,9 @@
 
 
                     function getCurrentGithubUser() {
-                        return userProfileService.getCurrentUserDetails()
-                            .then(function (currentUser) {
-                                return getGithubUserByAccountName(currentUser.AccountName);
+                        return userProfileService.initialize()
+                            .then(function () {
+                                return getGithubUserByAccountName(userProfileService.userProfile.AccountName);
                             });
                     }
 
