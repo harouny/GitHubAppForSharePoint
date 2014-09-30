@@ -24,9 +24,6 @@
     <File Path="App\layout\layoutContents.ctrl.js" Url="App/layout/layoutContents.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\app.css" Url="App/app.css" ReplaceContent="TRUE" />
     <File Path="App\common\services\loadingIndicatorService.js" Url="App/common/services/loadingIndicatorService.js" ReplaceContent="TRUE" />
-    <File Path="App\common\resources\userProfile.js" Url="App/common/resources/userProfile.js" ReplaceContent="TRUE" />
-    <File Path="App\github\resources\usersList.js" Url="App/github/resources/usersList.js" ReplaceContent="TRUE" />
-    <File Path="App\github\resources\repositoriesList.js" Url="App/github/resources/repositoriesList.js" ReplaceContent="TRUE" />
     <File Path="App\github\services\usersService.js" Url="App/github/services/usersService.js" ReplaceContent="TRUE" />
     <File Path="App\common\services\userProfileService.js" Url="App/common/services/userProfileService.js" ReplaceContent="TRUE" />
     <File Path="App\common\models\userProfile.js" Url="App/common/models/userProfile.js" ReplaceContent="TRUE" />
@@ -37,5 +34,6 @@
     <File Path="App\layout\header.ctrl.js" Url="App/layout/header.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\github\models\userListItem.js" Url="App/github/models/userListItem.js" ReplaceContent="TRUE" />
     <File Path="App\github\models\repositoryListItem.js" Url="App/github/models/repositoryListItem.js" ReplaceContent="TRUE" />
+    <File Path="App\github\services\repositoriesService.js" Url="App/github/services/repositoriesService.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

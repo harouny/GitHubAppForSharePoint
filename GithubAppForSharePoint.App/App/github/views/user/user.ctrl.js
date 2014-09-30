@@ -4,43 +4,29 @@
     define(["github/github",
         "github/services/usersService",
         "common/services/notificationService",
-        "common/services/loadingIndicatorService"
     ],
     function (github) {
 
         github.controller("user.ctrl",
-        ["$scope", "usersService", "$log", "$location", "notificationService", "loadingIndicatorService",
-        function ($scope, usersService, $log, $location, notificationService, loadingIndicatorService) {
+        ["$scope", "usersService", "$log", "$location", "notificationService",
+        function ($scope, usersService, $log, $location, notificationService) {
 
             $scope.submit = function () {
-                loadingIndicatorService.startLoading();
-                usersService.saveGithubUser($scope.githubUserName)
-                    .then(function() {
-                        notificationService.success("Saved", "your github details was successfully saved.");
-                        //$location.path("/repos");
-                        init();
-                    },
-                    function () {
-                            delete $scope.githubUserName;
-                            notificationService.success("Error", "sorry there was an error while saving your github user name.");
-                    }).finally(function () {
-                        loadingIndicatorService.stopLoading();
-                    });
+                usersService.saveGithubUser($scope.githubUserName).then(updateUi, updateUi);
             };
 
             function init() {
-                loadingIndicatorService.startLoading();
-                usersService.getCurrentGithubUser()
-                    .then(function (user) {
-                    if (user) {
-                        $scope.githubUserName = user.GithubUserName;
-                        $scope.disabled = true;
-                    }
-                }).finally(function () {
-                        loadingIndicatorService.stopLoading();
-                });
+                usersService.initialize().then(updateUi);
             }
 
+            function updateUi() {
+                if (usersService.currentUser) {
+                    $scope.githubUserName = usersService.currentUser.GithubUserName;
+                    $scope.disabled = true;
+                } else {
+                    delete $scope.disabled;
+                }
+            }
             init();
 
         }]);

@@ -8,23 +8,27 @@
         function (common, userProfileModel) {
             common.factory("userProfileService",
                 ["notificationService", "$http",
-                function(notificationService, $http) {
-                    var self = this;
+                function service(notificationService, $http) {
+
                     var resource = '../_api/SP.UserProfiles.PeopleManager/GetMyProperties?$select=PictureUrl,AccountName,Email,DisplayName';
-                    self.userProfile = { };
-                    self.initialize = function () {
+                    service.userProfile = null;
+
+                    service.initialize = function () {
                         return $http.get(resource)
-                        .success(function (data) {
-                            self.userProfile = new userProfileModel();
-                            self.userProfile.AccountName = data.d.AccountName;
-                            self.userProfile.DisplayName = data.d.DisplayName;
-                            self.userProfile.Email = data.d.Email;
-                        })
-                        .error(function () {
-                            notificationService.error("Error", "Error while loading current user profile.");
-                        });
+                            .then(function(response) {
+                                var profile = new userProfileModel();
+                                profile.AccountName = response.data.d.AccountName;
+                                profile.DisplayName = response.data.d.DisplayName;
+                                profile.Email = response.data.d.Email;
+                                service.userProfile = profile;
+                            },
+                            function (error) {
+                                notificationService.error("Error", "Error while loading current user profile.");
+                                throw error;
+                            });
                     };
-                    return self;
+
+                    return service;
                 }]);
         });
 
