@@ -27,14 +27,11 @@
     <ProjectItemFile Source="common\services\loadingIndicatorService.js" Target="App\common\services\" Type="ElementFile" />
     <ProjectItemFile Source="github\services\usersService.js" Target="App\github\services\" Type="ElementFile" />
     <ProjectItemFile Source="common\services\userProfileService.js" Target="App\common\services\" Type="ElementFile" />
-    <ProjectItemFile Source="common\models\userProfile.js" Target="App\common\models\" Type="ElementFile" />
     <ProjectItemFile Source="github\views\user\user.ctrl.js" Target="App\github\views\user\" Type="ElementFile" />
     <ProjectItemFile Source="layout\quicklaunch.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\quicklaunch.ctrl.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\header.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\header.ctrl.js" Target="App\layout\" Type="ElementFile" />
-    <ProjectItemFile Source="github\models\userListItem.js" Target="App\github\models\" Type="ElementFile" />
-    <ProjectItemFile Source="github\models\repositoryListItem.js" Target="App\github\models\" Type="ElementFile" />
     <ProjectItemFile Source="github\services\repositoriesService.js" Target="App\github\services\" Type="ElementFile" />
   </Files>
 </ProjectItem>

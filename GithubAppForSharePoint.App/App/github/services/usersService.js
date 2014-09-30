@@ -2,13 +2,12 @@
     "use strict";
 
     define(["github/github",
-            "github/models/userListItem",
             "common/services/userProfileService",
             "common/services/notificationService",
             "common/services/loadingIndicatorService"
             ],
 
-        function (github, userListItem) {
+        function (github) {
             github.factory("usersService",
                 ["userProfileService", "$http", "notificationService", "spContext", "loadingIndicatorService", "$q",
                 function service(userProfileService, $http, notificationService, spContext, loadingIndicatorService, $q) {
@@ -46,11 +45,7 @@
                             })
                             .then(function(response) {
                                 if (response.data.d.results && response.data.d.results.length == 1) {
-                                    var userItem = response.data.d.results[0];
-                                    var user = new userListItem();
-                                    user.AccountName = userItem.AccountName;
-                                    user.GithubUserName = userItem.GithubUserName;
-                                    service.currentUser = user;
+                                    service.currentUser = response.data.d.results[0];
                                     return service.currentUser;
                                 }
                                 return null;
@@ -66,15 +61,17 @@
                         loadingIndicatorService.startLoading();
                         return userProfileService.initialize()
                            .then(function () {
-                                var user = new userListItem();
-                                user.AccountName = userProfileService.userProfile.AccountName;
-                                user.GithubUserName = githubUserName;
-                                return $http.post(usersListResource, user, {
+                                var user = {
+                                    AccountName: userProfileService.userProfile.AccountName,
+                                    GithubUserName : githubUserName
+                                };
+                                return $http.post(usersListResource, user,
+                                {
                                     headers: {
                                         'X-RequestDigest': spContext.securityValidation,
                                     }
-                                }).then(function() {
-                                    service.currentUser = user;
+                                }).then(function(response) {
+                                    service.currentUser = response.data.d;
                                     notificationService.success("Saved", "your github details was successfully saved.");
                                 }, function() {
                                     notificationService.success("Error", "sorry there was an error while saving your github user name.");
