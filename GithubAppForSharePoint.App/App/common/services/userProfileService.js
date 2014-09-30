@@ -7,13 +7,16 @@
             ],
         function (common, userProfileModel) {
             common.factory("userProfileService",
-                ["notificationService", "$http",
-                function service(notificationService, $http) {
+                ["notificationService", "$http", "$q",
+                function service(notificationService, $http, $q) {
 
                     var resource = '../_api/SP.UserProfiles.PeopleManager/GetMyProperties?$select=PictureUrl,AccountName,Email,DisplayName';
                     service.userProfile = null;
 
                     service.initialize = function () {
+                        if (service.userProfile) {
+                            return $q.when(service.userProfile);
+                        }
                         return $http.get(resource)
                             .then(function(response) {
                                 var profile = new userProfileModel();
