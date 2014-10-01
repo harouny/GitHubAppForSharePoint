@@ -11,12 +11,14 @@
         ["$scope", "usersService", "$log", "$location", "notificationService",
         function ($scope, usersService, $log, $location, notificationService) {
 
-            $scope.submit = function () {
-                usersService.saveGithubUser($scope.githubUserName).then(updateUi, updateUi);
+            $scope.saveGithubUser = function () {
+                usersService.saveGithubUser($scope.githubUserName)
+                    .then(updateUi, updateUi);
             };
 
             function init() {
-                usersService.initialize().then(updateUi);
+                usersService.initialize()
+                    .then(updateUi);
             }
 
             function updateUi() {

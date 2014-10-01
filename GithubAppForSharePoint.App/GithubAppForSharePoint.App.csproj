@@ -51,7 +51,6 @@
     <Content Include="App\common\services\spContext.js" />
     <Content Include="App\common\services\userProfileService.js" />
     <Content Include="App\github\services\repositoriesService.js" />
-    <Content Include="App\github\views\repositories\repositories.ctrl.js" />
     <Content Include="App\github\services\usersService.js" />
     <Content Include="App\github\views\user\user.ctrl.js" />
     <Content Include="App\layout\chromeControl.ctrl.js">
@@ -66,7 +65,7 @@
     <Content Include="App\github\github.js" />
     <Content Include="App\github\github.routes.js" />
     <Content Include="App\github\views\allRepositories\allRepositories.html" />
-    <Content Include="App\github\views\repositories\repositories.html" />
+    <Content Include="App\github\views\reports\reports.html" />
     <Content Include="App\github\views\repository\repository.html" />
     <Content Include="App\github\views\user\user.html" />
     <Content Include="App\layout\chromeControl.html">

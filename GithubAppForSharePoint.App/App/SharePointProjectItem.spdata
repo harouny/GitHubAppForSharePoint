@@ -13,13 +13,12 @@
     <ProjectItemFile Source="layout\quicklaunch.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\shell.html" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="github\views\repository\repository.html" Target="App\github\views\repository\" Type="ElementFile" />
-    <ProjectItemFile Source="github\views\repositories\repositories.html" Target="App\github\views\repositories\" Type="ElementFile" />
+    <ProjectItemFile Source="github\views\reports\reports.html" Target="App\github\views\reports\" Type="ElementFile" />
     <ProjectItemFile Source="github\views\user\user.html" Target="App\github\views\user\" Type="ElementFile" />
     <ProjectItemFile Source="github\views\allRepositories\allRepositories.html" Target="App\github\views\allRepositories\" Type="ElementFile" />
     <ProjectItemFile Source="layout\layout.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\chromeControl.ctrl.js" Target="App\layout\" Type="ElementFile" />
     <ProjectItemFile Source="layout\chromeControl.html" Target="App\layout\" Type="ElementFile" />
-    <ProjectItemFile Source="github\views\repositories\repositories.ctrl.js" Target="App\github\views\repositories\" Type="ElementFile" />
     <ProjectItemFile Source="common\services\spContext.js" Target="App\common\services\" Type="ElementFile" />
     <ProjectItemFile Source="common\services\queryStringService.js" Target="App\common\services\" Type="ElementFile" />
     <ProjectItemFile Source="layout\layoutContents.ctrl.js" Target="App\layout\" Type="ElementFile" />

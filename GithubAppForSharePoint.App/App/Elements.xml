@@ -12,13 +12,12 @@
     <File Path="App\layout\quicklaunch.html" Url="App/layout/quicklaunch.html" ReplaceContent="TRUE" />
     <File Path="App\layout\shell.html" Url="App/layout/shell.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\repository\repository.html" Url="App/github/views/repository/repository.html" ReplaceContent="TRUE" />
-    <File Path="App\github\views\repositories\repositories.html" Url="App/github/views/repositories/repositories.html" ReplaceContent="TRUE" />
+    <File Path="App\github\views\reports\reports.html" Url="App/github/views/reports/reports.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\user\user.html" Url="App/github/views/user/user.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\allRepositories\allRepositories.html" Url="App/github/views/allRepositories/allRepositories.html" ReplaceContent="TRUE" />
     <File Path="App\layout\layout.js" Url="App/layout/layout.js" ReplaceContent="TRUE" />
     <File Path="App\layout\chromeControl.ctrl.js" Url="App/layout/chromeControl.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\layout\chromeControl.html" Url="App/layout/chromeControl.html" ReplaceContent="TRUE" />
-    <File Path="App\github\views\repositories\repositories.ctrl.js" Url="App/github/views/repositories/repositories.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\common\services\spContext.js" Url="App/common/services/spContext.js" ReplaceContent="TRUE" />
     <File Path="App\common\services\queryStringService.js" Url="App/common/services/queryStringService.js" ReplaceContent="TRUE" />
     <File Path="App\layout\layoutContents.ctrl.js" Url="App/layout/layoutContents.ctrl.js" ReplaceContent="TRUE" />

@@ -3,7 +3,6 @@
     define(['angular',
             'underscore',
             'github/github',
-            'github/views/repositories/repositories.ctrl',
             'github/views/user/user.ctrl'
             ],
     function (angular, _) {
@@ -16,19 +15,9 @@
                     config: {
                         id: 'allRepos',
                         templateUrl: '../App/github/views/allRepositories/allRepositories.html',
-                        title: 'All Repositories',
+                        title: 'All Contributions',
                         showInQuicklaunch: true,
                         isDefault : true
-                    }
-                },
-                {
-                    url: '/repos',
-                    config: {
-                        id: 'repos',
-                        templateUrl: '../App/github/views/repositories/repositories.html',
-                        title: 'My Repositories',
-                        controller: 'repositories.ctrl',
-                        showInQuicklaunch : true
                     }
                 },
                 {
@@ -36,7 +25,7 @@
                     config: {
                         id: 'repo',
                         templateUrl: '../App/github/views/repository/repository.html',
-                        title: 'Repository Details',
+                        title: 'Contribution Details',
                         showInQuicklaunch: false
                     }
                 },
@@ -46,10 +35,20 @@
                         id: 'user',
                         templateUrl: '../App/github/views/user/user.html',
                         controller: 'user.ctrl',
-                        title: 'My details',
+                        title: 'My Contributions',
+                        showInQuicklaunch: true
+                    }
+                },
+                {
+                    url: '/reports',
+                    config: {
+                        id: 'reports',
+                        templateUrl: '../App/github/views/reports/reports.html',
+                        title: 'Reports',
                         showInQuicklaunch: true
                     }
                 }
+
             ];
         }
 
