@@ -4,6 +4,7 @@
     define(["github/github",
         "github/services/usersService",
         "common/services/notificationService",
+        "github/directives/githubRepositories"
     ],
     function (github) {
 
@@ -16,18 +17,19 @@
                     .then(updateUi, updateUi);
             };
 
-            function init() {
-                usersService.initialize()
-                    .then(updateUi);
-            }
-
             function updateUi() {
                 if (usersService.currentUser) {
+                    $scope.isUserSaved = true;
                     $scope.githubUserName = usersService.currentUser.GithubUserName;
                     $scope.disabled = true;
                 } else {
                     delete $scope.disabled;
                 }
+            }
+
+            function init() {
+                    usersService.initialize()
+                        .then(updateUi);
             }
             init();
 

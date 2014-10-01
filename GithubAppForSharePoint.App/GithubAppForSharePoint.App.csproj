@@ -50,6 +50,13 @@
     <Content Include="App\common\services\queryStringService.js" />
     <Content Include="App\common\services\spContext.js" />
     <Content Include="App\common\services\userProfileService.js" />
+    <Content Include="App\github\directives\githubRepositories.ctrl.js">
+      <DependentUpon>githubRepositories.js</DependentUpon>
+    </Content>
+    <Content Include="App\github\directives\githubRepositories.html">
+      <DependentUpon>githubRepositories.js</DependentUpon>
+    </Content>
+    <Content Include="App\github\directives\githubRepositories.js" />
     <Content Include="App\github\services\repositoriesService.js" />
     <Content Include="App\github\services\usersService.js" />
     <Content Include="App\github\views\user\user.ctrl.js" />

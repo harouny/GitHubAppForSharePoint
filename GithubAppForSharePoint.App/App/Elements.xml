@@ -31,5 +31,8 @@
     <File Path="App\layout\header.js" Url="App/layout/header.js" ReplaceContent="TRUE" />
     <File Path="App\layout\header.ctrl.js" Url="App/layout/header.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\github\services\repositoriesService.js" Url="App/github/services/repositoriesService.js" ReplaceContent="TRUE" />
+    <File Path="App\github\directives\githubRepositories.js" Url="App/github/directives/githubRepositories.js" ReplaceContent="TRUE" />
+    <File Path="App\github\directives\githubRepositories.ctrl.js" Url="App/github/directives/githubRepositories.ctrl.js" ReplaceContent="TRUE" />
+    <File Path="App\github\directives\githubRepositories.html" Url="App/github/directives/githubRepositories.html" ReplaceContent="TRUE" />
   </Module>
 </Elements>
