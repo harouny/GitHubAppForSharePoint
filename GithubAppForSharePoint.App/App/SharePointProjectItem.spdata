@@ -35,5 +35,6 @@
     <ProjectItemFile Source="github\directives\githubRepositories.js" Target="App\github\directives\" Type="ElementFile" />
     <ProjectItemFile Source="github\directives\githubRepositories.ctrl.js" Target="App\github\directives\" Type="ElementFile" />
     <ProjectItemFile Source="github\directives\githubRepositories.html" Target="App\github\directives\" Type="ElementFile" />
+    <ProjectItemFile Source="github\services\githubApiService.js" Target="App\github\services\" Type="ElementFile" />
   </Files>
 </ProjectItem>

@@ -34,5 +34,6 @@
     <File Path="App\github\directives\githubRepositories.js" Url="App/github/directives/githubRepositories.js" ReplaceContent="TRUE" />
     <File Path="App\github\directives\githubRepositories.ctrl.js" Url="App/github/directives/githubRepositories.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\github\directives\githubRepositories.html" Url="App/github/directives/githubRepositories.html" ReplaceContent="TRUE" />
+    <File Path="App\github\services\githubApiService.js" Url="App/github/services/githubApiService.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
