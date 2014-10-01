@@ -12,7 +12,8 @@
                     restrict: 'AE',
                     controller: 'githubRepositories.ctrl',
                     scope: {
-                        githubUserName: "="
+                        githubUserName: "=",
+                        mode: "@"
                     },
                     templateUrl: "../App/github/directives/githubRepositories.html"
                 };

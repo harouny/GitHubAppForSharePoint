@@ -41,3 +41,9 @@
 .dots-th {
     width: 30px !important;
 }
+
+
+.view-container {
+    position: relative;
+    overflow: auto;
+}
