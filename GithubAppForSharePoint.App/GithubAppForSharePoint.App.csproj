@@ -46,6 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="App\app.css" />
+    <Content Include="App\common\models\userProfileModel.js" />
     <Content Include="App\common\services\loadingIndicatorService.js" />
     <Content Include="App\common\services\queryStringService.js" />
     <Content Include="App\common\services\spContext.js" />

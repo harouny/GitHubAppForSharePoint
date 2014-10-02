@@ -37,5 +37,6 @@
     <ProjectItemFile Source="github\directives\githubRepositories.html" Target="App\github\directives\" Type="ElementFile" />
     <ProjectItemFile Source="github\services\githubApiService.js" Target="App\github\services\" Type="ElementFile" />
     <ProjectItemFile Source="github\models\userItemModel.js" Target="App\github\models\" Type="ElementFile" />
+    <ProjectItemFile Source="common\models\userProfileModel.js" Target="App\common\models\" Type="ElementFile" />
   </Files>
 </ProjectItem>

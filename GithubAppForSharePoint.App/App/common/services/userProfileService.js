@@ -2,9 +2,10 @@
     "use strict";
 
     define(["common/common",
+            "common/models/userProfileModel",
             "common/services/notificationService"
             ],
-        function (common) {
+        function (common, userProfileModel) {
             common.factory("userProfileService",
                 ["notificationService", "$http", "$q",
                 function service(notificationService, $http, $q) {
@@ -18,7 +19,7 @@
                         }
                         return $http.get(resource)
                             .then(function(response) {
-                                service.userProfile = response.data.d;
+                                service.userProfile = new userProfileModel(response.data.d);
                             },
                             function (error) {
                                 notificationService.error("Error", "Error while loading current user profile.");
