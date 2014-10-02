@@ -1,6 +1,83 @@
-﻿<div data-ng-if="repositories">
+﻿<div data-ng-if="repositories" class="repositories-container">
     <h2>Repositories</h2>
-    <ul>
-        <li data-ng-repeat="repo in repositories">{{repo.name}}</li>
-    </ul>
+        
+    <table border="0" cellspacing="0" cellpadding="1" class="ms-listviewtable">
+        <thead>
+            <tr valign="top" class="ms-viewheadertr ms-vhltr">
+                <th scope="col" class="ms-vh2" style="width: 150px;">
+                    <div class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Name</a>
+                    </div>
+                </th>
+                <th scope="col" class="ms-vh2" style="width: 200px;">
+                    <div class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Description</a>
+                    </div>
+                </th>
+                <th scope="col" class="ms-vh2">
+                    <div class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Language</a>
+                    </div>
+                </th>
+                <th scope="col" class="ms-vh2">
+                    <div class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Fork</a>
+                    </div>
+                </th>
+                <th scope="col" class="ms-vh2">
+                    <div class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Size</a>
+                    </div>
+                </th>
+                <th scope="col" class="ms-vh2">
+                    <div class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Watchers</a>
+                    </div>
+                </th>
+                <th scope="col" class="ms-vh2">
+                    <div class="ms-vh-div">
+                        <a class="ms-headerSortTitleLink">Stars</a>
+                    </div>
+                </th>
+                <th scope="col" class="ms-vh2">
+                    <div class="ms-vh-div">
+                       
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr data-ng-repeat="repo in repositories" class="ms-itmHoverEnabled ms-itmhover">
+                <td class="ms-cellstyle ms-vb-title ms-positionRelative" height="100%">
+                    <div class="ms-vb ms-vb-menuPadding itx">
+                        <a class="ms-listlink" data-ng-href="repo.html_url" target="_blank">{{repo.name}}</a>
+                    </div>
+                </td>
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">{{repo.description}}</div>
+                </td>
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">{{repo.language}}</div>
+                </td>
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">{{repo.fork}}</div>
+                </td>
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">{{repo.size}}</div>
+                </td>
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">{{repo.watchers_count}}</div>
+                </td>
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">{{repo.stargazers_count}}</div>
+                </td>
+                <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
+                    <div class="ms-rtestate-field">
+                        <input type="button" value="Add" />
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
 </div>

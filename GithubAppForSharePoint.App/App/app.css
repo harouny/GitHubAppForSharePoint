@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   z-index: 99999;
-  background: #ccc /* fallback for old browsers */;
+  background: #ccc;
   background: rgba(204, 204, 204, .5);
 }
 
@@ -46,4 +46,9 @@
 .view-container {
     position: relative;
     overflow: auto;
+}
+
+
+.repositories-container {
+    margin-top: 20px;
 }
