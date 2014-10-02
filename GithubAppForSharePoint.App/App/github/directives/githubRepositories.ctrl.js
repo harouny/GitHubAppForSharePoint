@@ -8,11 +8,18 @@
     function (githubModule) {
 
         githubModule.controller("githubRepositories.ctrl",
-            ["$scope", "githubApiService",
-            function ($scope, githubApiService) {
+            ["$scope", "githubApiService", "$rootScope",
+            function ($scope, githubApiService, $rootScope) {
 
                 function init() {
-                    githubApiService.initialize().then(function() {
+                    if ($scope.mode === "user") {
+                        loadCurrentUserRepositories();
+                        $rootScope.$on("currentUserDetailsChanged", loadCurrentUserRepositories);
+                    }
+                }
+
+                function loadCurrentUserRepositories() {
+                    githubApiService.initialize().then(function () {
                         $scope.repositories = githubApiService.currentUserGitubRepositories;
                     });
                 }

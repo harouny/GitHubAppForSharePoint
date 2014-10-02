@@ -9,11 +9,15 @@
 
         function (github) {
             github.factory("githubApiService",
-                ["$http", "notificationService", "loadingIndicatorService", "usersService", "$q", "$resource",
-                function service($http, notificationService, loadingIndicatorService, usersService, $q, $resource) {
+                ["$http", "notificationService", "loadingIndicatorService", "usersService", "$q", "$resource", "$rootScope",
+                function service($http, notificationService, loadingIndicatorService, usersService, $q, $resource, $rootScope) {
 
                     service.currentUserGitubRepositories = null;
                     var reposByuserResource = $resource("//api.github.com/users/:user/repos");
+
+                    $rootScope.$on("currentUserDetailsChanged", function () {
+                        service.currentUserGitubRepositories = null;
+                    });
 
                     service.initialize = function () {
                         if (service.currentUserGitubRepositories) {

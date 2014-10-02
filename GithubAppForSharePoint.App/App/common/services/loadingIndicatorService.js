@@ -7,12 +7,20 @@
                 ["$window", "$rootScope",
                 function ($window, $rootScope) {
 
+                    var jobs = 0;
+
                     function startLoading() {
-                        $rootScope.isLoading = true;
+                        jobs++;
+                        if (!$rootScope.isLoading) {
+                            $rootScope.isLoading = true;
+                        }
                     }
 
                     function stopLoading() {
-                        $rootScope.isLoading = false;
+                        jobs--;
+                        if (jobs === 0) {
+                            $rootScope.isLoading = false;
+                        }
                     }
 
                     function isLoading() {

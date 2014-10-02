@@ -21,10 +21,7 @@
                 if (usersService.currentUser) {
                     $scope.isUserSaved = true;
                     $scope.githubUserName = usersService.currentUser.GithubUserName;
-                    $scope.disabled = true;
-                } else {
-                    delete $scope.disabled;
-                }
+                } 
             }
 
             function init() {
