@@ -3,25 +3,34 @@
 
     define([
         "github/github",
-        "github/services/githubApiService"
+        "github/services/githubApiService",
+        "github/services/repositoriesService"
     ],
     function (githubModule) {
 
         githubModule.controller("githubRepositories.ctrl",
-            ["$scope", "githubApiService", "$rootScope",
-            function ($scope, githubApiService, $rootScope) {
+            ["$scope", "githubApiService", "$rootScope", "repositoriesService",
+            function ($scope, githubApiService, $rootScope, repositoriesService) {
+
+                $scope.addRepository = addRepository;
 
                 function init() {
-                    if ($scope.mode === "user") {
-                        loadCurrentUserRepositories();
-                        $rootScope.$on("currentUserDetailsChanged", loadCurrentUserRepositories);
-                    }
+                    repositoriesService.initialize().then(function() {
+                        if ($scope.mode === "user") {
+                            loadCurrentUserRepositories();
+                            $rootScope.$on("currentUserDetailsChanged", loadCurrentUserRepositories);
+                        }
+                    });
                 }
 
                 function loadCurrentUserRepositories() {
                     githubApiService.initialize().then(function () {
                         $scope.repositories = githubApiService.currentUserGitubRepositories;
                     });
+                }
+
+                function addRepository(repository) {
+                    repositoriesService.addRepository(repository);
                 }
 
                 init();

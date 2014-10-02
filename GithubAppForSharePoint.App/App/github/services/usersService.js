@@ -41,7 +41,7 @@
                             {
                                 params:
                                 {
-                                    '$select': 'AccountName,GithubUserName',
+                                    '$select': 'AccountName,GithubUserName,Id',
                                     '$filter': 'AccountName eq \'' + accountName + '\''
                                 }
                             })
