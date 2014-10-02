@@ -18,7 +18,7 @@
                         loadingIndicatorService.startLoading();
                         return $http.get(repositoriesListResource, {
                             params: {
-                                '$select': 'RepositoryName,Url,RepositoryDescription,UserName'
+                                '$select': 'RepositoryName,Url,RepositoryDescription,AccountName,RepositoryId'
                             }
                         }).then(function(resource) {
                             return resource.data;

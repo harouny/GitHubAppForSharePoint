@@ -58,6 +58,7 @@
       <DependentUpon>githubRepositories.js</DependentUpon>
     </Content>
     <Content Include="App\github\directives\githubRepositories.js" />
+    <Content Include="App\github\models\repositoryItemModel.js" />
     <Content Include="App\github\models\userItemModel.js" />
     <Content Include="App\github\services\githubApiService.js" />
     <Content Include="App\github\services\repositoriesService.js" />

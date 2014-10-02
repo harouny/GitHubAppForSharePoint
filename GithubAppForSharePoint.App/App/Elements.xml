@@ -37,5 +37,6 @@
     <File Path="App\github\services\githubApiService.js" Url="App/github/services/githubApiService.js" ReplaceContent="TRUE" />
     <File Path="App\github\models\userItemModel.js" Url="App/github/models/userItemModel.js" ReplaceContent="TRUE" />
     <File Path="App\common\models\userProfileModel.js" Url="App/common/models/userProfileModel.js" ReplaceContent="TRUE" />
+    <File Path="App\github\models\repositoryItemModel.js" Url="App/github/models/repositoryItemModel.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>
