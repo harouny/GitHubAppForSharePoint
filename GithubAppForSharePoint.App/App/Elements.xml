@@ -38,5 +38,9 @@
     <File Path="App\github\models\userItemModel.js" Url="App/github/models/userItemModel.js" ReplaceContent="TRUE" />
     <File Path="App\common\models\userProfileModel.js" Url="App/common/models/userProfileModel.js" ReplaceContent="TRUE" />
     <File Path="App\github\models\repositoryItemModel.js" Url="App/github/models/repositoryItemModel.js" ReplaceContent="TRUE" />
+    <File Path="App\github\directives\githubContributions.js" Url="App/github/directives/githubContributions.js" ReplaceContent="TRUE" />
+    <File Path="App\github\directives\githubContributions.ctrl.js" Url="App/github/directives/githubContributions.ctrl.js" ReplaceContent="TRUE" />
+    <File Path="App\github\directives\githubContributions.html" Url="App/github/directives/githubContributions.html" ReplaceContent="TRUE" />
+    <File Path="App\github\views\allRepositories\allRepositories.ctrl.js" Url="App/github/views/allRepositories/allRepositories.ctrl.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

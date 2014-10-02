@@ -3,31 +3,36 @@
 
     define(["github/github",
             "github/models/repositoryItemModel",
+            "underscore",
             "common/services/notificationService",
             "common/services/loadingIndicatorService",
             "github/services/usersService",
             "common/services/spContext"
             ],
 
-        function (github, repositoryItemModel) {
+        function (github, repositoryItemModel, _) {
             github.factory("repositoriesService",
                 ["$http", "notificationService", "loadingIndicatorService", "usersService", "spContext",
                 function service($http, notificationService, loadingIndicatorService, usersService, spContext) {
 
-                    var repositoriesListResource = '../_api/web/lists/getbytitle(\'Repositories\')';
                     var repositoriesListItemsResource = '../_api/web/lists/getbytitle(\'Repositories\')/Items';
 
                     service.repositoriesListItems = null;
 
                     service.initialize = function () {
                         loadingIndicatorService.startLoading();
-                        return $http.get(repositoriesListResource, {
+                        return $http.get(repositoriesListItemsResource, {
                             params: {
-                                '$select': 'RepositoryName,Url,RepositoryDescription,AccountName,RepositoryId'
+                                '$select': 'RepositoryName,Url,RepositoryDescription,RepositoryId'
                             }
                         }).then(function(resource) {
-                            return resource.data;
+                            service.repositoriesListItems = new Array();
+                            _.each(resource.data.d.results, function (item) {
+                                service.repositoriesListItems.push(new repositoryItemModel(item));
+                            });
+                            return service.repositoriesListItems;
                         }, function(error) {
+                            notificationService.error("Error", "Error while loading contributions.");
                             throw error;
                         }).finally(function() {
                             loadingIndicatorService.stopLoading();

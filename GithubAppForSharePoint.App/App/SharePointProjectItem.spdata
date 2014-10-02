@@ -39,5 +39,9 @@
     <ProjectItemFile Source="github\models\userItemModel.js" Target="App\github\models\" Type="ElementFile" />
     <ProjectItemFile Source="common\models\userProfileModel.js" Target="App\common\models\" Type="ElementFile" />
     <ProjectItemFile Source="github\models\repositoryItemModel.js" Target="App\github\models\" Type="ElementFile" />
+    <ProjectItemFile Source="github\directives\githubContributions.js" Target="App\github\directives\" Type="ElementFile" />
+    <ProjectItemFile Source="github\directives\githubContributions.ctrl.js" Target="App\github\directives\" Type="ElementFile" />
+    <ProjectItemFile Source="github\directives\githubContributions.html" Target="App\github\directives\" Type="ElementFile" />
+    <ProjectItemFile Source="github\views\allRepositories\allRepositories.ctrl.js" Target="App\github\views\allRepositories\" Type="ElementFile" />
   </Files>
 </ProjectItem>

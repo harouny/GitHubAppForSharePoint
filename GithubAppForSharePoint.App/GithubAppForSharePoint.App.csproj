@@ -51,6 +51,13 @@
     <Content Include="App\common\services\queryStringService.js" />
     <Content Include="App\common\services\spContext.js" />
     <Content Include="App\common\services\userProfileService.js" />
+    <Content Include="App\github\directives\githubContributions.ctrl.js">
+      <DependentUpon>githubContributions.js</DependentUpon>
+    </Content>
+    <Content Include="App\github\directives\githubContributions.html">
+      <DependentUpon>githubContributions.js</DependentUpon>
+    </Content>
+    <Content Include="App\github\directives\githubContributions.js" />
     <Content Include="App\github\directives\githubRepositories.ctrl.js">
       <DependentUpon>githubRepositories.js</DependentUpon>
     </Content>
@@ -63,7 +70,12 @@
     <Content Include="App\github\services\githubApiService.js" />
     <Content Include="App\github\services\repositoriesService.js" />
     <Content Include="App\github\services\usersService.js" />
-    <Content Include="App\github\views\user\user.ctrl.js" />
+    <Content Include="App\github\views\allRepositories\allRepositories.ctrl.js">
+      <DependentUpon>allRepositories.html</DependentUpon>
+    </Content>
+    <Content Include="App\github\views\user\user.ctrl.js">
+      <DependentUpon>user.html</DependentUpon>
+    </Content>
     <Content Include="App\layout\chromeControl.ctrl.js">
       <DependentUpon>chromeControl.js</DependentUpon>
     </Content>

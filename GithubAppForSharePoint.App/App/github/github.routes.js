@@ -3,7 +3,8 @@
     define(['angular',
             'underscore',
             'github/github',
-            'github/views/user/user.ctrl'
+            'github/views/user/user.ctrl',
+            'github/views/allRepositories/allRepositories.ctrl'
             ],
     function (angular, _) {
 
@@ -16,6 +17,7 @@
                         id: 'allRepos',
                         templateUrl: '../App/github/views/allRepositories/allRepositories.html',
                         title: 'All Contributions',
+                        controller: 'allRepositories.ctrl',
                         showInQuicklaunch: true,
                         isDefault : true
                     }
