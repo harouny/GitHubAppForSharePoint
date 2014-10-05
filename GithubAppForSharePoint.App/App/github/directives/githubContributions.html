@@ -20,7 +20,7 @@
                 </th>
                 <th scope="col" class="ms-vh2">
                     <div class="ms-vh-div">
-                        <a class="ms-headerSortTitleLink">By</a>
+                        <a class="ms-headerSortTitleLink">Added By</a>
                     </div>
                 </th>
             </tr>
@@ -29,7 +29,7 @@
             <tr data-ng-repeat="con in contributions" class="ms-itmHoverEnabled ms-itmhover">
                 <td class="ms-cellstyle ms-vb-title ms-positionRelative" height="100%">
                     <div class="ms-vb ms-vb-menuPadding itx">
-                        <a class="ms-listlink" data-ng-href="con.Url" target="_blank">{{con.RepositoryName}}</a>
+                        <a class="ms-listlink" data-ng-href="{{con.Url}}" target="_blank">{{con.RepositoryName}}</a>
                     </div>
                 </td>
                 <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
@@ -39,7 +39,7 @@
                     <div class="ms-rtestate-field">{{con.Url}}</div>
                 </td>
                 <td class="ms-vb-lastCell ms-cellstyle ms-vb2 ms-vb-lastCell">
-                    <div class="ms-rtestate-field">{{con.AccountName}}</div>
+                    <div class="ms-rtestate-field">{{con.AddedBy}}</div>
                 </td>
             </tr>
         </tbody>

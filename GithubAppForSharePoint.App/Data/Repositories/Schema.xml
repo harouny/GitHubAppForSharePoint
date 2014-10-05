@@ -13,8 +13,16 @@
 
 
 
+
+
+
       <ContentType ID="0x0100af19df6c07134abc99ae48becd562d7e" Name="ListFieldsContentType">
         <FieldRefs>
+
+
+
+
+
 
 
 
@@ -32,6 +40,7 @@
           <FieldRef ID="{b468054e-5ecf-4989-8765-3eddca6d3b62}" Name="AccountName" />
           <FieldRef ID="{2b8c6abe-5683-41b2-8880-897c49fdbd1d}" Name="RepositoryName" />
           <FieldRef ID="{657c0f2a-13d5-44b2-bdc1-a9ebbe1b9fa3}" Name="RepositoryId" />
+          <FieldRef ID="{c08a368c-94d7-4e88-b0d6-b5a3586795dc}" Name="AddedBy" />
         </FieldRefs>
       </ContentType>
       <ContentTypeRef ID="0x01">
@@ -53,13 +62,21 @@
 
 
 
+
+
+
+
+
       <Field Name="Url" ID="{37c32e80-bc93-4998-b37a-76801ce55650}" DisplayName="Url" Type="Text" Required="TRUE" />
       <Field Name="RepositoryDescription" ID="{a1ff4324-5887-417c-997b-3cbee55e87a3}" DisplayName="Description" Type="Note" />
       <Field Name="AccountName" ID="{b468054e-5ecf-4989-8765-3eddca6d3b62}" DisplayName="Account Name" Type="Lookup" Required="TRUE" List="Lists/Users" ShowField="AccountName" />
       <Field Name="RepositoryName" ID="{2b8c6abe-5683-41b2-8880-897c49fdbd1d}" DisplayName="Name" Type="Text" Required="TRUE" />
       <Field Name="RepositoryId" ID="{657c0f2a-13d5-44b2-bdc1-a9ebbe1b9fa3}" DisplayName="RepositoryId" Type="Text" Required="TRUE" />
+      <Field Name="AddedBy" ID="{c08a368c-94d7-4e88-b0d6-b5a3586795dc}" DisplayName="User Name" Type="Text" Required="TRUE" />
     </Fields>
     <Views>
+
+
 
 
 
@@ -77,10 +94,12 @@
 
 
 
+
           <FieldRef Name="LinkTitleNoMenu"></FieldRef>
         </ViewFields>
         <Query>
           <OrderBy>
+
 
 
 
@@ -114,14 +133,21 @@
 
 
 
+
+
+
+
+
           <FieldRef Name="RepositoryName" />
           <FieldRef Name="Url" />
           <FieldRef Name="RepositoryDescription" />
           <FieldRef Name="AccountName" />
           <FieldRef Name="RepositoryId" />
+          <FieldRef Name="AddedBy" />
         </ViewFields>
         <Query>
           <OrderBy>
+
 
 
 

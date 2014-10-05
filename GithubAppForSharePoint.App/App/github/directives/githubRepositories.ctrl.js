@@ -3,34 +3,38 @@
 
     define([
         "github/github",
+        "underscore",
         "github/services/githubApiService",
         "github/services/repositoriesService"
     ],
-    function (githubModule) {
+    function (githubModule, _) {
 
         githubModule.controller("githubRepositories.ctrl",
             ["$scope", "githubApiService", "$rootScope", "repositoriesService",
             function ($scope, githubApiService, $rootScope, repositoriesService) {
 
                 $scope.addRepository = addRepository;
+                $rootScope.$on("currentUserDetailsChanged", init);
 
                 function init() {
                     repositoriesService.initialize().then(function() {
-                        if ($scope.mode === "user") {
-                            loadCurrentUserRepositories();
-                            $rootScope.$on("currentUserDetailsChanged", loadCurrentUserRepositories);
-                        }
+                        githubApiService.initialize().then(updateUi);
                     });
                 }
 
-                function loadCurrentUserRepositories() {
-                    githubApiService.initialize().then(function () {
-                        $scope.repositories = githubApiService.currentUserGitubRepositories;
+                function updateUi() {
+                    $scope.repositories = githubApiService.currentUserGitubRepositories;
+                    _.each($scope.repositories, function(repository) {
+                        repository.added = _.filter(repositoriesService.repositoriesListItems, function(repositoryItem) {
+                            return repository.id === Number(repositoryItem.RepositoryId);
+                        }).length > 0;
                     });
                 }
 
                 function addRepository(repository) {
-                    repositoriesService.addRepository(repository);
+                    repositoriesService.addRepository(repository).then(function() {
+                         repository.added = true;
+                    });
                 }
 
                 init();

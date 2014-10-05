@@ -8,6 +8,7 @@
             this.Url = item ? item.Url : null;
             this.RepositoryDescription = item ? item.RepositoryDescription : null;
             this.RepositoryId = item ? item.RepositoryId : null;
+            this.AddedBy = item ? item.AddedBy : null;
             this.__metadata = item ? item.__metadata : null;
         }
     });
