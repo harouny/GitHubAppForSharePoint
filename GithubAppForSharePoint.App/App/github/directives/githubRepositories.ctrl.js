@@ -23,7 +23,7 @@
                 }
 
                 function updateUi() {
-                    $scope.repositories = githubApiService.currentUserGitubRepositories;
+                    $scope.repositories = githubApiService.repos;
                     _.each($scope.repositories, function(repository) {
                         repository.added = _.filter(repositoriesService.repositoriesListItems, function(repositoryItem) {
                             return repository.id === Number(repositoryItem.RepositoryId);
@@ -36,9 +36,6 @@
                          repository.added = true;
                     });
                 }
-
-                init();
-
             }
         ]);
     });

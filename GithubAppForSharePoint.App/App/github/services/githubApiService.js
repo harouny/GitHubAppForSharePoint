@@ -10,28 +10,30 @@
         function (github) {
             github.factory("githubApiService",
                 ["$http", "notificationService", "loadingIndicatorService", "usersService", "$q", "$resource", "$rootScope",
-                function service($http, notificationService, loadingIndicatorService, usersService, $q, $resource, $rootScope) {
+                function service($http, notificationService, loadingService, usersService, $q, $resource, $rootScope) {
 
-                    service.currentUserGitubRepositories = null;
-                    var reposByuserResource = $resource("//api.github.com/users/:user/repos");
+                    service.repos = null;
+                    var resource = $resource("//api.github.com/users/:user/repos");
 
                     $rootScope.$on("currentUserDetailsChanged", function () {
-                        service.currentUserGitubRepositories = null;
+                        service.repos = null;
                     });
 
                     service.initialize = function () {
-                        if (service.currentUserGitubRepositories) {
-                            return $q.when(service.currentUserGitubRepositories);
+                        if (service.repos) {
+                            return $q.when(service.repos);
                         }
-                        loadingIndicatorService.startLoading();
+                        loadingService.startLoading();
                         return usersService.initialize()
                             .then(function() {
                                 if (usersService.currentUser) {
-                                    return reposByuserResource.query({ user: usersService.currentUser.GithubUserName })
+                                    return resource.query({
+                                             user: usersService.currentUser.GithubUserName
+                                        })
                                         .$promise
                                         .then(function (repositories) {
-                                            service.currentUserGitubRepositories = repositories;
-                                            return service.currentUserGitubRepositories;
+                                            service.repos = repositories;
+                                            return service.repos;
                                     }, function (error) {
                                             notificationService.error("Error", "Error while loading user repositories.");
                                             throw Error(error);
@@ -44,7 +46,7 @@
                                 throw Error(error);
                             })
                             .finally(function() {
-                                loadingIndicatorService.stopLoading();
+                                loadingService.stopLoading();
                             });
                     }
 
