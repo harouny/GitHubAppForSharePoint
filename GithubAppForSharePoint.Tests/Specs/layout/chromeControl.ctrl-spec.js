@@ -3,7 +3,7 @@
         'common/services/spContext',
         'layout/chromeControl.ctrl'],
 function (mock, spUiControls, spContext) {
-    describe("chrome control directive controller", function () {
+    describe("SharePoint Chrome", function () {
 
         var $scope;
         var chromeOptions;
@@ -36,47 +36,47 @@ function (mock, spUiControls, spContext) {
             });
         });
 
-        it("it loads chrome control into target DOM element", function() {
+        it("Should be loaded into every page", function() {
             expect(spUiControls.Navigation)
                 .toHaveBeenCalledWith("container-div", window.jasmine.any(Object));
         });
 
-        describe("passing the following details", function () {
+        describe("With the following attributes", function () {
 
-            it("app icon", function() {
+            it("App icon", function() {
                 expect(chromeOptions.appIconUrl).toBe("host_web_logo_url");
             });
 
-            it("site title", function () {
+            it("Site title", function () {
                 expect(chromeOptions.siteTitle).toBe("host_web_title");
             });
 
-            it("site url", function () {
+            it("Link back to the host site", function () {
                 expect(chromeOptions.siteUrl).toBe("host_web_url");
             });
 
-            it("app title", function () {
+            it("App title", function () {
                 expect(chromeOptions.appTitle).toBe("Github App For SharePoint");
             });
 
-            it("app web url", function () {
+            it("Link to app main URL", function () {
                 expect(chromeOptions.appWebUrl).toBe("/");
             });
 
-            it("app start page", function () {
+            it("App start page", function () {
                 expect(chromeOptions.appStartPage).toBe("#/");
-            });
-
-            it("on css loaded callback", function () {
-                expect(chromeOptions.onCssLoaded).toBe("onChromeLoaded()");
             });
         });
 
-        it("show chrome control", function() {
+        it("Should notify the host page that its loaded", function () {
+            expect(chromeOptions.onCssLoaded).toBe("onChromeLoaded()");
+        });
+
+        it("Should be displayed", function() {
             expect(chromeIsVisible).toBe(true);
         });
 
-        it("hide chrome control bottom header", function () {
+        it("Should hide it's bottom header", function () {
             expect(bottomHeaderIsVisible).toBe(false);
         });
 
