@@ -36,6 +36,8 @@
                          repository.added = true;
                     });
                 }
+
+                init();
             }
         ]);
     });

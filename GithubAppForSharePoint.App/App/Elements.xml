@@ -11,10 +11,9 @@
     <File Path="App\layout\header.html" Url="App/layout/header.html" ReplaceContent="TRUE" />
     <File Path="App\layout\quicklaunch.html" Url="App/layout/quicklaunch.html" ReplaceContent="TRUE" />
     <File Path="App\layout\shell.html" Url="App/layout/shell.html" ReplaceContent="TRUE" />
-    <File Path="App\github\views\repository\repository.html" Url="App/github/views/repository/repository.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\reports\reports.html" Url="App/github/views/reports/reports.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\user\user.html" Url="App/github/views/user/user.html" ReplaceContent="TRUE" />
-    <File Path="App\github\views\allRepositories\allRepositories.html" Url="App/github/views/allRepositories/allRepositories.html" ReplaceContent="TRUE" />
+    <File Path="App\github\views\contributions\contributions.html" Url="App/github/views/contributions/contributions.html" ReplaceContent="TRUE" />
     <File Path="App\layout\layout.js" Url="App/layout/layout.js" ReplaceContent="TRUE" />
     <File Path="App\layout\chromeControl.ctrl.js" Url="App/layout/chromeControl.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\layout\chromeControl.html" Url="App/layout/chromeControl.html" ReplaceContent="TRUE" />
@@ -41,6 +40,6 @@
     <File Path="App\github\directives\githubContributions.js" Url="App/github/directives/githubContributions.js" ReplaceContent="TRUE" />
     <File Path="App\github\directives\githubContributions.ctrl.js" Url="App/github/directives/githubContributions.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\github\directives\githubContributions.html" Url="App/github/directives/githubContributions.html" ReplaceContent="TRUE" />
-    <File Path="App\github\views\allRepositories\allRepositories.ctrl.js" Url="App/github/views/allRepositories/allRepositories.ctrl.js" ReplaceContent="TRUE" />
+    <File Path="App\github\views\contributions\contributions.ctrl.js" Url="App/github/views/contributions/contributions.ctrl.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

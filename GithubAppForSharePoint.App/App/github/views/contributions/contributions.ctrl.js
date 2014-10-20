@@ -6,11 +6,12 @@
             ],
         function (github) {
 
-        github.controller("allRepositories.ctrl",
+        github.controller("contributions.ctrl",
         ["$scope",
         function ($scope) {
             function init() {
             }
+
             init();
         }]);
     });

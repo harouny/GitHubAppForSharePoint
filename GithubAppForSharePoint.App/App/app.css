@@ -52,3 +52,9 @@
 .repositories-container {
     margin-top: 20px;
 }
+
+
+#s4-workspace {
+    overflow: auto;
+    position: relative;
+}

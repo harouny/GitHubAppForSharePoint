@@ -70,8 +70,8 @@
     <Content Include="App\github\services\githubApiService.js" />
     <Content Include="App\github\services\repositoriesService.js" />
     <Content Include="App\github\services\usersService.js" />
-    <Content Include="App\github\views\allRepositories\allRepositories.ctrl.js">
-      <DependentUpon>allRepositories.html</DependentUpon>
+    <Content Include="App\github\views\contributions\contributions.ctrl.js">
+      <DependentUpon>contributions.html</DependentUpon>
     </Content>
     <Content Include="App\github\views\user\user.ctrl.js">
       <DependentUpon>user.html</DependentUpon>
@@ -87,9 +87,8 @@
     <Content Include="App\app.js" />
     <Content Include="App\github\github.js" />
     <Content Include="App\github\github.routes.js" />
-    <Content Include="App\github\views\allRepositories\allRepositories.html" />
+    <Content Include="App\github\views\contributions\contributions.html" />
     <Content Include="App\github\views\reports\reports.html" />
-    <Content Include="App\github\views\repository\repository.html" />
     <Content Include="App\github\views\user\user.html" />
     <Content Include="App\layout\chromeControl.html">
       <DependentUpon>chromeControl.js</DependentUpon>

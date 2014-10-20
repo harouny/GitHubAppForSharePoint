@@ -17,8 +17,8 @@
                         }
                         return vars;
                     }
-                    function get (name) {
-                        return getAll()[name];
+                    function get (key) {
+                        return getAll()[key];
                     }
 
                     return {

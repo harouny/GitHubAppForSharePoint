@@ -9,8 +9,8 @@
     function (github) {
 
         github.controller("user.ctrl",
-        ["$scope", "usersService", "$log", "$location", "notificationService",
-        function ($scope, usersService, $log, $location, notificationService) {
+        ["$scope", "usersService",
+        function ($scope, usersService) {
 
             $scope.saveGithubUser = function () {
                 usersService.saveGithubUser($scope.githubUserName)

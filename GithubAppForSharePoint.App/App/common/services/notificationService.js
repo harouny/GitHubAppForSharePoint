@@ -2,9 +2,13 @@
 (function (define) {
     "use strict";
 
-    define(["common/common", "spCore"],
+    define(["common/common",
+            "spCore"],
         function (common) {
-            common.factory("notificationService", ["$log", "$window", function ($log, $window) {
+            common.factory("notificationService",
+                ["$log", "$window",
+
+            function ($log, $window) {
 
                 function error(title, messege) {
                     notify(title, messege, "../Images/error.png");

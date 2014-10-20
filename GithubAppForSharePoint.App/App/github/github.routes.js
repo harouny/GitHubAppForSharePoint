@@ -4,7 +4,7 @@
             'underscore',
             'github/github',
             'github/views/user/user.ctrl',
-            'github/views/allRepositories/allRepositories.ctrl'
+            'github/views/contributions/contributions.ctrl'
             ],
     function (angular, _) {
 
@@ -14,27 +14,16 @@
                 {
                     url: '/all',
                     config: {
-                        id: 'allRepos',
-                        templateUrl: '../App/github/views/allRepositories/allRepositories.html',
+                        templateUrl: '../App/github/views/contributions/contributions.html',
                         title: 'All Contributions',
-                        controller: 'allRepositories.ctrl',
+                        controller: 'contributions.ctrl',
                         showInQuicklaunch: true,
                         isDefault : true
                     }
                 },
                 {
-                    url: '/repo',
-                    config: {
-                        id: 'repo',
-                        templateUrl: '../App/github/views/repository/repository.html',
-                        title: 'Contribution Details',
-                        showInQuicklaunch: false
-                    }
-                },
-                {
                     url: '/user',
                     config: {
-                        id: 'user',
                         templateUrl: '../App/github/views/user/user.html',
                         controller: 'user.ctrl',
                         title: 'My Contributions',
@@ -44,7 +33,6 @@
                 {
                     url: '/reports',
                     config: {
-                        id: 'reports',
                         templateUrl: '../App/github/views/reports/reports.html',
                         title: 'Reports',
                         showInQuicklaunch: true

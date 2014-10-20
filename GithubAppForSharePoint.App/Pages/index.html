@@ -1,6 +1,5 @@
 ﻿<!-- ReSharper disable UnknownCssClass -->
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <meta charset="utf-8" />
@@ -9,12 +8,9 @@
         <link href="../App/app.css" rel="stylesheet" />
     </head>
     <body>
-        
         <div id="pageWidth" data-ng-controller="layoutContents">
-            
             <!-- chrome control -->
             <layout-chrome-control data-container-id="chrome-control-container"></layout-chrome-control>
-
             <!-- app layout -->
             <div data-ng-if="isChromeLoaded" id="s4-workspace" class="ms-core-overlay">
                 <div id="s4-bodyContainer">
@@ -25,7 +21,6 @@
                     </div>
                 </div>
             </div>
-
             <!-- working on it messege -->
             <div ng-hide="isChromeLoaded && !isLoading" id="workingOnIt-container"
                  class="dissolve-animation">
@@ -36,9 +31,7 @@
                     </span>
                 </div>
             </div>
-
         </div>
-
         <!-- none optimized -->
         <script src="../Scripts/require.js"></script>
         <script src="../App/app.js"></script>
