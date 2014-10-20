@@ -93,6 +93,7 @@
     <Content Include="App\layout\chromeControl.html">
       <DependentUpon>chromeControl.js</DependentUpon>
     </Content>
+    <Content Include="App\layout\workspaceFixer.js" />
     <Content Include="App\layout\header.ctrl.js">
       <DependentUpon>header.js</DependentUpon>
     </Content>

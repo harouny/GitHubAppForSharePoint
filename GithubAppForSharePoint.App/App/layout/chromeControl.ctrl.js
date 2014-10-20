@@ -4,10 +4,11 @@
     define([
         "layout/layout",
         "spUiControls",
+        "layout/workspaceFixer",
         "common/common.config",
         "common/services/spContext"
     ],
-    function (layoutModule, spUiControls) {
+    function (layoutModule, spUiControls, workspaceFixer) {
 
         layoutModule.controller("chromeControl.ctrl",
             ["$scope", "appConfig", "spContext", "$window", "$rootScope",
@@ -41,6 +42,7 @@
                 $window.onChromeLoaded = function () {
                     $rootScope.isChromeLoaded = true;
                     $rootScope.$apply();
+                    workspaceFixer.initialize();
                 };
             }
         ]);
