@@ -10,19 +10,17 @@
     function (layoutModule) {
 
         layoutModule.controller("layoutContents",
-            ["$scope", "$rootScope",
-            function ($scope, $rootScope) {
-
-                $scope.isChromeLoaded = $rootScope.chromeLoaded;
-                $scope.isLoading = $rootScope.isLoading;
-
+            ["$rootScope",
+            function ($rootScope) {
+                var self = this;
+                self.isChromeLoaded = $rootScope.chromeLoaded;
+                self.isLoading = $rootScope.isLoading;
                 $rootScope.$watch("isChromeLoaded", function (newValue) {
-                    $scope.isChromeLoaded = newValue;
+                    self.isChromeLoaded = newValue;
                 });
                 $rootScope.$watch("isLoading", function (newValue) {
-                    $scope.isLoading = newValue;
+                    self.isLoading = newValue;
                 });
-
             }]);
     });
 

@@ -12,7 +12,7 @@
             function ($scope, appRoutes, $route) {
 
                 function isRouteSelected(route) {
-                    return $route.current && $route.current.url === route.url;
+                    return $route.current && $route.current.originalPath === route.url;
                 }
 
                 function loadMenueItems() {
