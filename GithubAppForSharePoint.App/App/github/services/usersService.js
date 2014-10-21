@@ -6,7 +6,8 @@
             "github/models/userItemModel",
             "common/services/userProfileService",
             "common/services/notificationService",
-            "common/services/loadingIndicatorService"
+            "common/services/loadingIndicatorService",
+            "common/services/spContext"
             ],
 
         function (angular, github, userItemModel) {

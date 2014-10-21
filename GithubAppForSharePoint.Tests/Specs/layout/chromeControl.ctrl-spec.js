@@ -22,9 +22,6 @@ function (mock, spUiControls, spContext) {
                     }
                 }
             });
-            mock.module('common', function ($provide) {
-                $provide.value('spContext', spContext);
-            });
             mock.module('layout');
             mock.inject(function ($rootScope, $controller) {
                 $scope = $rootScope.$new();
