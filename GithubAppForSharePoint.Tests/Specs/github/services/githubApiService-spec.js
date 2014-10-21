@@ -4,11 +4,19 @@ define(['angular-mocks',
 function (mock) {
 
     describe("Github Api Service", function () {
-        var githubApiService, $httpBackend, $rootScope, loadingIndicatorService, usersService, notificationService, $q;
+
+        var githubApiService,
+            $httpBackend,
+            $rootScope,
+            loadingIndicatorService,
+            usersService,
+            notificationService,
+            $q;
 
         beforeEach(function() {
             mock.module('github');
-            mock.inject(function (_githubApiService_, _$httpBackend_, _$rootScope_, _loadingIndicatorService_, _usersService_, _notificationService_, _$q_) {
+            mock.inject(function (_githubApiService_, _$httpBackend_, _$rootScope_,
+                    _loadingIndicatorService_, _usersService_, _notificationService_, _$q_) {
                 githubApiService = _githubApiService_;
                 $httpBackend = _$httpBackend_;
                 $rootScope = _$rootScope_;
