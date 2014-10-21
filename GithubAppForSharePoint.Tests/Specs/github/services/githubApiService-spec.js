@@ -4,38 +4,38 @@ define(['angular-mocks',
 function (mock) {
 
     describe("Github Api Service", function () {
-        var githubApiService, httpBackend, rootScope, loadingIndicatorService, usersService, notificationService, q;
+        var githubApiService, $httpBackend, $rootScope, loadingIndicatorService, usersService, notificationService, $q;
 
         beforeEach(function() {
             mock.module('github');
-            mock.inject(function (_githubApiService_, $httpBackend, $rootScope, _loadingIndicatorService_, _usersService_, _notificationService_, $q) {
+            mock.inject(function (_githubApiService_, _$httpBackend_, _$rootScope_, _loadingIndicatorService_, _usersService_, _notificationService_, _$q_) {
                 githubApiService = _githubApiService_;
-                httpBackend = $httpBackend;
-                rootScope = $rootScope;
+                $httpBackend = _$httpBackend_;
+                $rootScope = _$rootScope_;
                 loadingIndicatorService = _loadingIndicatorService_;
                 usersService = _usersService_;
                 notificationService = _notificationService_;
-                q = $q;
+                $q = _$q_;
             });
         });
 
         describe("When initialized while it contains current user repositories", function () {
             beforeEach(function() {
-                spyOn(q, "when").and.callFake(function (repos) {
+                spyOn($q, "when").and.callFake(function (repos) {
                     return repos;
                 });
             });
             it("resolve promise immediately", function () {
                 githubApiService.repos = new Array();
                 githubApiService.initialize();
-                expect(q.when).toHaveBeenCalled();
+                expect($q.when).toHaveBeenCalled();
             });
 
             it("and return current user repos", function () {
                 githubApiService.repos = new Array();
                 var returnedRepos;
                 returnedRepos = githubApiService.initialize();
-                expect(q.when).toHaveBeenCalledWith(githubApiService.repos);
+                expect($q.when).toHaveBeenCalledWith(githubApiService.repos);
                 expect(returnedRepos).toBe(githubApiService.repos);
             });
 
@@ -45,7 +45,7 @@ function (mock) {
         describe("Notify user about the process of loading github repos", function() {
             beforeEach(function() {
                 spyOn(usersService, "initialize").and.callFake(function () {
-                    return q.reject();
+                    return $q.reject();
                 });
                 spyOn(loadingIndicatorService, "startLoading");
                 spyOn(loadingIndicatorService, "stopLoading");
