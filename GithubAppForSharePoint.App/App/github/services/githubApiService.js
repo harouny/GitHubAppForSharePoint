@@ -42,7 +42,7 @@
                                     return null;
                                 }
                             }, function(error) {
-                                notificationService.error("Error", "Error while loading current user github details.");
+                                notificationService.error("Error", "Error while loading user github details.");
                                 throw Error(error);
                             })
                             .finally(function() {

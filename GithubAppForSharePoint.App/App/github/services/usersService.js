@@ -27,7 +27,7 @@
                                 return getGithubUserByAccountName(userProfileService.userProfile.AccountName);
                             },
                             function (error) {
-                                notificationService.error("Error", "Error while loading current user profile.");
+                                notificationService.error("Error", "Error while loading user github details");
                                 throw Error(error);
                             })
                             .finally(function () {

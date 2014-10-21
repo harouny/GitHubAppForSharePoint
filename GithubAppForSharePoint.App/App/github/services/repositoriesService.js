@@ -52,36 +52,42 @@
                         loadingIndicatorService.startLoading();
                         return usersService.initialize()
                             .then(function() {
-                                var item = new repositoryItemModel();
-                                delete item.__metadata;
-                                delete item.AccountName;
-                                item.AccountNameId = usersService.currentUser.Id;
-                                item.RepositoryName = repository.name;
-                                item.Url = repository.html_url;
-                                item.RepositoryDescription = repository.description;
-                                item.RepositoryId = repository.id.toString();
-                                item.AddedBy = userProfileService.userProfile.DisplayName;
-                                return $http.post(repositoriesListItemsResource, item,
-                                {
-                                    headers: {
-                                        'X-RequestDigest': spContext.securityValidation,
-                                    }
-                                }).then(function (response) {
-                                    notificationService.success("Saved", "your repository have been added to contributions.");
-                                    var newItem = new repositoryItemModel(response.data.d);
-                                    service.repositoriesListItems.push(newItem);
-                                    return newItem;
-                                }, function(error) {
-                                    notificationService.error("Error", "Error while adding repository.");
-                                    throw error;
-                                });
+                                return addGithubRepository(repository);
                         }, function(error) {
-                            notificationService.error("Error", "Error while loading current user profile.");
+                            notificationService.error("Error", "Error while loading user github details.");
                             throw error;
                         }).finally(function () {
                             loadingIndicatorService.stopLoading();
                         });
                     }
+
+
+                    function addGithubRepository(repository) {
+                        var item = new repositoryItemModel();
+                        delete item.__metadata;
+                        delete item.AccountName;
+                        item.AccountNameId = usersService.currentUser.Id;
+                        item.RepositoryName = repository.name;
+                        item.Url = repository.html_url;
+                        item.RepositoryDescription = repository.description;
+                        item.RepositoryId = repository.id.toString();
+                        item.AddedBy = userProfileService.userProfile.DisplayName;
+                        return $http.post(repositoriesListItemsResource, item,
+                        {
+                            headers: {
+                                'X-RequestDigest': spContext.securityValidation,
+                            }
+                        }).then(function (response) {
+                            notificationService.success("Saved", "your repository have been added to contributions.");
+                            var newItem = new repositoryItemModel(response.data.d);
+                            service.repositoriesListItems.push(newItem);
+                            return newItem;
+                        }, function(error) {
+                            notificationService.error("Error", "Error while adding repository.");
+                            throw error;
+                        });
+                    }
+
 
                     return service;
                 }]);
