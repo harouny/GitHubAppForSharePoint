@@ -10,9 +10,6 @@
             ["$window", "repositoriesService",
             function ($window, repositoriesService) {
 
-                repositoriesService.initialize()
-                    .then(drawChart);
-
                 function drawChart() {
                     if (repositoriesService.repositoriesListItems
                         && repositoriesService.repositoriesListItems.length > 0) {
@@ -35,7 +32,14 @@
                             chart.draw(data, options);
                     }
                 }
-                
+
+                function init() {
+                    repositoriesService.initialize()
+                    .then(drawChart);
+                }
+
+                init();
+
             }]);
 
         });

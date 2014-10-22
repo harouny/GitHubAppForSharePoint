@@ -19,7 +19,6 @@
 
             function updateUi() {
                 if (usersService.currentUser) {
-                    $scope.isUserSaved = true;
                     $scope.githubUserName = usersService.currentUser.GithubUserName;
                 } 
             }
