@@ -24,8 +24,6 @@
 
             // init... akin to class constructor
             function init() {
-                $log.log(loggerSource, 'service loaded', null);
-
                 // if values don't exist on querystring...
                 if (decodeURIComponent(queryString.get("SPHostUrl")) === "undefined") {
                     // load the app context form the cookie
@@ -41,7 +39,6 @@
 
             // create sharepoint app context by moving params on querystring to an app cookie
             function createSpAppContext() {
-                $log.log(loggerSource, 'writing spContext cookie', null);
 
                 var appWebUrl = decodeURIComponent(queryString.get("SPAppWebUrl"));
                 $cookieStore.put('SPAppWebUrl', appWebUrl);
@@ -55,13 +52,11 @@
                 var logoUrl = decodeURIComponent(queryString.get("SPHostLogoUrl"));
                 $cookieStore.put('SPHostLogoUrl', logoUrl);
 
-                $log.log(loggerSource, 'redirecting to app', null);
                 $window.location.href = appWebUrl + '/Pages/index.html#' + appDefaultRoute;
             }
 
             // init the sharepoint app context by loding the app's cookie contents
             function loadSpAppContext() {
-                $log.log(loggerSource, 'loading spContext cookie', null);
                 service.hostWeb.appWebUrl = $cookieStore.get('SPAppWebUrl');
                 service.hostWeb.url = $cookieStore.get('SPHostUrl');
                 service.hostWeb.title = $cookieStore.get('SPHostTitle');

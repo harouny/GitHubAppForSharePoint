@@ -47,18 +47,20 @@
         //configure app routes
         var github = angular.module("github");
         var routes = getRoutes();
+
         github.constant("appRoutes", routes);
         github.constant("appDefaultRoute", _.find(routes, function(route) {
             return route.config.isDefault === true;
         }).url);
-        github.config(['$routeProvider', 'appRoutes',
-            function ($routeProvider, appRoutes) {
+
+        github.config(['$routeProvider', 'appRoutes', 'appDefaultRoute',
+            function ($routeProvider, appRoutes, appDefaultRoute) {
                 appRoutes.forEach(function (route) {
                     $routeProvider.when(route.url, route.config);
                 });
                 $routeProvider.otherwise
                 (
-                    { redirectTo: '/all' }
+                    { redirectTo: appDefaultRoute }
                 );
             }
         ]);
