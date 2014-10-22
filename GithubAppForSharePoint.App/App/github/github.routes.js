@@ -4,7 +4,8 @@
             'underscore',
             'github/github',
             'github/views/user/user.ctrl',
-            'github/views/contributions/contributions.ctrl'
+            'github/views/contributions/contributions.ctrl',
+            'github/views/reports/reports.ctrl'
             ],
     function (angular, _) {
 
@@ -34,6 +35,7 @@
                     url: '/reports',
                     config: {
                         templateUrl: '../App/github/views/reports/reports.html',
+                        controller: 'reports.ctrl',
                         title: 'Reports',
                         showInQuicklaunch: true
                     }

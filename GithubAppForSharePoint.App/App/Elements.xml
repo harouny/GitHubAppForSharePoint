@@ -42,5 +42,6 @@
     <File Path="App\github\directives\githubContributions.html" Url="App/github/directives/githubContributions.html" ReplaceContent="TRUE" />
     <File Path="App\github\views\contributions\contributions.ctrl.js" Url="App/github/views/contributions/contributions.ctrl.js" ReplaceContent="TRUE" />
     <File Path="App\layout\workspaceFixer.js" Url="App/layout/workspaceFixer.js" ReplaceContent="TRUE" />
+    <File Path="App\github\views\reports\reports.ctrl.js" Url="App/github/views/reports/reports.ctrl.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

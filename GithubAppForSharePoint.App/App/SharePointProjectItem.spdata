@@ -43,5 +43,6 @@
     <ProjectItemFile Source="github\directives\githubContributions.html" Target="App\github\directives\" Type="ElementFile" />
     <ProjectItemFile Source="github\views\contributions\contributions.ctrl.js" Target="App\github\views\contributions\" Type="ElementFile" />
     <ProjectItemFile Source="layout\workspaceFixer.js" Target="App\layout\" Type="ElementFile" />
+    <ProjectItemFile Source="github\views\reports\reports.ctrl.js" Target="App\github\views\reports\" Type="ElementFile" />
   </Files>
 </ProjectItem>

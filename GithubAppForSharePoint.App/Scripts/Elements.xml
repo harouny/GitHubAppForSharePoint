@@ -20,5 +20,17 @@
     <File Path="Scripts\angular-resource.min.js.map" Url="Scripts/angular-resource.min.js.map" ReplaceContent="TRUE" />
     <File Path="Scripts\angular-resource.min.js" Url="Scripts/angular-resource.min.js" ReplaceContent="TRUE" />
     <File Path="Scripts\angular-resource.js" Url="Scripts/angular-resource.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\lib\Markdown.Converter.js" Url="Scripts/bower_components/requirejs-plugins/lib/Markdown.Converter.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\lib\require.js" Url="Scripts/bower_components/requirejs-plugins/lib/require.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\lib\text.js" Url="Scripts/bower_components/requirejs-plugins/lib/text.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\src\async.js" Url="Scripts/bower_components/requirejs-plugins/src/async.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\src\depend.js" Url="Scripts/bower_components/requirejs-plugins/src/depend.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\src\font.js" Url="Scripts/bower_components/requirejs-plugins/src/font.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\src\goog.js" Url="Scripts/bower_components/requirejs-plugins/src/goog.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\src\image.js" Url="Scripts/bower_components/requirejs-plugins/src/image.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\src\json.js" Url="Scripts/bower_components/requirejs-plugins/src/json.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\src\mdown.js" Url="Scripts/bower_components/requirejs-plugins/src/mdown.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\src\noext.js" Url="Scripts/bower_components/requirejs-plugins/src/noext.js" ReplaceContent="TRUE" />
+    <File Path="Scripts\bower_components\requirejs-plugins\src\propertyParser.js" Url="Scripts/bower_components/requirejs-plugins/src/propertyParser.js" ReplaceContent="TRUE" />
   </Module>
 </Elements>

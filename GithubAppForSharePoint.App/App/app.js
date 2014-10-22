@@ -17,7 +17,10 @@
             //sharepoint scripts
             'spUiControls':     '/_layouts/15/SP.UI.Controls',
             'spInit':           '/_layouts/15/init',
-            'spCore':           '/_layouts/15/core'
+            'spCore':           '/_layouts/15/core',
+            'async':            '../Scripts/bower_components/requirejs-plugins/src/async',
+            'goog':             '../Scripts/bower_components/requirejs-plugins/src/goog',
+            'propertyParser':   '../Scripts/bower_components/requirejs-plugins/src/propertyParser'
         },
         shim:
         {

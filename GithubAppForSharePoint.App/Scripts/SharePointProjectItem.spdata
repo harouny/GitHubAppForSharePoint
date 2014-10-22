@@ -25,5 +25,37 @@
     <ProjectItemFile Source="angular-resource.min.js.map" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="angular-resource.min.js" Target="Scripts\" Type="ElementFile" />
     <ProjectItemFile Source="angular-resource.js" Target="Scripts\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\.bower.json" Target="Scripts\bower_components\requirejs-plugins\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\bower.json" Target="Scripts\bower_components\requirejs-plugins\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\README.mdown" Target="Scripts\bower_components\requirejs-plugins\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\async.html" Target="Scripts\bower_components\requirejs-plugins\examples\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\font.html" Target="Scripts\bower_components\requirejs-plugins\examples\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\goog.html" Target="Scripts\bower_components\requirejs-plugins\examples\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\image.html" Target="Scripts\bower_components\requirejs-plugins\examples\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\json.html" Target="Scripts\bower_components\requirejs-plugins\examples\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\mdown.html" Target="Scripts\bower_components\requirejs-plugins\examples\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\noext.html" Target="Scripts\bower_components\requirejs-plugins\examples\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\data\bar.json" Target="Scripts\bower_components\requirejs-plugins\examples\data\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\data\bar.md" Target="Scripts\bower_components\requirejs-plugins\examples\data\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\data\foo.json" Target="Scripts\bower_components\requirejs-plugins\examples\data\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\data\foo.md" Target="Scripts\bower_components\requirejs-plugins\examples\data\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\img\bike.jpg" Target="Scripts\bower_components\requirejs-plugins\examples\img\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\img\lol_cat.jpg" Target="Scripts\bower_components\requirejs-plugins\examples\img\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\img\relativePath.js" Target="Scripts\bower_components\requirejs-plugins\examples\img\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\img\software_engineer.png" Target="Scripts\bower_components\requirejs-plugins\examples\img\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\js\foo" Target="Scripts\bower_components\requirejs-plugins\examples\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\examples\js\foo.bar" Target="Scripts\bower_components\requirejs-plugins\examples\js\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\lib\Markdown.Converter.js" Target="Scripts\bower_components\requirejs-plugins\lib\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\lib\require.js" Target="Scripts\bower_components\requirejs-plugins\lib\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\lib\text.js" Target="Scripts\bower_components\requirejs-plugins\lib\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\src\async.js" Target="Scripts\bower_components\requirejs-plugins\src\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\src\depend.js" Target="Scripts\bower_components\requirejs-plugins\src\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\src\font.js" Target="Scripts\bower_components\requirejs-plugins\src\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\src\goog.js" Target="Scripts\bower_components\requirejs-plugins\src\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\src\image.js" Target="Scripts\bower_components\requirejs-plugins\src\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\src\json.js" Target="Scripts\bower_components\requirejs-plugins\src\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\src\mdown.js" Target="Scripts\bower_components\requirejs-plugins\src\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\src\noext.js" Target="Scripts\bower_components\requirejs-plugins\src\" Type="ElementFile" />
+    <ProjectItemFile Source="bower_components\requirejs-plugins\src\propertyParser.js" Target="Scripts\bower_components\requirejs-plugins\src\" Type="ElementFile" />
   </Files>
 </ProjectItem>

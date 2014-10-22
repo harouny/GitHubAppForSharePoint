@@ -73,6 +73,7 @@
     <Content Include="App\github\views\contributions\contributions.ctrl.js">
       <DependentUpon>contributions.html</DependentUpon>
     </Content>
+    <Content Include="App\github\views\reports\reports.ctrl.js" />
     <Content Include="App\github\views\user\user.ctrl.js">
       <DependentUpon>user.html</DependentUpon>
     </Content>
@@ -143,6 +144,29 @@
     <Content Include="Scripts\angular-sanitize.min.js">
       <DependentUpon>angular-sanitize.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\async.html" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\font.html" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\goog.html" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\image.html" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\img\bike.jpg" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\img\lol_cat.jpg" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\img\relativePath.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\img\software_engineer.png" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\json.html" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\mdown.html" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\examples\noext.html" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\lib\Markdown.Converter.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\lib\require.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\lib\text.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\src\async.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\src\depend.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\src\font.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\src\goog.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\src\image.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\src\json.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\src\mdown.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\src\noext.js" />
+    <Content Include="Scripts\bower_components\requirejs-plugins\src\propertyParser.js" />
     <Content Include="Scripts\jquery-2.1.1.intellisense.js">
       <DependentUpon>jquery-2.1.1.js</DependentUpon>
     </Content>
@@ -192,6 +216,15 @@
     <None Include="Scripts\angular-resource.min.js.map">
       <DependentUpon>angular-resource.js</DependentUpon>
     </None>
+    <None Include="Scripts\bower_components\requirejs-plugins\.bower.json" />
+    <None Include="Scripts\bower_components\requirejs-plugins\bower.json" />
+    <None Include="Scripts\bower_components\requirejs-plugins\examples\data\bar.json" />
+    <None Include="Scripts\bower_components\requirejs-plugins\examples\data\bar.md" />
+    <None Include="Scripts\bower_components\requirejs-plugins\examples\data\foo.json" />
+    <None Include="Scripts\bower_components\requirejs-plugins\examples\data\foo.md" />
+    <None Include="Scripts\bower_components\requirejs-plugins\examples\js\foo" />
+    <None Include="Scripts\bower_components\requirejs-plugins\examples\js\foo.bar" />
+    <None Include="Scripts\bower_components\requirejs-plugins\README.mdown" />
     <None Include="_build\build.json" />
     <None Include="_build\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{11d2a8de-a65e-4257-b4a7-ded66ca3532f}</SharePointProjectItemId>
