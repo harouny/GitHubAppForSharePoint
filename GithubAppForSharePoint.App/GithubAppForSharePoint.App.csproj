@@ -73,7 +73,9 @@
     <Content Include="App\github\views\contributions\contributions.ctrl.js">
       <DependentUpon>contributions.html</DependentUpon>
     </Content>
-    <Content Include="App\github\views\reports\reports.ctrl.js" />
+    <Content Include="App\github\views\reports\reports.ctrl.js">
+      <DependentUpon>reports.html</DependentUpon>
+    </Content>
     <Content Include="App\github\views\user\user.ctrl.js">
       <DependentUpon>user.html</DependentUpon>
     </Content>
